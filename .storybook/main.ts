@@ -15,6 +15,11 @@ const config: StorybookConfig = {
   "framework": {
     "name": "@storybook/vue3-vite",
     "options": {}
+  },
+  viteFinal: (config) => {
+    // Assurez-vous que `base` est bien configuré pour fonctionner avec GitHub Pages
+    config.base = '/storybook-project/'; // Remplace par ton propre dépôt
+    return config;
   }
 };
 export default config;
