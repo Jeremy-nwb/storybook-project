@@ -14,6 +14,7 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss(),
   ],
+  base: '/storybook-project/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
