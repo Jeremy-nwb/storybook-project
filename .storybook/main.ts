@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/vue3-vite';
+import { mergeConfig } from 'vite';
 
 const config: StorybookConfig = {
     "stories": [
@@ -17,14 +18,18 @@ const config: StorybookConfig = {
     },
     async viteFinal(config, { configType }) {
         if (configType === 'PRODUCTION') {
-            // On garde la configuration de base
-            config.base = '/storybook-project/';
+            return mergeConfig(config, {
+                // On dit à Vite de générer tous les chemins de manière relative ('./')
+                // C'est la méthode la plus fiable pour un déploiement sur GitHub Pages.
+                base: './',
 
-            // On ajoute cette nouvelle configuration pour forcer les chemins relatifs
-            config.build = {
-                ...config.build,
-                assetsDir: '', // Les assets seront à la racine du build
-            };
+                // (Optionnel) On peut garder la minification désactivée pour l'instant
+                // pour faciliter le débogage. Vous pourrez la réactiver (en enlevant
+                // la section 'build') une fois que tout fonctionnera.
+                build: {
+                    minify: false,
+                }
+            });
         }
         return config;
     }
