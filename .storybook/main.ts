@@ -1,5 +1,4 @@
 import type { StorybookConfig } from '@storybook/vue3-vite';
-import { mergeConfig } from 'vite';
 
 const config: StorybookConfig = {
     "stories": [
@@ -17,11 +16,15 @@ const config: StorybookConfig = {
         "options": {}
     },
     async viteFinal(config, { configType }) {
-        // Applique le chemin de base uniquement pour le build de PRODUCTION
         if (configType === 'PRODUCTION') {
-            return mergeConfig(config, {
-                base: '/storybook-project/',
-            });
+            // On garde la configuration de base
+            config.base = '/storybook-project/';
+
+            // On ajoute cette nouvelle configuration pour forcer les chemins relatifs
+            config.build = {
+                ...config.build,
+                assetsDir: '', // Les assets seront à la racine du build
+            };
         }
         return config;
     }
