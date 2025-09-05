@@ -1,9 +1,8 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./Card.stories-CBplaSwq.js","./index-D1MQ82HR.js","./_commonjsHelpers-C7MPfNLY.js","./index-BdOSk9or.js","./preload-helper-BbOs9S9B.js","./Accordeon.stories-CS8Urfup.js","./Button.stories-D8Bly0EQ.js","./Button-DsO1mLa8.js","./Button-Bnzz4IoU.css","./Configure-xWj2Xojy.js","./blocks-6cZ4C_1L.js","./index-BFDJJLJz.js","./Header.stories-D8povPJC.js","./Header-CEMfjrsh.js","./Header-eRovX6kq.css","./Page.stories-CL8Vm-DC.js","./Page-DYrHQXjz.css","./axe-B2EvhcZK.js","./DocsRenderer-PQXLIZUC-BoZ9C2S8.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./Card.stories-PDtVTW-R.js","./index-DmOD_NYz.js","./_commonjsHelpers-C7MPfNLY.js","./index-BdOSk9or.js","./preload-helper-DChMlIcJ.js","./Accordeon.stories-CjofNCOf.js","./Button.stories-C6LuqlGn.js","./Button-CHmi8Ysk.js","./Button-Bnzz4IoU.css","./Configure-DauOSE2U.js","./blocks-C_-4_bfZ.js","./index-D2mfpbeG.js","./Header.stories-CMdiCwyO.js","./Header-DGKNzgsv.js","./Header-eRovX6kq.css","./Page.stories-DsMRUBgl.js","./Page-DYrHQXjz.css","./axe-bkyre2PD.js","./DocsRenderer-PQXLIZUC-D11oMOud.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
 var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
-var _a2, _b2, _c, _d;
-import { _ as __vitePreload } from "./preload-helper-BbOs9S9B.js";
+import { _ as __vitePreload } from "./preload-helper-DChMlIcJ.js";
 (function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) {
@@ -3806,11 +3805,11 @@ var WA = y((Sc) => {
   };
   Sc.default = U9;
 });
-var YA = y((_c2) => {
-  Object.defineProperty(_c2, "__esModule", {
+var YA = y((_c) => {
+  Object.defineProperty(_c, "__esModule", {
     value: true
   });
-  _c2.default = void 0;
+  _c.default = void 0;
   var V9 = {
     abstract: false,
     accessibleNameRequired: true,
@@ -3911,7 +3910,7 @@ var YA = y((_c2) => {
     requiredProps: {},
     superClass: [["roletype", "widget", "input"]]
   };
-  _c2.default = V9;
+  _c.default = V9;
 });
 var KA = y((Cc) => {
   Object.defineProperty(Cc, "__esModule", {
@@ -5699,18 +5698,18 @@ var WO = y((Sd) => {
   };
   Sd.default = iJ;
 });
-var YO = y((_d2) => {
-  Object.defineProperty(_d2, "__esModule", {
+var YO = y((_d) => {
+  Object.defineProperty(_d, "__esModule", {
     value: true
   });
-  _d2.default = void 0;
+  _d.default = void 0;
   var sJ = bE(zO()), aJ = bE(GO()), lJ = bE(WO());
   function bE(e) {
     return e && e.__esModule ? e : { default: e };
   }
   o(bE, "_interopRequireDefault");
   var uJ = [["graphics-document", sJ.default], ["graphics-object", aJ.default], ["graphics-symbol", lJ.default]];
-  _d2.default = uJ;
+  _d.default = uJ;
 });
 var Pd = y((Cd) => {
   Object.defineProperty(Cd, "__esModule", {
@@ -7285,7 +7284,7 @@ var R1 = y((lIe, T1) => {
 });
 var _1 = y((cIe, S1) => {
   function gZ(e, t) {
-    return e == null ? void 0 : e[t];
+    return e?.[t];
   }
   o(gZ, "getValue");
   S1.exports = gZ;
@@ -9042,7 +9041,7 @@ var dk = y((yr) => {
         maxDepth: e && e.maxDepth !== void 0 ? e.maxDepth : zt.maxDepth,
         min: e && e.min !== void 0 ? e.min : zt.min,
         plugins: e && e.plugins !== void 0 ? e.plugins : zt.plugins,
-        printBasicPrototype: (t = e == null ? void 0 : e.printBasicPrototype) !== null && t !== void 0 ? t : true,
+        printBasicPrototype: (t = e?.printBasicPrototype) !== null && t !== void 0 ? t : true,
         printFunctionName: ak(e),
         spacingInner: e && e.min ? " " : `
 `,
@@ -19441,8 +19440,7 @@ var w3 = "UNIVERSAL_STORE:", Rt = {
           `Missing first subscribe argument, or second if first is the event type, when subscribing to a UniversalStore with id '${this.id}'`
         );
       return this.listeners.has(i) || this.listeners.set(i, /* @__PURE__ */ new Set()), this.listeners.get(i).add(s), () => {
-        var _a3;
-        this.debug("unsubscribe", { eventType: i, listener: s }), this.listeners.has(i) && (this.listeners.get(i).delete(s), ((_a3 = this.listeners.get(i)) == null ? void 0 : _a3.size) === 0 && this.listeners.delete(i));
+        this.debug("unsubscribe", { eventType: i, listener: s }), this.listeners.has(i) && (this.listeners.get(i).delete(s), this.listeners.get(i)?.size === 0 && this.listeners.delete(i));
       };
     }, "subscribe");
     this.send = /* @__PURE__ */ o((t7) => {
@@ -19493,7 +19491,7 @@ var w3 = "UNIVERSAL_STORE:", Rt = {
     }
     this.getState = this.getState.bind(this), this.setState = this.setState.bind(this), this.subscribe = this.subscribe.bind(this), this.onStateChange = this.onStateChange.bind(this), this.send = this.send.bind(this), this.emitToChannel = this.emitToChannel.bind(this), this.prepareThis = this.prepareThis.bind(this), this.emitToListeners = this.emitToListeners.bind(this), this.handleChannelEvents = this.handleChannelEvents.bind(
       this
-    ), this.debug = this.debug.bind(this), this.channel = (r7 == null ? void 0 : r7.channel) ?? J2.preparation.channel, this.environment = (r7 == null ? void 0 : r7.environment) ?? J2.preparation.environment, this.channel && this.environment ? (J2.preparation.resolve({ channel: this.channel, environment: this.environment }), this.prepareThis(
+    ), this.debug = this.debug.bind(this), this.channel = r7?.channel ?? J2.preparation.channel, this.environment = r7?.environment ?? J2.preparation.environment, this.channel && this.environment ? (J2.preparation.resolve({ channel: this.channel, environment: this.environment }), this.prepareThis(
       { channel: this.channel, environment: this.environment }
     )) : J2.preparation.promise.then(this.prepareThis);
   }
@@ -19526,10 +19524,9 @@ var w3 = "UNIVERSAL_STORE:", Rt = {
    * also - in the case of a follower - if the state has been synced with the leader's state.
    */
   get status() {
-    var _a3;
     if (!this.channel || !this.environment)
       return J2.Status.UNPREPARED;
-    switch ((_a3 = this.syncing) == null ? void 0 : _a3.state) {
+    switch (this.syncing?.state) {
       case Rt.PENDING:
       case void 0:
         return J2.Status.SYNCING;
@@ -19548,12 +19545,11 @@ var w3 = "UNIVERSAL_STORE:", Rt = {
    * hundred milliseconds.
    */
   untilReady() {
-    var _a3;
-    return Promise.all([J2.preparation.promise, (_a3 = this.syncing) == null ? void 0 : _a3.promise]);
+    return Promise.all([J2.preparation.promise, this.syncing?.promise]);
   }
   /** Creates a new instance of UniversalStore */
   static create(t) {
-    if (!t || typeof (t == null ? void 0 : t.id) != "string")
+    if (!t || typeof t?.id != "string")
       throw new TypeError("id is required and must be a string, when creating a UniversalStore");
     t.debug && console.debug(
       Q`[UniversalStore]
@@ -19623,8 +19619,7 @@ var w3 = "UNIVERSAL_STORE:", Rt = {
     );
   }
   emitToChannel(t, r7) {
-    var _a3;
-    this.debug("emitToChannel", { event: t, eventInfo: r7, channel: !!this.channel }), (_a3 = this.channel) == null ? void 0 : _a3.emit(this.channelEventName, {
+    this.debug("emitToChannel", { event: t, eventInfo: r7, channel: !!this.channel }), this.channel?.emit(this.channelEventName, {
       event: t,
       eventInfo: r7
     });
@@ -19665,12 +19660,11 @@ var w3 = "UNIVERSAL_STORE:", Rt = {
     );
   }
   handleChannelEvents(t) {
-    var _a3, _b3, _c2, _d2, _e2;
     let { event: r7, eventInfo: n } = t;
-    if ([n.actor.id, (_a3 = n.forwardingActor) == null ? void 0 : _a3.id].includes(this.actor.id)) {
+    if ([n.actor.id, n.forwardingActor?.id].includes(this.actor.id)) {
       this.debug("handleChannelEvents: Ignoring event from self", { channelEvent: t });
       return;
-    } else if (((_b3 = this.syncing) == null ? void 0 : _b3.state) === Rt.PENDING && r7.type !== J2.InternalEventType.EXISTING_STATE_RESPONSE) {
+    } else if (this.syncing?.state === Rt.PENDING && r7.type !== J2.InternalEventType.EXISTING_STATE_RESPONSE) {
       this.debug("handleChannelEvents: Ignoring event while syncing", { channelEvent: t });
       return;
     }
@@ -19706,9 +19700,9 @@ var w3 = "UNIVERSAL_STORE:", Rt = {
         case J2.InternalEventType.EXISTING_STATE_RESPONSE:
           if (this.debug("handleChannelEvents: Setting state from leader's existing state response", {
             event: r7
-          }), ((_c2 = this.syncing) == null ? void 0 : _c2.state) !== Rt.PENDING)
+          }), this.syncing?.state !== Rt.PENDING)
             break;
-          (_e2 = (_d2 = this.syncing).resolve) == null ? void 0 : _e2.call(_d2);
+          this.syncing.resolve?.();
           let i = {
             type: J2.InternalEventType.SET_STATE,
             payload: {
@@ -20660,7 +20654,7 @@ function rz(e) {
 o(rz, "baseIsNative");
 var nz = rz;
 function oz(e, t) {
-  return e == null ? void 0 : e[t];
+  return e?.[t];
 }
 o(oz, "getValue");
 var iz = oz;
@@ -20924,7 +20918,6 @@ o(FS, "convertUnconventionalData");
 var _G = /* @__PURE__ */ o(function(t) {
   let r7, n, i, s;
   return /* @__PURE__ */ o(function(l, u) {
-    var _a3;
     try {
       if (l === "")
         return s = [], r7 = /* @__PURE__ */ new Map([[u, "[]"]]), n = /* @__PURE__ */ new Map(), i = [], u;
@@ -20970,7 +20963,7 @@ var _G = /* @__PURE__ */ o(function(t) {
             "_constructor-name_": u.constructor.name
           }
         };
-      if (((_a3 = u == null ? void 0 : u.constructor) == null ? void 0 : _a3.name) && u.constructor.name !== "Object" && !Array.isArray(u)) {
+      if (u?.constructor?.name && u.constructor.name !== "Object" && !Array.isArray(u)) {
         let p5 = r7.get(u);
         if (!p5) {
           let f = {
@@ -21058,9 +21051,8 @@ var $S = /* @__PURE__ */ o((e) => {
   let t = Array.from(
     document.querySelectorAll("iframe[data-is-storybook]")
   ), [r7, ...n] = t.filter((s) => {
-    var _a3, _b3;
     try {
-      return ((_a3 = s.contentWindow) == null ? void 0 : _a3.location.origin) === e.source.location.origin && ((_b3 = s.contentWindow) == null ? void 0 : _b3.location.pathname) === e.source.location.pathname;
+      return s.contentWindow?.location.origin === e.source.location.origin && s.contentWindow?.location.pathname === e.source.location.pathname;
     } catch {
     }
     try {
@@ -21076,7 +21068,7 @@ var $S = /* @__PURE__ */ o((e) => {
       return false;
     }
     return l === e.origin;
-  }), i = r7 == null ? void 0 : r7.getAttribute("src");
+  }), i = r7?.getAttribute("src");
   if (i && n.length === 0) {
     let { protocol: s, host: a, pathname: l } = new URL(i, document.location.toString());
     return `${s}//${a}${l}`;
@@ -21087,7 +21079,7 @@ var { document: Sb, location: _b } = k, BS = "storybook-channel", OG = { maxDept
   constructor(t) {
     this.config = t;
     this.connected = false;
-    if (this.buffer = [], typeof (k == null ? void 0 : k.addEventListener) == "function" && k.addEventListener("message", this.handleEvent.bind(this), false), t.page !== "manager" && t.page !== "preview")
+    if (this.buffer = [], typeof k?.addEventListener == "function" && k.addEventListener("message", this.handleEvent.bind(this), false), t.page !== "manager" && t.page !== "preview")
       throw new Error(`postmsg-channel: "config.page" cannot be "${t.page}"`);
   }
   setHandler(t) {
@@ -21126,7 +21118,7 @@ var { document: Sb, location: _b } = k, BS = "storybook-channel", OG = { maxDept
       ...OG,
       ...k.CHANNEL_OPTIONS || {},
       ...p5
-    }, m = this.getFrames(n), h5 = new URLSearchParams((_b == null ? void 0 : _b.search) || ""), b = za(
+    }, m = this.getFrames(n), h5 = new URLSearchParams(_b?.search || ""), b = za(
       {
         key: BS,
         event: t,
@@ -21161,7 +21153,7 @@ var { document: Sb, location: _b } = k, BS = "storybook-channel", OG = { maxDept
           return [];
         }
       });
-      return (n == null ? void 0 : n.length) ? n : this.getCurrentFrames();
+      return n?.length ? n : this.getCurrentFrames();
     }
     return k && k.parent && k.parent !== k.self ? [k.parent] : [];
   }
@@ -21807,8 +21799,7 @@ var fg = class fg2 {
     this.hasUpdates = void 0;
     this.currentContext = void 0;
     this.renderListener = /* @__PURE__ */ o((t) => {
-      var _a3;
-      t === ((_a3 = this.currentContext) == null ? void 0 : _a3.id) && (this.triggerEffects(), this.currentContext = null, this.removeRenderListeners());
+      t === this.currentContext?.id && (this.triggerEffects(), this.currentContext = null, this.removeRenderListeners());
     }, "renderListener");
     this.init();
   }
@@ -22091,7 +22082,7 @@ var a_ = /* @__PURE__ */ o((e, t) => typeof t[e] > "u" && !(e in t), "isInInitia
     argTypes: r7,
     parameters: { actions: n }
   } = e;
-  return (n == null ? void 0 : n.disable) || !r7 ? {} : Object.entries(r7).filter(([s, a]) => !!a.action).reduce((s, [a, l]) => (a_(a, t) && (s[a] = Ir(typeof l.action == "string" ? l.action : a)), s), {});
+  return n?.disable || !r7 ? {} : Object.entries(r7).filter(([s, a]) => !!a.action).reduce((s, [a, l]) => (a_(a, t) && (s[a] = Ir(typeof l.action == "string" ? l.action : a)), s), {});
 }, "addActionsFromArgTypes");
 var zG = [
   u_,
@@ -22239,8 +22230,8 @@ o(gg, "a");
 gg.open = "";
 gg.close = "";
 function c_(e = false) {
-  let t = typeof process < "u" ? process : void 0, r7 = (t == null ? void 0 : t.env) || {}, n = (t == null ? void 0 : t.argv) || [];
-  return !("NO_COLOR" in r7 || n.includes("--no-color")) && ("FORCE_COLOR" in r7 || n.includes("--color") || (t == null ? void 0 : t.platform) === "win32" || e && r7.TERM !== "dumb" || "CI" in r7) || typeof window < "u" && !!window.chrome;
+  let t = typeof process < "u" ? process : void 0, r7 = t?.env || {}, n = t?.argv || [];
+  return !("NO_COLOR" in r7 || n.includes("--no-color")) && ("FORCE_COLOR" in r7 || n.includes("--color") || t?.platform === "win32" || e && r7.TERM !== "dumb" || "CI" in r7) || typeof window < "u" && !!window.chrome;
 }
 o(c_, "C");
 function d_(e = false) {
@@ -22947,34 +22938,34 @@ function a6() {
 }
 o(a6, "getColorsEmpty");
 function B_(e) {
-  return (e == null ? void 0 : e.printFunctionName) ?? Lt.printFunctionName;
+  return e?.printFunctionName ?? Lt.printFunctionName;
 }
 o(B_, "getPrintFunctionName");
 function H_(e) {
-  return (e == null ? void 0 : e.escapeRegex) ?? Lt.escapeRegex;
+  return e?.escapeRegex ?? Lt.escapeRegex;
 }
 o(H_, "getEscapeRegex");
 function U_(e) {
-  return (e == null ? void 0 : e.escapeString) ?? Lt.escapeString;
+  return e?.escapeString ?? Lt.escapeString;
 }
 o(U_, "getEscapeString");
 function T_(e) {
   return {
-    callToJSON: (e == null ? void 0 : e.callToJSON) ?? Lt.callToJSON,
-    colors: (e == null ? void 0 : e.highlight) ? s6() : a6(),
-    compareKeys: typeof (e == null ? void 0 : e.compareKeys) == "function" || (e == null ? void 0 : e.compareKeys) === null ? e.compareKeys : Lt.compareKeys,
+    callToJSON: e?.callToJSON ?? Lt.callToJSON,
+    colors: e?.highlight ? s6() : a6(),
+    compareKeys: typeof e?.compareKeys == "function" || e?.compareKeys === null ? e.compareKeys : Lt.compareKeys,
     escapeRegex: H_(e),
     escapeString: U_(e),
-    indent: (e == null ? void 0 : e.min) ? "" : l6((e == null ? void 0 : e.indent) ?? Lt.indent),
-    maxDepth: (e == null ? void 0 : e.maxDepth) ?? Lt.maxDepth,
-    maxWidth: (e == null ? void 0 : e.maxWidth) ?? Lt.maxWidth,
-    min: (e == null ? void 0 : e.min) ?? Lt.min,
-    plugins: (e == null ? void 0 : e.plugins) ?? Lt.plugins,
-    printBasicPrototype: (e == null ? void 0 : e.printBasicPrototype) ?? true,
+    indent: e?.min ? "" : l6(e?.indent ?? Lt.indent),
+    maxDepth: e?.maxDepth ?? Lt.maxDepth,
+    maxWidth: e?.maxWidth ?? Lt.maxWidth,
+    min: e?.min ?? Lt.min,
+    plugins: e?.plugins ?? Lt.plugins,
+    printBasicPrototype: e?.printBasicPrototype ?? true,
     printFunctionName: B_(e),
-    spacingInner: (e == null ? void 0 : e.min) ? " " : `
+    spacingInner: e?.min ? " " : `
 `,
-    spacingOuter: (e == null ? void 0 : e.min) ? "" : `
+    spacingOuter: e?.min ? "" : `
 `
   };
 }
@@ -24180,7 +24171,7 @@ function tW(e, t, r7, n, i) {
 }
 o(tW, "diffLinesUnified2");
 function RC(e, t, r7) {
-  let n = (r7 == null ? void 0 : r7.truncateThreshold) ?? false, i = Math.max(Math.floor((r7 == null ? void 0 : r7.truncateThreshold) ?? 0), 0), s = n ? Math.min(e.length, i) : e.length, a = n ? Math.min(t.length, i) : t.length, l = s !== e.length || a !== t.length, u = /* @__PURE__ */ o((m, h5) => e[m] === t[h5], "isCommon"), c = [], d = 0, p5 = 0;
+  let n = r7?.truncateThreshold ?? false, i = Math.max(Math.floor(r7?.truncateThreshold ?? 0), 0), s = n ? Math.min(e.length, i) : e.length, a = n ? Math.min(t.length, i) : t.length, l = s !== e.length || a !== t.length, u = /* @__PURE__ */ o((m, h5) => e[m] === t[h5], "isCommon"), c = [], d = 0, p5 = 0;
   for (vC(s, a, u, /* @__PURE__ */ o((m, h5, b) => {
     for (; d !== h5; d += 1)
       c.push(new Te(tt$1, e[d]));
@@ -24237,7 +24228,7 @@ function lC(e) {
 }
 o(lC, "getNewLineSymbol");
 function rW(e, t, r7) {
-  let n = (r7 == null ? void 0 : r7.truncateThreshold) ?? false, i = Math.max(Math.floor((r7 == null ? void 0 : r7.truncateThreshold) ?? 0), 0), s = e.length, a = t.length;
+  let n = r7?.truncateThreshold ?? false, i = Math.max(Math.floor(r7?.truncateThreshold ?? 0), 0), s = e.length, a = t.length;
   if (n) {
     let m = e.includes(`
 `), h5 = t.includes(`
@@ -24681,8 +24672,8 @@ function Ki(e, t, r7 = /* @__PURE__ */ new WeakSet()) {
   try {
     return Nr$1(n);
   } catch (i) {
-    return Nr$1(new Error(`Failed to fully serialize error: ${i == null ? void 0 : i.message}
-Inner error message: ${n == null ? void 0 : n.message}`));
+    return Nr$1(new Error(`Failed to fully serialize error: ${i?.message}
+Inner error message: ${n?.message}`));
   }
 }
 o(Ki, "processError");
@@ -24739,9 +24730,8 @@ var TW = new Error(
     this.initialized = false;
     this.state = {};
     this.loadParentWindowState = /* @__PURE__ */ o(() => {
-      var _a3, _b3;
       try {
-        this.state = ((_b3 = (_a3 = k.window) == null ? void 0 : _a3.parent) == null ? void 0 : _b3.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER_STATE__) || {};
+        this.state = k.window?.parent?.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER_STATE__ || {};
       } catch {
         this.detached = true;
       }
@@ -24779,39 +24769,29 @@ var TW = new Error(
       }));
       let p5 = this.getLog(c);
       this.setState(c, ({ shadowCalls: f }) => {
-        var _a3;
         if (d || !p5.length)
           return { playUntil: d };
         let m = f.findIndex((h5) => h5.id === p5[0].callId);
         return {
-          playUntil: (_a3 = f.slice(0, m).filter((h5) => {
-            var _a4;
-            return h5.interceptable && !((_a4 = h5.ancestors) == null ? void 0 : _a4.length);
-          }).slice(-1)[0]) == null ? void 0 : _a3.id
+          playUntil: f.slice(0, m).filter((h5) => h5.interceptable && !h5.ancestors?.length).slice(-1)[0]?.id
         };
       }), u.emit(lo, { storyId: c, isDebugging: true });
     }, "start"), n = /* @__PURE__ */ o((u) => ({ storyId: c }) => {
-      var _a3;
-      let d = this.getLog(c).filter((f) => {
-        var _a4;
-        return !((_a4 = f.ancestors) == null ? void 0 : _a4.length);
-      }), p5 = d.reduceRight((f, m, h5) => f >= 0 || m.status === "waiting" ? f : h5, -1);
-      r7(u)({ storyId: c, playUntil: (_a3 = d[p5 - 1]) == null ? void 0 : _a3.callId });
+      let d = this.getLog(c).filter((f) => !f.ancestors?.length), p5 = d.reduceRight((f, m, h5) => f >= 0 || m.status === "waiting" ? f : h5, -1);
+      r7(u)({ storyId: c, playUntil: d[p5 - 1]?.callId });
     }, "back"), i = /* @__PURE__ */ o((u) => ({ storyId: c, callId: d }) => {
-      var _a3;
       let { calls: p5, shadowCalls: f, resolvers: m } = this.getState(c), h5 = p5.find(({ id: v5 }) => v5 === d), b = f.find(({ id: v5 }) => v5 === d);
       if (!h5 && b && Object.values(m).length > 0) {
-        let v5 = (_a3 = this.getLog(c).find((g) => g.status === "waiting")) == null ? void 0 : _a3.callId;
+        let v5 = this.getLog(c).find((g) => g.status === "waiting")?.callId;
         b.id !== v5 && this.setState(c, { playUntil: b.id }), Object.values(m).forEach((g) => g());
       } else
         r7(u)({ storyId: c, playUntil: d });
     }, "goto"), s = /* @__PURE__ */ o((u) => ({ storyId: c }) => {
-      var _a3;
       let { resolvers: d } = this.getState(c);
       if (Object.values(d).length > 0)
         Object.values(d).forEach((p5) => p5());
       else {
-        let p5 = (_a3 = this.getLog(c).find((f) => f.status === "waiting")) == null ? void 0 : _a3.callId;
+        let p5 = this.getLog(c).find((f) => f.status === "waiting")?.callId;
         p5 ? r7(u)({ storyId: c, playUntil: p5 }) : a({ storyId: c });
       }
     }, "next"), a = /* @__PURE__ */ o(({ storyId: u }) => {
@@ -24858,7 +24838,6 @@ var TW = new Error(
     }
   }
   cleanup() {
-    var _a3;
     this.state = Object.entries(this.state).reduce(
       (n, [i, s]) => {
         let a = IC(s);
@@ -24874,7 +24853,7 @@ var TW = new Error(
       next: false,
       end: false
     }, logItems: [] };
-    (_a3 = this.channel) == null ? void 0 : _a3.emit(tr.SYNC, r7), this.updateParentWindowState();
+    this.channel?.emit(tr.SYNC, r7), this.updateParentWindowState();
   }
   getLog(t) {
     let { calls: r7, shadowCalls: n } = this.getState(t), i = [...n];
@@ -24883,7 +24862,7 @@ var TW = new Error(
     });
     let s = /* @__PURE__ */ new Set();
     return i.reduceRight((a, l) => (l.args.forEach((u) => {
-      (u == null ? void 0 : u.__callId__) && s.add(u.__callId__);
+      u?.__callId__ && s.add(u.__callId__);
     }), l.path.forEach((u) => {
       u.__callId__ && s.add(u.__callId__);
     }), (l.interceptable || l.exception) && !s.has(l.id) && (a.unshift({ callId: l.id, status: l.status, ancestors: l.ancestors }), s.add(l.id)), a), []);
@@ -24898,12 +24877,9 @@ var TW = new Error(
     return n += 1, a.reduce(
       (l, u) => {
         let c = CW(t, u);
-        if (typeof (c == null ? void 0 : c.get) == "function") {
+        if (typeof c?.get == "function") {
           if (c.configurable) {
-            let p5 = /* @__PURE__ */ o(() => {
-              var _a3, _b3;
-              return (_b3 = (_a3 = c == null ? void 0 : c.get) == null ? void 0 : _a3.bind(t)) == null ? void 0 : _b3();
-            }, "getter");
+            let p5 = /* @__PURE__ */ o(() => c?.get?.bind(t)?.(), "getter");
             Object.defineProperty(l, u, {
               get: /* @__PURE__ */ o(() => this.instrument(p5(), { ...r7, path: s.concat(u) }, n), "get")
             });
@@ -24927,8 +24903,7 @@ var TW = new Error(
   // Returns a function that invokes the original function, records the invocation ("call") and
   // returns the original result.
   track(t, r7, n, i, s) {
-    var _a3, _b3, _c2, _d2;
-    let a = ((_a3 = i == null ? void 0 : i[0]) == null ? void 0 : _a3.__storyId__) || ((_d2 = (_c2 = (_b3 = k.__STORYBOOK_PREVIEW__) == null ? void 0 : _b3.selectionStore) == null ? void 0 : _c2.selection) == null ? void 0 : _d2.storyId), { cursor: l, ancestors: u } = this.getState(
+    let a = i?.[0]?.__storyId__ || k.__STORYBOOK_PREVIEW__?.selectionStore?.selection?.storyId, { cursor: l, ancestors: u } = this.getState(
       a
     );
     this.setState(a, { cursor: l + 1 });
@@ -24952,7 +24927,6 @@ var TW = new Error(
   }
   invoke(t, r7, n, i) {
     let { callRefsByResult: s, renderPhase: a } = this.getState(n.storyId), l = 25, u = /* @__PURE__ */ o((p5, f, m) => {
-      var _a3, _b3, _c2;
       if (m.includes(p5))
         return "[Circular]";
       if (m = [...m, p5], f > l)
@@ -24971,13 +24945,13 @@ var TW = new Error(
         let { flags: h5, source: b } = p5;
         return { __regexp__: { flags: h5, source: b } };
       }
-      if (p5 instanceof ((_a3 = k.window) == null ? void 0 : _a3.HTMLElement)) {
+      if (p5 instanceof k.window?.HTMLElement) {
         let { prefix: h5, localName: b, id: v5, classList: g, innerText: w5 } = p5, E = Array.from(g);
         return { __element__: { prefix: h5, localName: b, id: v5, classNames: E, innerText: w5 } };
       }
       return typeof p5 == "function" ? {
         __function__: { name: "getMockName" in p5 ? p5.getMockName() : p5.name }
-      } : typeof p5 == "symbol" ? { __symbol__: { description: p5.description } } : typeof p5 == "object" && ((_b3 = p5 == null ? void 0 : p5.constructor) == null ? void 0 : _b3.name) && ((_c2 = p5 == null ? void 0 : p5.constructor) == null ? void 0 : _c2.name) !== "Object" ? { __class__: { name: p5.constructor.name } } : Object.prototype.toString.call(p5) === "[object Object]" ? Object.fromEntries(
+      } : typeof p5 == "symbol" ? { __symbol__: { description: p5.description } } : typeof p5 == "object" && p5?.constructor?.name && p5?.constructor?.name !== "Object" ? { __class__: { name: p5.constructor.name } } : Object.prototype.toString.call(p5) === "[object Object]" ? Object.fromEntries(
         Object.entries(p5).map(([h5, b]) => [h5, u(b, ++f, m)])
       ) : p5;
     }, "serializeValues"), c = {
@@ -24985,12 +24959,11 @@ var TW = new Error(
       args: n.args.map((p5) => u(p5, 0, []))
     };
     n.path.forEach((p5) => {
-      (p5 == null ? void 0 : p5.__callId__) && this.setState(n.storyId, ({ chainedCallIds: f }) => ({
+      p5?.__callId__ && this.setState(n.storyId, ({ chainedCallIds: f }) => ({
         chainedCallIds: new Set(Array.from(f).concat(p5.__callId__))
       }));
     });
     let d = /* @__PURE__ */ o((p5) => {
-      var _a3;
       if (p5 instanceof Error) {
         let { name: f, message: m, stack: h5, callId: b = n.id } = p5, {
           showDiff: v5 = void 0,
@@ -25003,7 +24976,7 @@ var TW = new Error(
             ...Array.from(S.callRefsByResult.entries()),
             [p5, { __callId__: n.id, retain: n.retain }]
           ])
-        })), (_a3 = n.ancestors) == null ? void 0 : _a3.length)
+        })), n.ancestors?.length)
           throw Object.prototype.hasOwnProperty.call(p5, "callId") || Object.defineProperty(p5, "callId", { value: n.id }), p5;
       }
       throw p5;
@@ -25037,8 +25010,7 @@ var TW = new Error(
   }
   // Sends the call info to the manager and synchronizes the log.
   update(t) {
-    var _a3;
-    (_a3 = this.channel) == null ? void 0 : _a3.emit(tr.CALL, t), this.setState(t.storyId, ({ calls: r7 }) => {
+    this.channel?.emit(tr.CALL, t), this.setState(t.storyId, ({ calls: r7 }) => {
       let n = r7.concat(t).reduce((i, s) => Object.assign(i, { [s.id]: s }), {});
       return {
         // Calls are sorted to ensure parent calls always come before calls in their callback.
@@ -25052,8 +25024,7 @@ var TW = new Error(
   // Uses a 0ms debounce because this might get called many times in one tick.
   sync(t) {
     let r7 = /* @__PURE__ */ o(() => {
-      var _a3, _b3, _c2;
-      let { isLocked: n, isPlaying: i } = this.getState(t), s = this.getLog(t), a = (_a3 = s.filter(({ ancestors: p5 }) => !p5.length).find((p5) => p5.status === "waiting")) == null ? void 0 : _a3.callId, l = s.some((p5) => p5.status === "active");
+      let { isLocked: n, isPlaying: i } = this.getState(t), s = this.getLog(t), a = s.filter(({ ancestors: p5 }) => !p5.length).find((p5) => p5.status === "waiting")?.callId, l = s.some((p5) => p5.status === "active");
       if (this.detached || n || l || s.length === 0) {
         let f = { controlStates: {
           detached: this.detached,
@@ -25063,7 +25034,7 @@ var TW = new Error(
           next: false,
           end: false
         }, logItems: s };
-        (_b3 = this.channel) == null ? void 0 : _b3.emit(tr.SYNC, f);
+        this.channel?.emit(tr.SYNC, f);
         return;
       }
       let u = s.some(
@@ -25076,7 +25047,7 @@ var TW = new Error(
         next: i,
         end: i
       }, logItems: s, pausedAt: a };
-      (_c2 = this.channel) == null ? void 0 : _c2.emit(tr.SYNC, d);
+      this.channel?.emit(tr.SYNC, d);
     }, "synchronize");
     this.setState(t, ({ syncTimeout: n }) => (clearTimeout(n), { syncTimeout: setTimeout(r7, 0) }));
   }
@@ -25084,10 +25055,9 @@ var TW = new Error(
 o(nv, "Instrumenter");
 var rv = nv;
 function rr(e, t = {}) {
-  var _a3, _b3, _c2, _d2, _e2, _f, _g2, _h;
   try {
     let r7 = false, n = false;
-    return ((_c2 = (_b3 = (_a3 = k.window) == null ? void 0 : _a3.location) == null ? void 0 : _b3.search) == null ? void 0 : _c2.includes("instrument=true")) ? r7 = true : ((_f = (_e2 = (_d2 = k.window) == null ? void 0 : _d2.location) == null ? void 0 : _e2.search) == null ? void 0 : _f.includes("instrument=false")) && (n = true), ((_g2 = k.window) == null ? void 0 : _g2.parent) === k.window && !r7 || n ? e : (k.window && !k.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ && (k.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ = new rv()), ((_h = k.window) == null ? void 0 : _h.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__).instrument(e, t));
+    return k.window?.location?.search?.includes("instrument=true") ? r7 = true : k.window?.location?.search?.includes("instrument=false") && (n = true), k.window?.parent === k.window && !r7 || n ? e : (k.window && !k.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ && (k.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ = new rv()), (k.window?.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__).instrument(e, t));
   } catch (r7) {
     return be.warn(r7), e;
   }
@@ -28375,14 +28345,14 @@ var Ve$1 = /* @__PURE__ */ (function(e) {
       return j.position = new $l(F, {
         line: r7,
         column: n
-      }, (t == null ? void 0 : t.source) || ""), m(), j;
+      }, t?.source || ""), m(), j;
     };
   }
   o(s, "position");
   let a = [];
   function l(F) {
-    let j = new Dl((t == null ? void 0 : t.source) || "", F, r7, n, e);
-    if (t == null ? void 0 : t.silent) a.push(j);
+    let j = new Dl(t?.source || "", F, r7, n, e);
+    if (t?.silent) a.push(j);
     else throw j;
   }
   o(l, "error");
@@ -28391,7 +28361,7 @@ var Ve$1 = /* @__PURE__ */ (function(e) {
     return {
       type: Ve$1.stylesheet,
       stylesheet: {
-        source: t == null ? void 0 : t.source,
+        source: t?.source,
         rules: F,
         parsingErrors: a
       }
@@ -29809,7 +29779,6 @@ function Zd(e, t) {
 o(Zd, "toHaveAccessibleDescription");
 var Ts = "aria-invalid", kne = ["false"];
 function yx(e, t) {
-  var _a3;
   me$1(e, yx, this);
   let r7 = this.isNot ? "not to" : "to", n = this.isNot ? ".not.toHaveAccessibleErrorMessage" : ".toHaveAccessibleErrorMessage", i = e.getAttribute(
     "aria-errormessage"
@@ -29840,7 +29809,7 @@ function yx(e, t) {
       ), "message")
     };
   let u = ip(
-    ((_a3 = e.ownerDocument.getElementById(i)) == null ? void 0 : _a3.textContent) ?? ""
+    e.ownerDocument.getElementById(i)?.textContent ?? ""
   );
   return {
     pass: t === void 0 ? !!u : t instanceof RegExp ? t.test(u) : this.equals(u, t),
@@ -30551,8 +30520,7 @@ function hoe() {
 }
 o(hoe, "supportedRoles");
 function RN(e) {
-  var _a3;
-  return ((_a3 = Rs.roles.get(e)) == null ? void 0 : _a3.props["aria-checked"]) !== void 0;
+  return Rs.roles.get(e)?.props["aria-checked"] !== void 0;
 }
 o(RN, "roleSupportsChecked");
 function Ox(e) {
@@ -32293,7 +32261,7 @@ var KN = /* @__PURE__ */ o((e, t) => {
   }].forEach(({ name: c, condition: d, action: p5 }) => {
     i(c, function(f) {
       let m = a(this), h5 = p5 === "return" ? m.mock.results : m.mock.settledResults, b = h5[h5.length - 1], v5 = m.getMockName();
-      this.assert(d(m, f), `expected last "${v5}" call to ${p5} #{exp}`, `expected last "${v5}" call to not ${p5} #{exp}`, f, b == null ? void 0 : b.value);
+      this.assert(d(m, f), `expected last "${v5}" call to ${p5} #{exp}`, `expected last "${v5}" call to not ${p5} #{exp}`, f, b?.value);
     });
   }), [{
     name: "toHaveNthResolvedWith",
@@ -32312,7 +32280,7 @@ var KN = /* @__PURE__ */ o((e, t) => {
   }].forEach(({ name: c, condition: d, action: p5 }) => {
     i(c, function(f, m) {
       let h5 = a(this), b = h5.getMockName(), g = (p5 === "return" ? h5.mock.results : h5.mock.settledResults)[f - 1], w5 = `${Cs(f)} call`;
-      this.assert(d(h5, f, m), `expected ${w5} "${b}" call to ${p5} #{exp}`, `expected ${w5} "${b}" call to not ${p5} #{exp}`, m, g == null ? void 0 : g.value);
+      this.assert(d(h5, f, m), `expected ${w5} "${b}" call to ${p5} #{exp}`, `expected ${w5} "${b}" call to not ${p5} #{exp}`, m, g?.value);
     });
   }), i("withContext", function(c) {
     for (let d in c)
@@ -32324,7 +32292,7 @@ var KN = /* @__PURE__ */ o((e, t) => {
     let p5 = t.flag(this, "vitest-test"), f = t.flag(this, "object");
     if (t.flag(this, "poll"))
       throw new SyntaxError("expect.poll() is not supported in combination with .resolves");
-    if (typeof (f == null ? void 0 : f.then) != "function")
+    if (typeof f?.then != "function")
       throw new TypeError(`You must provide a Promise to expect() when using .resolves, not '${typeof f}'.`);
     let m = new Proxy(this, { get: /* @__PURE__ */ o((h5, b, v5) => {
       let g = Reflect.get(h5, b, v5);
@@ -32344,7 +32312,7 @@ var KN = /* @__PURE__ */ o((e, t) => {
     let p5 = t.flag(this, "vitest-test"), f = t.flag(this, "object"), m = typeof f == "function" ? f() : f;
     if (t.flag(this, "poll"))
       throw new SyntaxError("expect.poll() is not supported in combination with .rejects");
-    if (typeof (m == null ? void 0 : m.then) != "function")
+    if (typeof m?.then != "function")
       throw new TypeError(`You must provide a Promise to expect() when using .rejects, not '${typeof m}'.`);
     let h5 = new Proxy(this, { get: /* @__PURE__ */ o((b, v5, g) => {
       let w5 = Reflect.get(b, v5, g);
@@ -32586,7 +32554,7 @@ o(ZN, "reactiveMock");
 function QN(e) {
   let t = JN(e), r7 = t.impl;
   return t.willCall(function(...n) {
-    return aw.forEach((i) => i(e, n)), r7 == null ? void 0 : r7.apply(this, n);
+    return aw.forEach((i) => i(e, n)), r7?.apply(this, n);
   }), e;
 }
 o(QN, "listenWhenCalled");
@@ -34131,7 +34099,7 @@ function Hye(e, t) {
       if (b !== "pending")
         try {
           let P = Tye(e);
-          typeof (P == null ? void 0 : P.then) == "function" ? (b = "pending", P.then((_5) => {
+          typeof P?.then == "function" ? (b = "pending", P.then((_5) => {
             b = "resolved", w5(null, _5);
           }, (_5) => {
             b = "rejected", p5 = _5;
@@ -35672,7 +35640,7 @@ function Ebe(e) {
     getData(n) {
       var i;
       let s = (i = this.items.find(kh(n, true))) !== null && i !== void 0 ? i : this.items.find(kh(n, false)), a = "";
-      return s == null ? void 0 : s.getAsString((l) => {
+      return s?.getAsString((l) => {
         a = l;
       }), a;
     }
@@ -35785,7 +35753,7 @@ function pB(e, t) {
 }
 o(pB, "createClipboardStub");
 function hT(e) {
-  return !!(e == null ? void 0 : e[oi]);
+  return !!e?.[oi];
 }
 o(hT, "isClipboardStub");
 function hB(e) {
@@ -35817,7 +35785,7 @@ function wbe(e) {
 }
 o(wbe, "detachClipboardStubFromView");
 async function yB(e) {
-  let t = e.defaultView, r7 = t == null ? void 0 : t.navigator.clipboard, n = r7 && await r7.read();
+  let t = e.defaultView, r7 = t?.navigator.clipboard, n = r7 && await r7.read();
   if (!n)
     throw new Error("The Clipboard API is unavailable.");
   let i = ni(t);
@@ -35890,7 +35858,7 @@ function rt(e) {
 o(rt, "isDisabled");
 function jn(e) {
   let t = e.activeElement;
-  return (t == null ? void 0 : t.shadowRoot) ? jn(t.shadowRoot) : rt(t) ? e.ownerDocument ? (
+  return t?.shadowRoot ? jn(t.shadowRoot) : rt(t) ? e.ownerDocument ? (
     /* istanbul ignore next */
     e.ownerDocument.body
   ) : e.body : t;
@@ -35958,7 +35926,7 @@ function wB(e) {
 o(wB, "isElement");
 function TB(e) {
   let t = e.ownerDocument.getSelection();
-  if ((t == null ? void 0 : t.focusNode) && $e$1(e)) {
+  if (t?.focusNode && $e$1(e)) {
     let n = sn$1(t.focusNode);
     if (n) {
       if (!t.isCollapsed) {
@@ -35977,7 +35945,7 @@ function an$1(e, t) {
 o(an$1, "wrapEvent");
 function ht$1(e) {
   let t = gB(e, ia$1), r7 = jn(e.ownerDocument);
-  (t ?? e.ownerDocument.body) !== r7 && (t ? an$1(() => t.focus()) : an$1(() => r7 == null ? void 0 : r7.blur()), TB(t ?? e.ownerDocument.body));
+  (t ?? e.ownerDocument.body) !== r7 && (t ? an$1(() => t.focus()) : an$1(() => r7?.blur()), TB(t ?? e.ownerDocument.body));
 }
 o(ht$1, "focusElement");
 function RB(e) {
@@ -36234,9 +36202,9 @@ function Kh(e) {
       type: "input",
       selection: xr$1(t)
     };
-  let r7 = t == null ? void 0 : t.ownerDocument.getSelection();
+  let r7 = t?.ownerDocument.getSelection();
   return {
-    type: sn$1(e) && (r7 == null ? void 0 : r7.anchorNode) && sn$1(r7.anchorNode) ? "contenteditable" : "default",
+    type: sn$1(e) && r7?.anchorNode && sn$1(r7.anchorNode) ? "contenteditable" : "default",
     selection: r7
   };
 }
@@ -36367,7 +36335,7 @@ function UB(e) {
 o(UB, "getValueOrTextContent");
 function VB(e) {
   let t = Ae(e);
-  for (let r7 = e; r7 == null ? void 0 : r7.ownerDocument; r7 = r7.parentElement) {
+  for (let r7 = e; r7?.ownerDocument; r7 = r7.parentElement) {
     let { display: n, visibility: i } = t.getComputedStyle(r7);
     if (n === "none" || i === "hidden")
       return false;
@@ -36422,7 +36390,7 @@ function vT(e, t) {
     });
   } else {
     let r7 = e.ownerDocument.getSelection();
-    if (!(r7 == null ? void 0 : r7.focusNode))
+    if (!r7?.focusNode)
       return;
     if (r7.isCollapsed) {
       let n = Yh(r7.focusNode, r7.focusOffset, t);
@@ -36456,7 +36424,7 @@ function GB(e) {
     return xr$1(e).startOffset === 0 && xr$1(e).endOffset === Ge(e).length;
   var t;
   let r7 = (t = sn$1(e)) !== null && t !== void 0 ? t : e.ownerDocument.body, n = e.ownerDocument.getSelection();
-  return (n == null ? void 0 : n.anchorNode) === r7 && n.focusNode === r7 && n.anchorOffset === 0 && n.focusOffset === r7.childNodes.length;
+  return n?.anchorNode === r7 && n.focusNode === r7 && n.anchorOffset === 0 && n.focusOffset === r7.childNodes.length;
 }
 o(GB, "isAllSelected");
 function kn(e, t, r7) {
@@ -36581,7 +36549,7 @@ ut$1.keypress = (e, t, r7) => {
         r7.dispatchUIEvent(t, "click");
       };
     if (X$1(t, "input")) {
-      let n = t.form, i = n == null ? void 0 : n.querySelector('input[type="submit"], button:not([type]), button[type="submit"]');
+      let n = t.form, i = n?.querySelector('input[type="submit"], button:not([type]), button[type="submit"]');
       return i ? () => r7.dispatchUIEvent(i, "click") : n && jbe.includes(t.type) && n.querySelectorAll("input").length === 1 ? () => r7.dispatchUIEvent(
         n,
         "submit"
@@ -37232,17 +37200,17 @@ function RT(e) {
 o(RT, "patchFocus");
 function t2(e) {
   let t = jn(e);
-  return (t == null ? void 0 : t.tagName) === "BODY" ? null : t;
+  return t?.tagName === "BODY" ? null : t;
 }
 o(t2, "getActiveTarget");
 var ST = Symbol("Interceptor for programmatical calls");
 function si(e, t, r7) {
-  let n = Object.getOwnPropertyDescriptor(e.constructor.prototype, t), i = Object.getOwnPropertyDescriptor(e, t), s = (n == null ? void 0 : n.set) ? "set" : "value";
-  if (typeof (n == null ? void 0 : n[s]) != "function" || n[s][ST])
+  let n = Object.getOwnPropertyDescriptor(e.constructor.prototype, t), i = Object.getOwnPropertyDescriptor(e, t), s = n?.set ? "set" : "value";
+  if (typeof n?.[s] != "function" || n[s][ST])
     throw new Error(`Element ${e.tagName} does not implement "${String(t)}".`);
   function a(...l) {
     let { applyNative: u = false, realArgs: c, then: d } = r7.call(this, ...l), p5 = (!u && i || n)[s];
-    s === "set" ? p5.call(this, c) : p5.call(this, ...c), d == null ? void 0 : d();
+    s === "set" ? p5.call(this, c) : p5.call(this, ...c), d?.();
   }
   o(a, "intercept"), a[ST] = ST, Object.defineProperty(e, t, {
     ...i ?? n,
@@ -37857,7 +37825,7 @@ function m2({ document: e, target: t, clickCount: r7, node: n, offset: i }) {
       throw new Error("The given offset is out of bounds.");
     }
     let h5 = e.getSelection();
-    return h5 == null ? void 0 : h5.removeAllRanges(), h5 == null ? void 0 : h5.addRange(m.cloneRange()), m;
+    return h5?.removeAllRanges(), h5?.addRange(m.cloneRange()), m;
   }
 }
 o(m2, "setSelectionPerMouseDown");
@@ -37895,7 +37863,7 @@ function h2(e, { document: t, target: r7, node: n, offset: i }) {
     let a = e.cloneRange(), l = a.comparePoint(s.node, s.offset);
     l < 0 ? a.setStart(s.node, s.offset) : l > 0 && a.setEnd(s.node, s.offset);
     let u = t.getSelection();
-    u == null ? void 0 : u.removeAllRanges(), u == null ? void 0 : u.addRange(a.cloneRange());
+    u?.removeAllRanges(), u?.addRange(a.cloneRange());
   }
 }
 o(h2, "modifySelectionPerMouseMove");
@@ -38044,7 +38012,7 @@ function ui(e, t) {
 o(ui, "hasPointerEvents");
 function Jbe(e) {
   let t = Ae(e);
-  for (let r7 = e, n = []; r7 == null ? void 0 : r7.ownerDocument; r7 = r7.parentElement) {
+  for (let r7 = e, n = []; r7?.ownerDocument; r7 = r7.parentElement) {
     n.push(r7);
     let i = t.getComputedStyle(r7).pointerEvents;
     if (i && ![
@@ -38062,7 +38030,7 @@ var y2 = Symbol("Last check for pointer-events");
 function g2(e, t) {
   let r7 = t[y2];
   if (!(e.config.pointerEventsCheck !== Fn.Never && (!r7 || b2(e.config.pointerEventsCheck, Fn.EachApiCall) && r7[nt.Call] !== da(e, nt.Call) || b2(e.config.pointerEventsCheck, Fn.EachTrigger) && r7[nt.Trigger] !== da(e, nt.Trigger))))
-    return r7 == null ? void 0 : r7.result;
+    return r7?.result;
   let i = Jbe(t);
   return t[y2] = {
     [nt.Call]: da(e, nt.Call),
@@ -38073,7 +38041,7 @@ function g2(e, t) {
 o(g2, "checkPointerEvents");
 function Hn(e, t) {
   let r7 = g2(e, t);
-  if ((r7 == null ? void 0 : r7.pointerEvents) === "none")
+  if (r7?.pointerEvents === "none")
     throw new Error([
       `Unable to perform pointer interaction as the element ${r7.tree.length > 1 ? "inherits" : "has"} \`pointer-events: none\`:`,
       "",
@@ -38120,7 +38088,7 @@ function Zbe(e) {
     var s;
     r7 = (s = e.textContent) === null || s === void 0 ? void 0 : s.trim();
   }
-  return r7 = r7 == null ? void 0 : r7.replace(/\n/g, "  "), Number(r7 == null ? void 0 : r7.length) > 30 && (r7 = `${r7 == null ? void 0 : r7.substring(0, 29)}…`), r7 ? `(label=${r7})` : "";
+  return r7 = r7?.replace(/\n/g, "  "), Number(r7?.length) > 30 && (r7 = `${r7?.substring(0, 29)}…`), r7 ? `(label=${r7})` : "";
 }
 o(Zbe, "getLabelDescr");
 function b2(e, t) {
@@ -38214,7 +38182,7 @@ var MT = class MT2 {
   }
   async move(t, r7, n) {
     let i = this.pointers.get(r7), s = i.move(t, n), a = i.pointerType === "touch" ? void 0 : this.mouse.move(t, n, i.isPrevented);
-    s == null ? void 0 : s.leave(), a == null ? void 0 : a.leave(), s == null ? void 0 : s.enter(), a == null ? void 0 : a.enter(), s == null ? void 0 : s.move(), a == null ? void 0 : a.move();
+    s?.leave(), a?.leave(), s?.enter(), a?.enter(), s?.move(), a?.move();
   }
   async release(t, r7, n) {
     let i = this.devices.get(r7.pointerType);
@@ -38222,11 +38190,11 @@ var MT = class MT2 {
     let s = this.pointers.get(this.getPointerName(r7)), a = s.isPrevented;
     if (s.position = n, s.pointerType !== "touch" && (this.mouse.position = n), i.countPressed === 0 && s.up(t, r7.button), s.pointerType === "touch" && s.release(t), s.pointerType === "touch" && !s.isMultitouch) {
       let l = this.mouse.move(t, n, a);
-      l == null ? void 0 : l.leave(), l == null ? void 0 : l.enter(), l == null ? void 0 : l.move(), this.mouse.down(t, r7, a);
+      l?.leave(), l?.enter(), l?.move(), this.mouse.down(t, r7, a);
     }
     if (!s.isMultitouch) {
       let l = this.mouse.move(t, n, a);
-      l == null ? void 0 : l.leave(), l == null ? void 0 : l.enter(), l == null ? void 0 : l.move(), this.mouse.up(t, r7, a);
+      l?.leave(), l?.enter(), l?.move(), this.mouse.up(t, r7, a);
     }
   }
   getPointerName(t) {
@@ -38574,7 +38542,7 @@ async function sge(e, t) {
   var a, l, u, c;
   let d = {
     target: (a = t.target) !== null && a !== void 0 ? a : age(e, s),
-    coords: (l = t.coords) !== null && l !== void 0 ? l : s == null ? void 0 : s.coords,
+    coords: (l = t.coords) !== null && l !== void 0 ? l : s?.coords,
     caret: {
       node: (u = t.node) !== null && u !== void 0 ? u : N2(t) || s == null || (r7 = s.caret) === null || r7 === void 0 ? void 0 : r7.node,
       offset: (c = t.offset) !== null && c !== void 0 ? c : N2(t) || s == null || (n = s.caret) === null || n === void 0 ? void 0 : n.offset
@@ -38710,7 +38678,7 @@ async function U2(e, t) {
   if (!r7 || !X$1(r7, "input", {
     type: "file"
   }))
-    throw new TypeError(`The ${r7 === e ? "given" : "associated"} ${r7 == null ? void 0 : r7.tagName} element does not accept file uploads`);
+    throw new TypeError(`The ${r7 === e ? "given" : "associated"} ${r7?.tagName} element does not accept file uploads`);
   if (rt(e)) return;
   let n = (Array.isArray(t) ? t : [
     t
@@ -39057,9 +39025,8 @@ var { expect: Yve } = rr(
   }, "mock")
 };
 var Y2 = false, Xve = /* @__PURE__ */ o((e) => {
-  var _a3;
   let { parameters: t } = e;
-  ((_a3 = t == null ? void 0 : t.actions) == null ? void 0 : _a3.disable) || Y2 || (lw((r7, n) => {
+  t?.actions?.disable || Y2 || (lw((r7, n) => {
     let i = r7.getMockName();
     i !== "spy" && (!/^next\/.*::/.test(i) || [
       "next/router::useRouter()",
@@ -39082,10 +39049,7 @@ var K2 = {
   light: { name: "light", value: "#F8F8F8" },
   dark: { name: "dark", value: "#333" }
 };
-var { document: Qt } = globalThis, X2 = /* @__PURE__ */ o(() => {
-  var _a3;
-  return (globalThis == null ? void 0 : globalThis.matchMedia) ? !!((_a3 = globalThis.matchMedia("(prefers-reduced-motion: reduce)")) == null ? void 0 : _a3.matches) : false;
-}, "isReduceMotionEnabled"), WT = /* @__PURE__ */ o((e) => {
+var { document: Qt } = globalThis, X2 = /* @__PURE__ */ o(() => globalThis?.matchMedia ? !!globalThis.matchMedia("(prefers-reduced-motion: reduce)")?.matches : false, "isReduceMotionEnabled"), WT = /* @__PURE__ */ o((e) => {
   (Array.isArray(e) ? e : [e]).forEach(Zve);
 }, "clearStyles"), Zve = /* @__PURE__ */ o((e) => {
   if (!Qt)
@@ -39103,7 +39067,6 @@ var { document: Qt } = globalThis, X2 = /* @__PURE__ */ o(() => {
     n.setAttribute("id", e), n.innerHTML = t, Qt.head.appendChild(n);
   }
 }, "addGridStyle"), Q2 = /* @__PURE__ */ o((e, t, r7) => {
-  var _a3;
   if (!Qt)
     return;
   let n = Qt.getElementById(e);
@@ -39113,7 +39076,7 @@ var { document: Qt } = globalThis, X2 = /* @__PURE__ */ o(() => {
     let i = Qt.createElement("style");
     i.setAttribute("id", e), i.innerHTML = t;
     let s = `addon-backgrounds-grid${r7 ? `-docs-${r7}` : ""}`, a = Qt.getElementById(s);
-    a ? (_a3 = a.parentElement) == null ? void 0 : _a3.insertBefore(i, a) : Qt.head.appendChild(i);
+    a ? a.parentElement?.insertBefore(i, a) : Qt.head.appendChild(i);
   }
 }, "addBackgroundStyle");
 var eEe = {
@@ -39125,7 +39088,7 @@ var eEe = {
     options: a = K2,
     disable: l,
     grid: u = eEe
-  } = n[ci] || {}, c = r7[ci] || {}, d = typeof c == "string" ? c : c == null ? void 0 : c.value, p5 = d ? a[d] : void 0, f = typeof p5 == "string" ? p5 : (p5 == null ? void 0 : p5.value) || "transparent", m = typeof c == "string" ? false : c.grid || false, h5 = !!p5 && !l, b = i === "docs" ? `#anchor--${s} .docs-story` : ".sb-show-main", v5 = i === "docs" ? `#anchor--${s} .docs-story` : ".sb-show-main", g = n.layout === void 0 || n.layout === "padded", w5 = i === "docs" ? 20 : g ? 16 : 0, { cellAmount: E, cellSize: R, opacity: S, offsetX: P = w5, offsetY: _5 = w5 } = u, C5 = i === "docs" ? `${Z2}-docs-${s}` : `${Z2}-color`, O = i === "docs" ? s : null;
+  } = n[ci] || {}, c = r7[ci] || {}, d = typeof c == "string" ? c : c?.value, p5 = d ? a[d] : void 0, f = typeof p5 == "string" ? p5 : p5?.value || "transparent", m = typeof c == "string" ? false : c.grid || false, h5 = !!p5 && !l, b = i === "docs" ? `#anchor--${s} .docs-story` : ".sb-show-main", v5 = i === "docs" ? `#anchor--${s} .docs-story` : ".sb-show-main", g = n.layout === void 0 || n.layout === "padded", w5 = i === "docs" ? 20 : g ? 16 : 0, { cellAmount: E, cellSize: R, opacity: S, offsetX: P = w5, offsetY: _5 = w5 } = u, C5 = i === "docs" ? `${Z2}-docs-${s}` : `${Z2}-color`, O = i === "docs" ? s : null;
   kt$1(() => {
     let q = `
     ${b} {
@@ -39163,7 +39126,7 @@ var eEe = {
     J22(L, D);
   }, [E, R, v5, L, m, P, _5, S]), e();
 }, "withBackgroundAndGrid");
-var rEe = ((_a2 = globalThis.FEATURES) == null ? void 0 : _a2.backgrounds) ? [tH] : [], nEe = {
+var rEe = globalThis.FEATURES?.backgrounds ? [tH] : [], nEe = {
   [ci]: {
     grid: {
       cellSize: 20,
@@ -39221,7 +39184,7 @@ var sEe = "svg,path,rect,circle,line,polyline,polygon,ellipse,text".split(","), 
       i,
       s
     );
-  }), r7 == null ? void 0 : r7.forEach((i) => {
+  }), r7?.forEach((i) => {
     if (!(i == null || i === false))
       try {
         n.appendChild(i);
@@ -39268,26 +39231,19 @@ var sEe = "svg,path,rect,circle,line,polyline,polygon,ellipse,text".split(","), 
 }, "normalizeOptions"), aEe = /* @__PURE__ */ o((e) => e instanceof Function, "isFunction"), ya$1 = /* @__PURE__ */ new Map(), Un = /* @__PURE__ */ new Map(), ay = /* @__PURE__ */ new Map(), ar = /* @__PURE__ */ o((e) => {
   let t = Symbol();
   return Un.set(t, []), ya$1.set(t, e), { get: /* @__PURE__ */ o(() => ya$1.get(t), "get"), set: /* @__PURE__ */ o((a) => {
-    var _a3;
     let l = ya$1.get(t), u = aEe(a) ? a(l) : a;
-    u !== l && (ya$1.set(t, u), (_a3 = Un.get(t)) == null ? void 0 : _a3.forEach((c) => {
-      var _a4;
-      (_a4 = ay.get(c)) == null ? void 0 : _a4(), ay.set(c, c(u));
+    u !== l && (ya$1.set(t, u), Un.get(t)?.forEach((c) => {
+      ay.get(c)?.(), ay.set(c, c(u));
     }));
-  }, "set"), subscribe: /* @__PURE__ */ o((a) => {
-    var _a3;
-    return (_a3 = Un.get(t)) == null ? void 0 : _a3.push(a), () => {
-      let l = Un.get(t);
-      l && Un.set(
-        t,
-        l.filter((u) => u !== a)
-      );
-    };
-  }, "subscribe"), teardown: /* @__PURE__ */ o(() => {
-    var _a3;
-    (_a3 = Un.get(t)) == null ? void 0 : _a3.forEach((a) => {
-      var _a4;
-      (_a4 = ay.get(a)) == null ? void 0 : _a4(), ay.delete(a);
+  }, "set"), subscribe: /* @__PURE__ */ o((a) => (Un.get(t)?.push(a), () => {
+    let l = Un.get(t);
+    l && Un.set(
+      t,
+      l.filter((u) => u !== a)
+    );
+  }), "subscribe"), teardown: /* @__PURE__ */ o(() => {
+    Un.get(t)?.forEach((a) => {
+      ay.get(a)?.(), ay.delete(a);
     }), Un.delete(t), ya$1.delete(t);
   }, "teardown") };
 }, "useStore"), QT = /* @__PURE__ */ o((e) => {
@@ -39302,14 +39258,14 @@ var sEe = "svg,path,rect,circle,line,polyline,polygon,ellipse,text".split(","), 
           `:is(${s}):not([id^="storybook-"], [id^="storybook-"] *, [class^="sb-"], [class^="sb-"] *)`
         ),
         // Elements matching the selector inside the storybook root, as these were excluded above.
-        ...(t == null ? void 0 : t.querySelectorAll(s)) || []
+        ...t?.querySelectorAll(s) || []
       ];
       for (let l of a) {
         let u = r7.get(l);
         (!u || u.priority <= i) && r7.set(l, {
           ...n,
           priority: i,
-          selectors: Array.from(new Set(((u == null ? void 0 : u.selectors) || []).concat(s)))
+          selectors: Array.from(new Set((u?.selectors || []).concat(s)))
         });
       }
     }
@@ -39337,7 +39293,7 @@ var sEe = "svg,path,rect,circle,line,polyline,polygon,ellipse,text".split(","), 
   };
 }).sort((t, r7) => r7.width * r7.height - t.width * t.height), "mapBoxes"), ZT = /* @__PURE__ */ o((e, t) => {
   let r7 = e.getBoundingClientRect(), { x: n, y: i } = t;
-  return (r7 == null ? void 0 : r7.top) && (r7 == null ? void 0 : r7.left) && n >= r7.left && n <= r7.left + r7.width && i >= r7.top && i <= r7.top + r7.height;
+  return r7?.top && r7?.left && n >= r7.left && n <= r7.left + r7.width && i >= r7.top && i <= r7.top + r7.height;
 }, "isOverMenu"), eR = /* @__PURE__ */ o((e, t, r7) => {
   if (!t || !r7)
     return false;
@@ -39418,7 +39374,7 @@ var Ce$1 = "storybook-highlights-menu", dH = "storybook-highlights-root", lEe = 
   }), n.subscribe((_5) => {
     l.set((C5) => C5.filter(({ element: O }) => _5.has(O)));
   }), l.subscribe((_5) => {
-    _5.length ? (d.set((C5) => _5.some((O) => O.element === (C5 == null ? void 0 : C5.element)) ? C5 : void 0), c.set((C5) => _5.some((O) => O.element === (C5 == null ? void 0 : C5.element)) ? C5 : void 0)) : (d.set(void 0), c.set(void 0), s.set(void 0));
+    _5.length ? (d.set((C5) => _5.some((O) => O.element === C5?.element) ? C5 : void 0), c.set((C5) => _5.some((O) => O.element === C5?.element) ? C5 : void 0)) : (d.set(void 0), c.set(void 0), s.set(void 0));
   });
   let f = new Map(/* @__PURE__ */ new Map());
   r7.subscribe((_5) => {
@@ -39480,10 +39436,9 @@ var Ce$1 = "storybook-highlights-menu", dH = "storybook-highlights-root", lEe = 
   let b = /* @__PURE__ */ o(() => {
     let _5 = d.get(), C5 = _5 ? [_5] : l.get(), O = C5.length === 1 ? C5[0] : c.get(), L = s.get() !== void 0;
     i.get().forEach((q) => {
-      var _a3;
       let D = m.get(q.element);
       if (D) {
-        let H = O === q, M7 = L ? O ? H : C5.includes(q) : (_a3 = u.get()) == null ? void 0 : _a3.includes(q);
+        let H = O === q, M7 = L ? O ? H : C5.includes(q) : u.get()?.includes(q);
         Object.assign(D.style, {
           animation: "none",
           background: "transparent",
@@ -39521,7 +39476,6 @@ var Ce$1 = "storybook-highlights-menu", dH = "storybook-highlights-root", lEe = 
   }, "updateBoxStyles");
   i.subscribe(b), l.subscribe(b), u.subscribe(b), c.subscribe(b), d.subscribe(b);
   let v5 = /* @__PURE__ */ o(() => {
-    var _a3;
     if (!p5)
       return;
     let _5 = t.getElementById(Ce$1);
@@ -39636,12 +39590,11 @@ var Ce$1 = "storybook-highlights-menu", dH = "storybook-highlights-root", lEe = 
         "ul",
         { class: "element-list" },
         O.map((q) => {
-          var _a4;
-          let D = O.length > 1 && !!((_a4 = q.menu) == null ? void 0 : _a4.some(
+          let D = O.length > 1 && !!q.menu?.some(
             (U) => U.some(
               (N) => !N.selectors || N.selectors.some((W) => q.selectors.includes(W))
             )
-          )), H = D ? {
+          ), H = D ? {
             class: "selectable",
             onClick: /* @__PURE__ */ o(() => d.set(q), "onClick"),
             onMouseEnter: /* @__PURE__ */ o(() => c.set(q), "onMouseEnter"),
@@ -39657,12 +39610,12 @@ var Ce$1 = "storybook-highlights-menu", dH = "storybook-highlights-root", lEe = 
         })
       )
     )), d.get() || l.get().length === 1) {
-      let q = d.get() || l.get()[0], D = (_a3 = q.menu) == null ? void 0 : _a3.filter(
+      let q = d.get() || l.get()[0], D = q.menu?.filter(
         (H) => H.some(
           (M7) => !M7.selectors || M7.selectors.some((U) => q.selectors.includes(U))
         )
       );
-      (D == null ? void 0 : D.length) && _5.appendChild(
+      D?.length && _5.appendChild(
         Le$1(
           "ul",
           { class: "menu-list" },
@@ -39707,9 +39660,8 @@ var Ce$1 = "storybook-highlights-menu", dH = "storybook-highlights-root", lEe = 
   let g = /* @__PURE__ */ o((_5) => {
     let C5 = sH(_5);
     r7.set((O) => {
-      var _a3;
       let L = C5.id ? O.filter((q) => q.id !== C5.id) : O;
-      return ((_a3 = C5.selectors) == null ? void 0 : _a3.length) ? [...L, C5] : L;
+      return C5.selectors?.length ? [...L, C5] : L;
     });
   }, "addHighlight"), w5 = /* @__PURE__ */ o((_5) => {
     _5 && r7.set((C5) => C5.filter((O) => O.id !== _5));
@@ -39753,7 +39705,7 @@ var Ce$1 = "storybook-highlights-menu", dH = "storybook-highlights-root", lEe = 
     _5 === "loading" && E();
   });
 }, "useHighlights");
-((_b2 = globalThis == null ? void 0 : globalThis.FEATURES) == null ? void 0 : _b2.highlight) && (He == null ? void 0 : He.ready) && He.ready().then(pH);
+globalThis?.FEATURES?.highlight && He?.ready && He.ready().then(pH);
 var rR = /* @__PURE__ */ o(() => ({}), "default");
 var fH = "measureEnabled";
 function mH() {
@@ -39799,8 +39751,7 @@ function gH() {
 }
 o(gH, "rescale");
 function vH() {
-  var _a3;
-  Be$1.canvas && (yH(), (_a3 = Be$1.canvas.parentNode) == null ? void 0 : _a3.removeChild(Be$1.canvas), Be$1 = {});
+  Be$1.canvas && (yH(), Be$1.canvas.parentNode?.removeChild(Be$1.canvas), Be$1 = {});
 }
 o(vH, "destroy");
 var di = {
@@ -39878,10 +39829,7 @@ function ga(e, t, r7, n) {
 }
 o(ga, "drawStack");
 function TH(e, t, r7, n) {
-  let i = r7.reduce((s, a) => {
-    var _a3;
-    return Object.prototype.hasOwnProperty.call(s, a.position) || (s[a.position] = []), (_a3 = s[a.position]) == null ? void 0 : _a3.push(a), s;
-  }, {});
+  let i = r7.reduce((s, a) => (Object.prototype.hasOwnProperty.call(s, a.position) || (s[a.position] = []), s[a.position]?.push(a), s), {});
   i.top && ga(e, t, i.top, n), i.right && ga(e, t, i.right, n), i.bottom && ga(e, t, i.bottom, n), i.left && ga(e, t, i.left, n), i.center && ga(e, t, i.center, n);
 }
 o(TH, "labelStacks");
@@ -40157,7 +40105,7 @@ var AH = /* @__PURE__ */ o((e, t) => {
     };
   }, [r7, t.viewMode]), e();
 }, "withMeasure");
-var REe = ((_c = globalThis.FEATURES) == null ? void 0 : _c.measure) ? [AH] : [], SEe = {
+var REe = globalThis.FEATURES?.measure ? [AH] : [], SEe = {
   [fH]: false
 }, iR = /* @__PURE__ */ o(() => ({
   decorators: REe,
@@ -40586,14 +40534,12 @@ var qH = /* @__PURE__ */ o((e, t) => {
     };
   }, [n, s, t]), e();
 }, "withOutline");
-var CEe = ((_d = globalThis.FEATURES) == null ? void 0 : _d.outline) ? [qH] : [], PEe = {
+var CEe = globalThis.FEATURES?.outline ? [qH] : [], PEe = {
   [dy]: false
 }, lR = /* @__PURE__ */ o(() => ({ decorators: CEe, initialGlobals: PEe }), "default");
 var AEe = /* @__PURE__ */ o(({ parameters: e }) => {
-  var _a3, _b3, _c2;
-  ((_a3 = e == null ? void 0 : e.test) == null ? void 0 : _a3.mockReset) === true ? dw() : ((_b3 = e == null ? void 0 : e.test) == null ? void 0 : _b3.clearMocks) === true ? cw() : ((_c2 = e == null ? void 0 : e.test) == null ? void 0 : _c2.restoreMocks) !== false && pw();
+  e?.test?.mockReset === true ? dw() : e?.test?.clearMocks === true ? cw() : e?.test?.restoreMocks !== false && pw();
 }, "resetAllMocksLoader"), uR = /* @__PURE__ */ o((e, t = 0, r7) => {
-  var _a3, _b3;
   if (t > 5 || e == null)
     return e;
   if (hr$1(e))
@@ -40605,22 +40551,21 @@ var AEe = /* @__PURE__ */ o(({ parameters: e }) => {
   if (Array.isArray(e)) {
     t++;
     for (let n = 0; n < e.length; n++)
-      ((_a3 = Object.getOwnPropertyDescriptor(e, n)) == null ? void 0 : _a3.writable) && (e[n] = uR(e[n], t));
+      Object.getOwnPropertyDescriptor(e, n)?.writable && (e[n] = uR(e[n], t));
     return e;
   }
   if (typeof e == "object" && e.constructor === Object) {
     t++;
     for (let [n, i] of Object.entries(e))
-      ((_b3 = Object.getOwnPropertyDescriptor(e, n)) == null ? void 0 : _b3.writable) && (e[n] = uR(i, t, n));
+      Object.getOwnPropertyDescriptor(e, n)?.writable && (e[n] = uR(i, t, n));
     return e;
   }
   return e;
 }, "traverseArgs"), OEe = /* @__PURE__ */ o(({ initialArgs: e }) => {
   uR(e);
 }, "nameSpiesAndWrapActionsInSpies"), IH = false, qEe = /* @__PURE__ */ o(async (e) => {
-  var _a3, _b3;
   globalThis.HTMLElement && e.canvasElement instanceof globalThis.HTMLElement && (e.canvas = HT(e.canvasElement));
-  let t = (_b3 = (_a3 = globalThis.window) == null ? void 0 : _a3.navigator) == null ? void 0 : _b3.clipboard;
+  let t = globalThis.window?.navigator?.clipboard;
   if (t) {
     e.userEvent = rr(
       { userEvent: UT.setup() },
@@ -40671,7 +40616,7 @@ function py() {
 }
 o(py, "getCoreAnnotations");
 function fi(e) {
-  return e != null && typeof e == "object" && "_tag" in e && (e == null ? void 0 : e._tag) === "Story";
+  return e != null && typeof e == "object" && "_tag" in e && e?._tag === "Story";
 }
 o(fi, "isStory");
 var pR = /* @__PURE__ */ o((e) => e.toLowerCase().replace(/[ ’–—―′¿'`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, "-").replace(
@@ -40947,7 +40892,7 @@ var mi = Symbol("incompatible"), ER = /* @__PURE__ */ o((e, t) => {
     return t.length >= e.length ? r7 : r7.concat(new Array(e.length - t.length).fill(void 0));
   }
   return ct$1(e) && ct$1(t) ? Object.keys({ ...e, ...t }).reduce((r7, n) => {
-    let i = yi(e == null ? void 0 : e[n], t == null ? void 0 : t[n]);
+    let i = yi(e?.[n], t?.[n]);
     return i === Vn ? r7 : Object.assign(r7, { [n]: i });
   }, {}) : t;
 }, "deepDiff"), xR = "UNTARGETED";
@@ -41085,18 +41030,18 @@ See https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#hoisted-csf-
 function Gn(e, t, r7) {
   let n = t, i = typeof t == "function" ? t : null, { story: s } = n;
   s && (se.debug("deprecated story", s), Ai(FEe));
-  let a = FH(e), l = typeof n != "function" && n.name || n.storyName || (s == null ? void 0 : s.name) || a, u = [
+  let a = FH(e), l = typeof n != "function" && n.name || n.storyName || s?.name || a, u = [
     ...de(n.decorators),
-    ...de(s == null ? void 0 : s.decorators)
-  ], c = { ...s == null ? void 0 : s.parameters, ...n.parameters }, d = { ...s == null ? void 0 : s.args, ...n.args }, p5 = { ...s == null ? void 0 : s.argTypes, ...n.argTypes }, f = [
+    ...de(s?.decorators)
+  ], c = { ...s?.parameters, ...n.parameters }, d = { ...s?.args, ...n.args }, p5 = { ...s?.argTypes, ...n.argTypes }, f = [
     ...de(n.loaders),
-    ...de(s == null ? void 0 : s.loaders)
+    ...de(s?.loaders)
   ], m = [
     ...de(n.beforeEach),
-    ...de(s == null ? void 0 : s.beforeEach)
+    ...de(s?.beforeEach)
   ], h5 = [
     ...de(n.afterEach),
-    ...de(s == null ? void 0 : s.afterEach)
+    ...de(s?.afterEach)
   ], { render: b, play: v5, tags: g = [], globals: w5 = {} } = n, E = c.__id || LH(r7.id, a);
   return {
     moduleExport: t,
@@ -41142,7 +41087,7 @@ var DEe = /* @__PURE__ */ o((e) => {
   );
 }, "checkGlobals"), $Ee = /* @__PURE__ */ o((e) => {
   let { options: t } = e;
-  (t == null ? void 0 : t.storySort) && se.error("The storySort option parameter can only be set globally");
+  t?.storySort && se.error("The storySort option parameter can only be set globally");
 }, "checkStorySort"), gy = /* @__PURE__ */ o((e) => {
   e && (DEe(e), $Ee(e));
 }, "checkDisallowedParameters");
@@ -41292,10 +41237,10 @@ function bi(e, t, r7) {
       await C5(P);
     }
   }, "applyAfterEach"), d = /* @__PURE__ */ o((P) => P.originalStoryFn(P.args, P), "undecoratedStoryFn"), { applyDecorators: p5 = vy, runStep: f } = r7, m = [
-    ...de(e == null ? void 0 : e.decorators),
-    ...de(t == null ? void 0 : t.decorators),
-    ...de(r7 == null ? void 0 : r7.decorators)
-  ], h5 = (e == null ? void 0 : e.userStoryFn) || (e == null ? void 0 : e.render) || t.render || r7.render, b = Xa(p5)(d, m), v5 = /* @__PURE__ */ o((P) => b(P), "unboundStoryFn"), g = (e == null ? void 0 : e.play) ?? (t == null ? void 0 : t.play), w5 = EU(g);
+    ...de(e?.decorators),
+    ...de(t?.decorators),
+    ...de(r7?.decorators)
+  ], h5 = e?.userStoryFn || e?.render || t.render || r7.render, b = Xa(p5)(d, m), v5 = /* @__PURE__ */ o((P) => b(P), "unboundStoryFn"), g = e?.play ?? t?.play, w5 = EU(g);
   if (!h5 && !w5)
     throw new Ui({ id: i });
   let E = /* @__PURE__ */ o((P) => async () => (await P.renderToCanvas(), P.canvas), "defaultMount"), R = e.mount ?? t.mount ?? r7.mount ?? E, S = r7.testingLibraryRender;
@@ -41329,42 +41274,41 @@ function Ey(e, t, r7) {
 }
 o(Ey, "prepareMeta");
 function xU(e, t, r7) {
-  var _a3;
-  let n = ["dev", "test"], i = ((_a3 = k.DOCS_OPTIONS) == null ? void 0 : _a3.autodocs) === true ? ["autodocs"] : [], s = DH(
+  let n = ["dev", "test"], i = k.DOCS_OPTIONS?.autodocs === true ? ["autodocs"] : [], s = DH(
     ...n,
     ...i,
     ...r7.tags ?? [],
     ...t.tags ?? [],
-    ...(e == null ? void 0 : e.tags) ?? []
+    ...e?.tags ?? []
   ), a = Tt$1(
     r7.parameters,
     t.parameters,
-    e == null ? void 0 : e.parameters
+    e?.parameters
   ), { argTypesEnhancers: l = [], argsEnhancers: u = [] } = r7, c = Tt$1(
     r7.argTypes,
     t.argTypes,
-    e == null ? void 0 : e.argTypes
+    e?.argTypes
   );
   if (e) {
-    let g = (e == null ? void 0 : e.userStoryFn) || (e == null ? void 0 : e.render) || t.render || r7.render;
+    let g = e?.userStoryFn || e?.render || t.render || r7.render;
     a.__isArgsStory = g && g.length > 0;
   }
   let d = {
     ...r7.args,
     ...t.args,
-    ...e == null ? void 0 : e.args
+    ...e?.args
   }, p5 = {
     ...t.globals,
-    ...e == null ? void 0 : e.globals
+    ...e?.globals
   }, f = {
     componentId: t.id,
     title: t.title,
     kind: t.title,
     // Back compat
-    id: (e == null ? void 0 : e.id) || t.id,
+    id: e?.id || t.id,
     // if there's no story name, we create a fake one since enhancers expect a name
-    name: (e == null ? void 0 : e.name) || "__meta",
-    story: (e == null ? void 0 : e.name) || "__meta",
+    name: e?.name || "__meta",
+    story: e?.name || "__meta",
     // Back compat
     component: t.component,
     subcomponents: t.subcomponents,
@@ -41394,13 +41338,12 @@ function xU(e, t, r7) {
 }
 o(xU, "preparePartialAnnotations");
 function xy(e) {
-  var _a3;
   let { args: t } = e, r7 = {
     ...e,
     allArgs: void 0,
     argsByTarget: void 0
   };
-  if ((_a3 = k.FEATURES) == null ? void 0 : _a3.argTypeTargetsV7) {
+  if (k.FEATURES?.argTypeTargetsV7) {
     let s = yU(e);
     r7 = {
       ...e,
@@ -41410,8 +41353,7 @@ function xy(e) {
     };
   }
   let n = Object.entries(r7.args).reduce((s, [a, l]) => {
-    var _a4;
-    if (!((_a4 = r7.argTypes[a]) == null ? void 0 : _a4.mapping))
+    if (!r7.argTypes[a]?.mapping)
       return s[a] = l, s;
     let u = /* @__PURE__ */ o((c) => {
       let d = r7.argTypes[a].mapping;
@@ -41482,7 +41424,7 @@ var HEe = /* @__PURE__ */ o((e, t, r7) => {
         return { control: { type: "number" } };
       case "enum": {
         let { value: s } = n;
-        return { control: { type: (s == null ? void 0 : s.length) <= 5 ? "radio" : "select" }, options: s };
+        return { control: { type: s?.length <= 5 ? "radio" : "select" }, options: s };
       }
       case "function":
       case "symbol":
@@ -41498,7 +41440,7 @@ var HEe = /* @__PURE__ */ o((e, t, r7) => {
   } = e;
   if (!r7)
     return t;
-  let a = Ta(t, n, i), l = Sr$1(a, (u, c) => (u == null ? void 0 : u.type) && HEe(u, c.toString(), s));
+  let a = Ta(t, n, i), l = Sr$1(a, (u, c) => u?.type && HEe(u, c.toString(), s));
   return Tt$1(l, a);
 }, "inferControls");
 gi.secondPass = true;
@@ -41566,10 +41508,7 @@ function wy(e) {
 }
 o(wy, "composeStepRunners");
 function Sa(e, t) {
-  return e.map((r7) => {
-    var _a3;
-    return ((_a3 = r7.default) == null ? void 0 : _a3[t]) ?? r7[t];
-  }).filter(Boolean);
+  return e.map((r7) => r7.default?.[t] ?? r7[t]).filter(Boolean);
 }
 o(Sa, "getField");
 function cn$1(e, t, r7 = {}) {
@@ -41588,12 +41527,11 @@ function Ra(e, t) {
 }
 o(Ra, "getSingletonField");
 function _r$1(e) {
-  var _a3;
   let t = cn$1(e, "argTypesEnhancers"), r7 = Sa(e, "runStep"), n = cn$1(e, "beforeAll");
   return {
     parameters: Tt$1(...Sa(e, "parameters")),
     decorators: cn$1(e, "decorators", {
-      reverseFileOrder: !(((_a3 = k.FEATURES) == null ? void 0 : _a3.legacyDecoratorFileOrder) ?? false)
+      reverseFileOrder: !(k.FEATURES?.legacyDecoratorFileOrder ?? false)
     }),
     args: Ty(e, "args"),
     argsEnhancers: cn$1(e, "argsEnhancers"),
@@ -41619,11 +41557,10 @@ function _r$1(e) {
 }
 o(_r$1, "composeConfigs");
 function Ry() {
-  var _a3, _b3, _c2;
   try {
     return (
       // @ts-expect-error This property exists in Vitest browser mode
-      !!globalThis.__vitest_browser__ || !!((_c2 = (_b3 = (_a3 = globalThis.window) == null ? void 0 : _a3.navigator) == null ? void 0 : _b3.userAgent) == null ? void 0 : _c2.match(/StorybookTestRunner/))
+      !!globalThis.__vitest_browser__ || !!globalThis.window?.navigator?.userAgent?.match(/StorybookTestRunner/)
     );
   } catch {
     return false;
@@ -41645,8 +41582,7 @@ function Yn(e = true) {
     animation-play-state: paused !important;
     transition: none !important;
   }`, document.head.appendChild(r7), document.body.clientHeight, document.head.removeChild(t), () => {
-    var _a3;
-    (_a3 = r7.parentNode) == null ? void 0 : _a3.removeChild(r7);
+    r7.parentNode?.removeChild(r7);
   };
 }
 o(Yn, "pauseAnimations");
@@ -41660,12 +41596,9 @@ async function Kn(e) {
     new Promise((r7) => {
       setTimeout(() => {
         let n = [globalThis.document, ...RU(globalThis.document)], i = /* @__PURE__ */ o(async () => {
-          if (t || (e == null ? void 0 : e.aborted))
+          if (t || e?.aborted)
             return;
-          let s = n.flatMap((a) => {
-            var _a3;
-            return ((_a3 = a == null ? void 0 : a.getAnimations) == null ? void 0 : _a3.call(a)) || [];
-          }).filter((a) => a.playState === "running" && !UEe(a));
+          let s = n.flatMap((a) => a?.getAnimations?.() || []).filter((a) => a.playState === "running" && !UEe(a));
           s.length > 0 && (await Promise.all(s.map((a) => a.finished)), await i());
         }, "checkAnimationsFinished");
         i().then(r7);
@@ -41688,9 +41621,8 @@ function RU(e) {
 }
 o(RU, "getShadowRoots");
 function UEe(e) {
-  var _a3;
   if (e instanceof CSSAnimation && e.effect instanceof KeyframeEffect && e.effect.target) {
-    let t = getComputedStyle(e.effect.target, e.effect.pseudoElement), r7 = (_a3 = t.animationName) == null ? void 0 : _a3.split(", ").indexOf(e.animationName);
+    let t = getComputedStyle(e.effect.target, e.effect.pseudoElement), r7 = t.animationName?.split(", ").indexOf(e.animationName);
     return t.animationIterationCount.split(", ")[r7] === "infinite";
   }
   return false;
@@ -41734,11 +41666,10 @@ function _U(e) {
 o(_U, "setProjectAnnotations");
 var pn$1 = [];
 function OR(e, t, r7, n, i) {
-  var _a3;
   if (e === void 0)
     throw new Error("Expected a story but received undefined.");
   t.title = t.title ?? VEe;
-  let s = wa(t), a = i || e.storyName || ((_a3 = e.story) == null ? void 0 : _a3.name) || e.name || zEe, l = Gn(
+  let s = wa(t), a = i || e.storyName || e.story?.name || e.name || zEe, l = Gn(
     a,
     e,
     s
@@ -41774,9 +41705,7 @@ function OR(e, t, r7, n, i) {
       mount: null
     });
     return E.parameters.__isPortableStory = true, E.context = E, c.renderToCanvas && (E.renderToCanvas = async () => {
-      var _a4;
-      let R = await ((_a4 = c.renderToCanvas) == null ? void 0 : _a4.call(
-        c,
+      let R = await c.renderToCanvas?.(
         {
           componentId: c.componentId,
           title: c.title,
@@ -41798,13 +41727,12 @@ ${S.description}`);
           unboundStoryFn: c.unboundStoryFn
         },
         E.canvasElement
-      ));
+      );
       R && pn$1.push(R);
     }), E.mount = c.mount(E), E;
   }, "initializeContext"), h5, b = /* @__PURE__ */ o(async (E) => {
-    var _a4;
     let R = m();
-    return R.canvasElement ?? (R.canvasElement = (_a4 = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _a4.body), h5 && (R.loaded = h5.loaded), Object.assign(R, E), c.playFunction(R);
+    return R.canvasElement ?? (R.canvasElement = globalThis?.document?.body), h5 && (R.loaded = h5.loaded), Object.assign(R, E), c.playFunction(R);
   }, "play"), v5 = /* @__PURE__ */ o((E) => {
     let R = m();
     return Object.assign(R, E), YEe(c, R);
@@ -41872,15 +41800,13 @@ function PU(e) {
             `);
         let { props: a, ...l } = i;
         await r7.evaluate(async (c) => {
-          var _a3, _b3, _c2;
-          let d = await ((_a3 = globalThis.__pwUnwrapObject) == null ? void 0 : _a3.call(globalThis, c));
-          return (_c2 = (_b3 = "__pw_type" in d ? d.type : d) == null ? void 0 : _b3.load) == null ? void 0 : _c2.call(_b3);
+          let d = await globalThis.__pwUnwrapObject?.(c);
+          return ("__pw_type" in d ? d.type : d)?.load?.();
         }, l);
         let u = await t(i, ...s);
         return await r7.evaluate(async (c) => {
-          var _a3, _b3;
-          let d = await ((_a3 = globalThis.__pwUnwrapObject) == null ? void 0 : _a3.call(globalThis, c)), p5 = "__pw_type" in d ? d.type : d, f = document.querySelector("#root");
-          return (_b3 = p5 == null ? void 0 : p5.play) == null ? void 0 : _b3.call(p5, { canvasElement: f });
+          let d = await globalThis.__pwUnwrapObject?.(c), p5 = "__pw_type" in d ? d.type : d, f = document.querySelector("#root");
+          return p5?.play?.({ canvasElement: f });
         }, l), u;
       });
     }, "mount")
@@ -41888,14 +41814,12 @@ function PU(e) {
 }
 o(PU, "createPlaywrightTest");
 async function YEe(e, t) {
-  var _a3, _b3;
   for (let s of [...pn$1].reverse())
     await s();
   if (pn$1.length = 0, !t.canvasElement) {
     let s = document.createElement("div");
-    (_b3 = (_a3 = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _a3.body) == null ? void 0 : _b3.appendChild(s), t.canvasElement = s, pn$1.push(() => {
-      var _a4, _b4, _c2, _d2;
-      ((_b4 = (_a4 = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _a4.body) == null ? void 0 : _b4.contains(s)) && ((_d2 = (_c2 = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _c2.body) == null ? void 0 : _d2.removeChild(s));
+    globalThis?.document?.body?.appendChild(s), t.canvasElement = s, pn$1.push(() => {
+      globalThis?.document?.body?.contains(s) && globalThis?.document?.body?.removeChild(s);
     });
   }
   if (t.loaded = await e.applyLoaders(t), t.abortSignal.aborted)
@@ -41908,7 +41832,7 @@ async function YEe(e, t) {
     throw new gn({ playFunction: r7.toString() });
   }), await r7(t));
   let i;
-  Ry() ? i = Yn() : await Kn(t.abortSignal), await e.applyAfterEach(t), await (i == null ? void 0 : i());
+  Ry() ? i = Yn() : await Kn(t.abortSignal), await e.applyAfterEach(t), await i?.();
 }
 o(YEe, "runStory");
 var AU = 1e3, KEe = 1e4, qR = class qR2 {
@@ -42070,7 +41994,7 @@ o(IR, "slash");
 var XEe = /* @__PURE__ */ o((e) => {
   if (e.length === 0)
     return e;
-  let t = e[e.length - 1], r7 = t == null ? void 0 : t.replace(/(?:[.](?:story|stories))?([.][^.]+)$/i, "");
+  let t = e[e.length - 1], r7 = t?.replace(/(?:[.](?:story|stories))?([.][^.]+)$/i, "");
   if (e.length === 1)
     return [r7];
   let n = e[e.length - 2];
@@ -42225,7 +42149,6 @@ var NR = class NR2 {
     initial: t = false,
     forceRemount: r7 = false
   } = {}) {
-    var _a3, _b3, _c2, _d2, _e2, _f, _g2, _h;
     let { canvasElement: n } = this;
     if (!this.story)
       throw new Error("cannot render when not prepared");
@@ -42269,8 +42192,7 @@ var NR = class NR2 {
         // Before assigning it to the context, we resolve the context dependency,
         // so that a user can just call it as await mount(...args) in their play function.
         mount: /* @__PURE__ */ o(async (...H) => {
-          var _a4, _b4;
-          (_b4 = (_a4 = this.callbacks).showStoryDuringRender) == null ? void 0 : _b4.call(_a4);
+          this.callbacks.showStoryDuringRender?.();
           let M7 = null;
           return await this.runPhase(v5, "rendering", async () => {
             M7 = await i.mount(E)(...H);
@@ -42301,13 +42223,13 @@ var NR = class NR2 {
       let S = await p5(E);
       if (this.store.addCleanupCallbacks(i, ...S), this.checkIfAborted(v5) || (!g && !w5 && await E.mount(), this.notYetRendered = false, v5.aborted))
         return;
-      let P = ((_b3 = (_a3 = this.story.parameters) == null ? void 0 : _a3.test) == null ? void 0 : _b3.dangerouslyIgnoreUnhandledErrors) === true, _5 = /* @__PURE__ */ new Set(), C5 = /* @__PURE__ */ o((H) => {
+      let P = this.story.parameters?.test?.dangerouslyIgnoreUnhandledErrors === true, _5 = /* @__PURE__ */ new Set(), C5 = /* @__PURE__ */ o((H) => {
         H.error && _5.add(H.error);
       }, "onError"), O = /* @__PURE__ */ o((H) => {
         H.reason && _5.add(H.reason);
       }, "onUnhandledRejection");
       if (this.renderOptions.autoplay && r7 && h5 && this.phase !== "errored") {
-        (_c2 = window == null ? void 0 : window.addEventListener) == null ? void 0 : _c2.call(window, "error", C5), (_d2 = window == null ? void 0 : window.addEventListener) == null ? void 0 : _d2.call(window, "unhandledrejection", O), this.disableKeyListeners = true;
+        window?.addEventListener?.("error", C5), window?.addEventListener?.("unhandledrejection", O), this.disableKeyListeners = true;
         try {
           if (w5 ? await h5(E) : (E.mount = async () => {
             throw new gn({ playFunction: h5.toString() });
@@ -42315,7 +42237,7 @@ var NR = class NR2 {
             throw new Vi();
           this.checkIfAborted(v5), !P && _5.size > 0 ? await this.runPhase(v5, "errored") : await this.runPhase(v5, "played");
         } catch (H) {
-          if ((_f = (_e2 = this.callbacks).showStoryDuringRender) == null ? void 0 : _f.call(_e2), await this.runPhase(v5, "errored", async () => {
+          if (this.callbacks.showStoryDuringRender?.(), await this.runPhase(v5, "errored", async () => {
             this.channel.emit(zy, kU(H));
           }), this.story.parameters.throwPlayFunctionExceptions !== false)
             throw H;
@@ -42324,7 +42246,7 @@ var NR = class NR2 {
         if (!P && _5.size > 0 && this.channel.emit(
           Gy,
           Array.from(_5).map(kU)
-        ), this.disableKeyListeners = false, (_g2 = window == null ? void 0 : window.removeEventListener) == null ? void 0 : _g2.call(window, "unhandledrejection", O), (_h = window == null ? void 0 : window.removeEventListener) == null ? void 0 : _h.call(window, "error", C5), v5.aborted)
+        ), this.disableKeyListeners = false, window?.removeEventListener?.("unhandledrejection", O), window?.removeEventListener?.("error", C5), v5.aborted)
           return;
       }
       await this.runPhase(v5, "completing", async () => {
@@ -42386,7 +42308,6 @@ var NR = class NR2 {
     this.phase === "playing" && (this.abortController.abort(), this.runPhase(this.abortController.signal, "aborted"));
   }
   async teardown() {
-    var _a3, _b3;
     this.torndown = true, this.cancelRender(), this.story && await this.store.cleanupStory(this.story);
     for (let t = 0; t < 3; t += 1) {
       if (!this.isPending()) {
@@ -42395,7 +42316,7 @@ var NR = class NR2 {
       }
       await new Promise((r7) => setTimeout(r7, 0));
     }
-    (_b3 = (_a3 = window == null ? void 0 : window.location) == null ? void 0 : _a3.reload) == null ? void 0 : _b3.call(_a3), await new Promise(() => {
+    window?.location?.reload?.(), await new Promise(() => {
     });
   }
 };
@@ -42465,9 +42386,8 @@ var { fetch: QEe } = k, ZEe = "./index.json", jR = class jR2 {
     }
   }
   async runBeforeAllHook(t) {
-    var _a3, _b3;
     try {
-      await ((_a3 = this.beforeAllCleanup) == null ? void 0 : _a3.call(this)), this.beforeAllCleanup = await ((_b3 = t.beforeAll) == null ? void 0 : _b3.call(t));
+      await this.beforeAllCleanup?.(), this.beforeAllCleanup = await t.beforeAll?.();
     } catch (r7) {
       throw this.renderPreviewEntryError("Error in beforeAll hook:", r7), r7;
     }
@@ -42577,29 +42497,27 @@ var { fetch: QEe } = k, ZEe = "./index.json", jR = class jR2 {
     });
   }
   async onRequestArgTypesInfo({ id: t, payload: r7 }) {
-    var _a3;
     try {
       await this.storeInitializationPromise;
-      let n = await ((_a3 = this.storyStoreValue) == null ? void 0 : _a3.loadStory(r7));
+      let n = await this.storyStoreValue?.loadStory(r7);
       this.channel.emit($a, {
         id: t,
         success: true,
-        payload: { argTypes: (n == null ? void 0 : n.argTypes) || {} },
+        payload: { argTypes: n?.argTypes || {} },
         error: null
       });
     } catch (n) {
       this.channel.emit($a, {
         id: t,
         success: false,
-        error: n == null ? void 0 : n.message
+        error: n?.message
       });
     }
   }
   async onResetArgs({ storyId: t, argNames: r7 }) {
-    var _a3;
     if (!this.storyStoreValue)
       throw new We({ methodName: "onResetArgs" });
-    let i = ((_a3 = this.storyRenders.find((l) => l.id === t)) == null ? void 0 : _a3.story) || await this.storyStoreValue.loadStory({ storyId: t }), a = (r7 || [
+    let i = this.storyRenders.find((l) => l.id === t)?.story || await this.storyStoreValue.loadStory({ storyId: t }), a = (r7 || [
       .../* @__PURE__ */ new Set([
         ...Object.keys(i.initialArgs),
         ...Object.keys(this.storyStoreValue.args.get(t))
@@ -42643,8 +42561,7 @@ var { fetch: QEe } = k, ZEe = "./index.json", jR = class jR2 {
     };
   }
   async teardownRender(t, { viewModeChanged: r7 } = {}) {
-    var _a3;
-    this.storyRenders = this.storyRenders.filter((n) => n !== t), await ((_a3 = t == null ? void 0 : t.teardown) == null ? void 0 : _a3.call(t, { viewModeChanged: r7 }));
+    this.storyRenders = this.storyRenders.filter((n) => n !== t), await t?.teardown?.({ viewModeChanged: r7 });
   }
   // API
   async loadStory({ storyId: t }) {
@@ -42869,8 +42786,7 @@ var LR = class LR2 {
     }, l();
   }
   async teardown({ viewModeChanged: t } = {}) {
-    var _a3;
-    (_a3 = this.teardownRender) == null ? void 0 : _a3.call(this, { viewModeChanged: t }), this.torndown = true;
+    this.teardownRender?.({ viewModeChanged: t }), this.torndown = true;
   }
 };
 o(LR, "CsfDocsRender");
@@ -42931,8 +42847,7 @@ var FR = class FR2 {
     }, u();
   }
   async teardown({ viewModeChanged: t } = {}) {
-    var _a3;
-    (_a3 = this.teardownRender) == null ? void 0 : _a3.call(this, { viewModeChanged: t }), this.torndown = true;
+    this.teardownRender?.({ viewModeChanged: t }), this.torndown = true;
   }
 };
 o(FR, "MdxDocsRender");
@@ -42945,7 +42860,7 @@ function txe(e) {
 o(txe, "focusInInput");
 var LU = "attached-mdx", rxe = "unattached-mdx";
 function nxe({ tags: e }) {
-  return (e == null ? void 0 : e.includes(rxe)) || (e == null ? void 0 : e.includes(LU));
+  return e?.includes(rxe) || e?.includes(LU);
 }
 o(nxe, "isMdxEntry");
 function DR(e) {
@@ -43039,18 +42954,14 @@ var $R = class $R2 extends Qn {
     this.selectionStore.setQueryParams(r7);
   }
   async onUpdateGlobals({ globals: r7 }) {
-    var _a3, _b3;
     let n = this.currentRender instanceof Jn && this.currentRender.story || void 0;
-    super.onUpdateGlobals({ globals: r7, currentStory: n }), (this.currentRender instanceof Ca || this.currentRender instanceof _a) && await ((_b3 = (_a3 = this.currentRender).rerender) == null ? void 0 : _b3.call(_a3));
+    super.onUpdateGlobals({ globals: r7, currentStory: n }), (this.currentRender instanceof Ca || this.currentRender instanceof _a) && await this.currentRender.rerender?.();
   }
   async onUpdateArgs({ storyId: r7, updatedArgs: n }) {
     super.onUpdateArgs({ storyId: r7, updatedArgs: n });
   }
   async onPreloadStories({ ids: r7 }) {
-    await this.storeInitializationPromise, this.storyStoreValue && await Promise.allSettled(r7.map((n) => {
-      var _a3;
-      return (_a3 = this.storyStoreValue) == null ? void 0 : _a3.loadEntry(n);
-    }));
+    await this.storeInitializationPromise, this.storyStoreValue && await Promise.allSettled(r7.map((n) => this.storyStoreValue?.loadEntry(n)));
   }
   // RENDERING
   // We can either have:
@@ -43059,7 +42970,6 @@ var $R = class $R2 extends Qn {
   // - a story selected in "docs" viewMode,
   //     in which case we render the docsPage for that story
   async renderSelection({ persistedArgs: r7 } = {}) {
-    var _a3, _b3, _c2, _d2;
     let { renderToCanvas: n } = this;
     if (!this.storyStoreValue || !n)
       throw new We({ methodName: "renderSelection" });
@@ -43073,8 +42983,8 @@ var $R = class $R2 extends Qn {
       this.currentRender && await this.teardownRender(this.currentRender), this.renderStoryLoadingException(s, m);
       return;
     }
-    let l = ((_a3 = this.currentSelection) == null ? void 0 : _a3.storyId) !== s, u = ((_b3 = this.currentRender) == null ? void 0 : _b3.type) !== a.type;
-    a.type === "story" ? this.view.showPreparingStory({ immediate: u }) : this.view.showPreparingDocs({ immediate: u }), ((_c2 = this.currentRender) == null ? void 0 : _c2.isPreparing()) && await this.teardownRender(this.currentRender);
+    let l = this.currentSelection?.storyId !== s, u = this.currentRender?.type !== a.type;
+    a.type === "story" ? this.view.showPreparingStory({ immediate: u }) : this.view.showPreparingDocs({ immediate: u }), this.currentRender?.isPreparing() && await this.teardownRender(this.currentRender);
     let c;
     a.type === "story" ? c = new Jn(
       this.channel,
@@ -43135,7 +43045,7 @@ var $R = class $R2 extends Qn {
         initialGlobals: h5,
         storyGlobals: {},
         userGlobals: b
-      }), ixe(c) || ((_d2 = c.entry.tags) == null ? void 0 : _d2.includes(LU))) {
+      }), ixe(c) || c.entry.tags?.includes(LU)) {
         if (!c.csfFiles)
           throw new Fi({ storyId: s });
         ({ parameters: m } = this.storyStoreValue.preparedMetaFromCSFFile({
@@ -43156,8 +43066,7 @@ var $R = class $R2 extends Qn {
     );
   }
   async teardownRender(r7, { viewModeChanged: n = false } = {}) {
-    var _a3;
-    this.storyRenders = this.storyRenders.filter((i) => i !== r7), await ((_a3 = r7 == null ? void 0 : r7.teardown) == null ? void 0 : _a3.call(r7, { viewModeChanged: n }));
+    this.storyRenders = this.storyRenders.filter((i) => i !== r7), await r7?.teardown?.({ viewModeChanged: n });
   }
   // UTILITIES
   mainStoryCallbacks(r7) {
@@ -43179,15 +43088,13 @@ var $R = class $R2 extends Qn {
   }
   // renderException is used if we fail to render the story and it is uncaught by the app layer
   renderException(r7, n) {
-    var _a3;
-    let { name: i = "Error", message: s = String(n), stack: a } = n, l = (_a3 = this.currentRender) == null ? void 0 : _a3.renderId;
+    let { name: i = "Error", message: s = String(n), stack: a } = n, l = this.currentRender?.renderId;
     this.channel.emit(rb, { name: i, message: s, stack: a }), this.channel.emit(jt, { newPhase: "errored", renderId: l, storyId: r7 }), this.view.showErrorDisplay(n), se.error(`Error rendering story '${r7}':`), se.error(n);
   }
   // renderError is used by the various app layers to inform the user they have done something
   // wrong -- for instance returned the wrong thing from a story
   renderError(r7, { title: n, description: i }) {
-    var _a3;
-    let s = (_a3 = this.currentRender) == null ? void 0 : _a3.renderId;
+    let s = this.currentRender?.renderId;
     this.channel.emit(Qy, { title: n, description: i }), this.channel.emit(jt, { newPhase: "errored", renderId: s, storyId: r7 }), this.view.showErrorDisplay({ message: n, stack: i }), se.error(`Error rendering story ${n}: ${i}`);
   }
 };
@@ -43248,7 +43155,7 @@ var e5 = /* @__PURE__ */ o(({
   selection: e,
   extraParams: t
 }) => {
-  let r7 = mn$1 == null ? void 0 : mn$1.location.search.slice(1), { path: n, selectedKind: i, selectedStory: s, ...a } = (0, Aa.parse)(r7);
+  let r7 = mn$1?.location.search.slice(1), { path: n, selectedKind: i, selectedStory: s, ...a } = (0, Aa.parse)(r7);
   return `?${(0, Aa.stringify)({
     ...a,
     ...t,
@@ -43370,8 +43277,7 @@ var { document: ot$1 } = k, O5 = 100, N5 = /* @__PURE__ */ ((s) => (s.MAIN = "MA
     ), this.showMode("ERROR");
   }
   showNoPreview() {
-    var _a3, _b3;
-    this.testing || (this.showMode("NOPREVIEW"), (_a3 = this.storyRoot()) == null ? void 0 : _a3.setAttribute("hidden", "true"), (_b3 = this.docsRoot()) == null ? void 0 : _b3.setAttribute("hidden", "true"));
+    this.testing || (this.showMode("NOPREVIEW"), this.storyRoot()?.setAttribute("hidden", "true"), this.docsRoot()?.setAttribute("hidden", "true"));
   }
   showPreparingStory({ immediate: t = false } = {}) {
     clearTimeout(this.preparingTimeout), t ? this.showMode("PREPARING_STORY") : this.preparingTimeout = setTimeout(
@@ -43460,8 +43366,7 @@ o(sS, "simulatePageLoad");
 var L5 = "storybook/docs";
 var F5 = `${L5}/snippet-rendered`;
 async function aS(e, t) {
-  var _a3, _b3, _c2;
-  let r7 = (_c2 = (_b3 = (_a3 = t.parameters) == null ? void 0 : _a3.docs) == null ? void 0 : _b3.source) == null ? void 0 : _c2.transform, { id: n, unmappedArgs: i } = t, s = r7 && e ? r7 == null ? void 0 : r7(e, t) : e, a = s ? await s : void 0;
+  let r7 = t.parameters?.docs?.source?.transform, { id: n, unmappedArgs: i } = t, s = r7 && e ? r7?.(e, t) : e, a = s ? await s : void 0;
   He.getChannel().emit(F5, {
     id: n,
     source: a,
@@ -43486,8 +43391,8 @@ var D5 = /* @__PURE__ */ o((e, t) => {
       Object.getOwnPropertyDescriptors(e)
     );
     t.persist();
-    let r7 = Object.getOwnPropertyDescriptor(t, "view"), n = r7 == null ? void 0 : r7.value;
-    return typeof n == "object" && (n == null ? void 0 : n.constructor.name) === "Window" && Object.defineProperty(t, "view", {
+    let r7 = Object.getOwnPropertyDescriptor(t, "view"), n = r7?.value;
+    return typeof n == "object" && n?.constructor.name === "Window" && Object.defineProperty(t, "view", {
       ...r7,
       value: Object.create(n.constructor.prototype)
     }), t;
@@ -43499,13 +43404,12 @@ function Ir(e, t = {}) {
     ...so,
     ...t
   }, n = /* @__PURE__ */ o(function(...s) {
-    var _a3, _b3;
     if (t.implicit) {
-      let m = (_a3 = "__STORYBOOK_PREVIEW__" in k ? k.__STORYBOOK_PREVIEW__ : void 0) == null ? void 0 : _a3.storyRenders.find(
+      let m = ("__STORYBOOK_PREVIEW__" in k ? k.__STORYBOOK_PREVIEW__ : void 0)?.storyRenders.find(
         (h5) => h5.phase === "playing" || h5.phase === "rendering"
       );
       if (m) {
-        let h5 = !((_b3 = globalThis == null ? void 0 : globalThis.FEATURES) == null ? void 0 : _b3.disallowImplicitActionsInRenderV8), b = new Ni({
+        let h5 = !globalThis?.FEATURES?.disallowImplicitActionsInRenderV8, b = new Ni({
           phase: m.phase,
           name: e,
           deprecated: h5
@@ -43572,7 +43476,6 @@ async function B5() {
 }
 o(B5, "maybeSetupPreviewNavigator");
 var Rwe = /* @__PURE__ */ o(async (e, t) => {
-  var _a3, _b3;
   let r7 = { entries: {} };
   for (let l of Object.values(e.entries)) {
     let u = l.title.split("/"), c = r7;
@@ -43687,13 +43590,12 @@ var Rwe = /* @__PURE__ */ o(async (e, t) => {
       font-weight: bold;
       color: rgb(2, 156, 253);
     }
-  `, document.head.appendChild(a), (_b3 = (_a3 = s.querySelector(".sb-navigator-story-link.active")) == null ? void 0 : _a3.closest("details")) == null ? void 0 : _b3.scrollIntoView({ block: "center" });
+  `, document.head.appendChild(a), s.querySelector(".sb-navigator-story-link.active")?.closest("details")?.scrollIntoView({ block: "center" });
 }, "setupPreviewNavigator");
 var U5 = Ne(H5(), 1);
 var dS;
 function Swe() {
-  var _a3;
-  return dS || (dS = new U5.default((_a3 = k.navigator) == null ? void 0 : _a3.userAgent).getBrowserInfo()), dS;
+  return dS || (dS = new U5.default(k.navigator?.userAgent).getBrowserInfo()), dS;
 }
 o(Swe, "getBrowserInfo");
 function V5(e) {
@@ -43727,12 +43629,12 @@ if (window.CONFIG_TYPE === "DEVELOPMENT") {
   window.__STORYBOOK_SERVER_CHANNEL__ = channel$1;
 }
 const importers = {
-  "./src/components/Card.stories.ts": () => __vitePreload(() => import("./Card.stories-CBplaSwq.js"), true ? __vite__mapDeps([0,1,2,3,4]) : void 0, import.meta.url),
-  "./src/stories/Accordeon.stories.ts": () => __vitePreload(() => import("./Accordeon.stories-CS8Urfup.js"), true ? __vite__mapDeps([5,1,2,3,4]) : void 0, import.meta.url),
-  "./src/stories/Button.stories.ts": () => __vitePreload(() => import("./Button.stories-D8Bly0EQ.js"), true ? __vite__mapDeps([6,7,8,4]) : void 0, import.meta.url),
-  "./src/stories/Configure.mdx": () => __vitePreload(() => import("./Configure-xWj2Xojy.js"), true ? __vite__mapDeps([9,10,4,2,3,11]) : void 0, import.meta.url),
-  "./src/stories/Header.stories.ts": () => __vitePreload(() => import("./Header.stories-D8povPJC.js"), true ? __vite__mapDeps([12,13,7,8,14,4]) : void 0, import.meta.url),
-  "./src/stories/Page.stories.ts": () => __vitePreload(() => import("./Page.stories-CL8Vm-DC.js"), true ? __vite__mapDeps([15,13,7,8,14,4,16]) : void 0, import.meta.url)
+  "./src/components/Card.stories.ts": () => __vitePreload(() => import("./Card.stories-PDtVTW-R.js"), true ? __vite__mapDeps([0,1,2,3,4]) : void 0, import.meta.url),
+  "./src/stories/Accordeon.stories.ts": () => __vitePreload(() => import("./Accordeon.stories-CjofNCOf.js"), true ? __vite__mapDeps([5,1,2,3,4]) : void 0, import.meta.url),
+  "./src/stories/Button.stories.ts": () => __vitePreload(() => import("./Button.stories-C6LuqlGn.js"), true ? __vite__mapDeps([6,7,8,4]) : void 0, import.meta.url),
+  "./src/stories/Configure.mdx": () => __vitePreload(() => import("./Configure-DauOSE2U.js"), true ? __vite__mapDeps([9,10,4,2,3,11]) : void 0, import.meta.url),
+  "./src/stories/Header.stories.ts": () => __vitePreload(() => import("./Header.stories-CMdiCwyO.js"), true ? __vite__mapDeps([12,13,7,8,14,4]) : void 0, import.meta.url),
+  "./src/stories/Page.stories.ts": () => __vitePreload(() => import("./Page.stories-DsMRUBgl.js"), true ? __vite__mapDeps([15,13,7,8,14,4,16]) : void 0, import.meta.url)
 };
 async function importFn(path) {
   return await importers[path]();
@@ -45250,7 +45152,7 @@ var dt = Jr((fe2, yt) => {
       }, "JsdocTypeNamePath"),
       JsdocTypeSymbol: /* @__PURE__ */ r((e) => {
         let t = "", o7 = e.element, i = false;
-        return (o7 == null ? void 0 : o7.type) === "JsdocTypeVariadic" && (o7.meta.position === "prefix" ? t = "..." : i = true, o7 = o7.element), (o7 == null ? void 0 : o7.type) === "JsdocTypeName" ? t += o7.value : (o7 == null ? void 0 : o7.type) === "JsdocTypeNumber" && (t += o7.value.toString()), i && (t += "..."), F(`${e.value}(${t})`);
+        return o7?.type === "JsdocTypeVariadic" && (o7.meta.position === "prefix" ? t = "..." : i = true, o7 = o7.element), o7?.type === "JsdocTypeName" ? t += o7.value : o7?.type === "JsdocTypeNumber" && (t += o7.value.toString()), i && (t += "..."), F(`${e.value}(${t})`);
       }, "JsdocTypeSymbol"),
       JsdocTypeParenthesis: /* @__PURE__ */ r((e, t) => t(J7(e.element)), "JsdocTypeParenthesis"),
       JsdocTypeMappedType: N,
@@ -45699,7 +45601,7 @@ var dt = Jr((fe2, yt) => {
       JsdocTypeAsserts: ["left", "right"]
     };
     function ke2(e, t, o7, i, l) {
-      i == null ? void 0 : i(e, t, o7);
+      i?.(e, t, o7);
       let f = tt2[e.type];
       for (let d of f) {
         let h5 = e[d];
@@ -45710,7 +45612,7 @@ var dt = Jr((fe2, yt) => {
           else
             ke2(h5, e, d, i, l);
       }
-      l == null ? void 0 : l(e, t, o7);
+      l?.(e, t, o7);
     }
     r(ke2, "_traverse");
     function yr(e, t, o7) {
@@ -45736,7 +45638,6 @@ var Sr = /* @__PURE__ */ r((n) => n.name === "literal", "isLiteral"), Er = /* @_
       throw new br({ type: n, language: "Flow" });
   }
 }, "convertSig"), B = /* @__PURE__ */ r((n) => {
-  var _a3, _b3, _c2, _d2;
   let { name: s, raw: a } = n, p5 = {};
   switch (typeof a < "u" && (p5.raw = a), n.name) {
     case "literal":
@@ -45751,9 +45652,9 @@ var Sr = /* @__PURE__ */ r((n) => n.name === "literal", "isLiteral"), Er = /* @_
     case "signature":
       return { ...p5, ...Nr(n) };
     case "union":
-      return ((_a3 = n.elements) == null ? void 0 : _a3.every(Sr)) ? { ...p5, name: "enum", value: (_b3 = n.elements) == null ? void 0 : _b3.map(Er) } : { ...p5, name: s, value: (_c2 = n.elements) == null ? void 0 : _c2.map(B) };
+      return n.elements?.every(Sr) ? { ...p5, name: "enum", value: n.elements?.map(Er) } : { ...p5, name: s, value: n.elements?.map(B) };
     case "intersection":
-      return { ...p5, name: s, value: (_d2 = n.elements) == null ? void 0 : _d2.map(B) };
+      return { ...p5, name: s, value: n.elements?.map(B) };
     default:
       return { ...p5, name: "other", value: s };
   }
@@ -45811,7 +45712,7 @@ var vr = /^\(.*\) => /, C = /* @__PURE__ */ r((n) => {
     case "element":
     case "elementType":
     default: {
-      if ((s == null ? void 0 : s.indexOf("|")) > 0)
+      if (s?.indexOf("|") > 0)
         try {
           let P = s.split("|").map((b) => JSON.parse(b));
           return { ...u, name: "enum", value: P };
@@ -45839,7 +45740,6 @@ var Ar = /* @__PURE__ */ r((n) => {
       throw new kr({ type: n, language: "Typescript" });
   }
 }, "convertSig"), M = /* @__PURE__ */ r((n) => {
-  var _a3, _b3, _c2, _d2;
   let { name: s, raw: a } = n, p5 = {};
   switch (typeof a < "u" && (p5.raw = a), n.name) {
     case "string":
@@ -45853,14 +45753,14 @@ var Ar = /* @__PURE__ */ r((n) => {
       return { ...p5, ...Ar(n) };
     case "union":
       let c;
-      return ((_a3 = n.elements) == null ? void 0 : _a3.every((u) => u.name === "literal")) ? c = {
+      return n.elements?.every((u) => u.name === "literal") ? c = {
         ...p5,
         name: "enum",
         // @ts-expect-error fix types
-        value: (_b3 = n.elements) == null ? void 0 : _b3.map((u) => ie(u.value))
-      } : c = { ...p5, name: s, value: (_c2 = n.elements) == null ? void 0 : _c2.map(M) }, c;
+        value: n.elements?.map((u) => ie(u.value))
+      } : c = { ...p5, name: s, value: n.elements?.map(M) }, c;
     case "intersection":
-      return { ...p5, name: s, value: (_d2 = n.elements) == null ? void 0 : _d2.map(M) };
+      return { ...p5, name: s, value: n.elements?.map(M) };
     default:
       return { ...p5, name: "other", value: s };
   }
@@ -46306,7 +46206,7 @@ function Pt(n, s) {
   if (n != null) {
     let { value: a } = n;
     if (!K(a))
-      return wt(a) ? w(s == null ? void 0 : s.name, a) : w(a);
+      return wt(a) ? w(s?.name, a) : w(a);
   }
   return null;
 }
@@ -46423,13 +46323,12 @@ function vt(n, s, a) {
 }
 r(vt, "createBasicPropDef");
 function ye(n, s) {
-  var _a3;
-  if (s == null ? void 0 : s.includesJsDoc) {
+  if (s?.includesJsDoc) {
     let { description: a, extractedTags: p5 } = s;
     a != null && (n.description = s.description);
     let c = {
       ...p5,
-      params: (_a3 = p5 == null ? void 0 : p5.params) == null ? void 0 : _a3.map(
+      params: p5?.params?.map(
         (u) => ({
           name: u.getPrettyName(),
           description: u.description
@@ -46471,9 +46370,8 @@ var kt = /* @__PURE__ */ r(
 ), yn = /* @__PURE__ */ r((n) => {
   let s = kt(n[0]), a = $e(s);
   return n.map((p5) => {
-    var _a3;
     let c = p5;
-    return ((_a3 = p5.type) == null ? void 0 : _a3.elements) && (c = {
+    return p5.type?.elements && (c = {
       ...p5,
       type: {
         ...p5.type,
@@ -46795,11 +46693,11 @@ const replacer = (_key, val) => {
   return val;
 };
 const stringifySymbol = (v5, i = "") => {
-  var _a3;
+  var _a2;
   return (
     // Symbol.description in es2019+ so we need to cast here to pass
     // the lib: es2016 check
-    isSymbol(v5) ? `Symbol(${(_a3 = v5.description) != null ? _a3 : i})` : v5
+    isSymbol(v5) ? `Symbol(${(_a2 = v5.description) != null ? _a2 : i})` : v5
   );
 };
 function normalizeCssVarValue(value) {
@@ -48467,8 +48365,8 @@ function warn$1(msg, ...args) {
       [
         // eslint-disable-next-line no-restricted-syntax
         msg + args.map((a) => {
-          var _a3, _b3;
-          return (_b3 = (_a3 = a.toString) == null ? void 0 : _a3.call(a)) != null ? _b3 : JSON.stringify(a);
+          var _a2, _b2;
+          return (_b2 = (_a2 = a.toString) == null ? void 0 : _a2.call(a)) != null ? _b2 : JSON.stringify(a);
         }).join(""),
         instance && instance.proxy,
         trace.map(
@@ -48824,7 +48722,7 @@ function flushJobs(seen2) {
 let devtools$1;
 let buffer = [];
 function setDevtoolsHook$1(hook, target) {
-  var _a3, _b3;
+  var _a2, _b2;
   devtools$1 = hook;
   if (devtools$1) {
     devtools$1.enabled = true;
@@ -48837,7 +48735,7 @@ function setDevtoolsHook$1(hook, target) {
     typeof window !== "undefined" && // some envs mock window but not fully
     window.HTMLElement && // also exclude jsdom
     // eslint-disable-next-line no-restricted-syntax
-    !((_b3 = (_a3 = window.navigator) == null ? void 0 : _a3.userAgent) == null ? void 0 : _b3.includes("jsdom"))
+    !((_b2 = (_a2 = window.navigator) == null ? void 0 : _a2.userAgent) == null ? void 0 : _b2.includes("jsdom"))
   ) {
     const replay = target.__VUE_DEVTOOLS_HOOK_REPLAY__ = target.__VUE_DEVTOOLS_HOOK_REPLAY__ || [];
     replay.push((newHook) => {
@@ -62322,24 +62220,20 @@ var ARG_TYPE_SECTIONS = ["props", "events", "slots", "exposed", "expose"], extra
     });
   }), argTypes;
 }, extractFromVueDocgenApi = (docgenInfo, section, extractedProp) => {
-  var _a3, _b3, _c2;
   let type, sbType;
-  if (section === "events" && (type = (_a3 = docgenInfo.type) == null ? void 0 : _a3.names.join(), sbType = { name: "other", value: type ?? "", required: false }), section === "slots") {
-    let slotBindings = (_b3 = docgenInfo.bindings) == null ? void 0 : _b3.filter((binding) => !!binding.name).map((binding) => {
-      var _a4;
-      return `${binding.name}: ${((_a4 = binding.type) == null ? void 0 : _a4.name) ?? "unknown"}`;
-    }).join("; ");
+  if (section === "events" && (type = docgenInfo.type?.names.join(), sbType = { name: "other", value: type ?? "", required: false }), section === "slots") {
+    let slotBindings = docgenInfo.bindings?.filter((binding) => !!binding.name).map((binding) => `${binding.name}: ${binding.type?.name ?? "unknown"}`).join("; ");
     type = slotBindings ? `{ ${slotBindings} }` : void 0, sbType = { name: "other", value: type ?? "", required: false };
   }
   if (section === "props") {
     let propInfo = docgenInfo;
-    if (type = (_c2 = propInfo.type) == null ? void 0 : _c2.name, sbType = extractedProp ? pe(extractedProp.docgenInfo) : { name: "other", value: type }, propInfo.type && "elements" in propInfo.type && Array.isArray(propInfo.type.elements) && propInfo.type.elements.length > 0) {
+    if (type = propInfo.type?.name, sbType = extractedProp ? pe(extractedProp.docgenInfo) : { name: "other", value: type }, propInfo.type && "elements" in propInfo.type && Array.isArray(propInfo.type.elements) && propInfo.type.elements.length > 0) {
       let elements = propInfo.type.elements.map((i) => i.name);
       type === "Array" && (type = `${elements.length === 1 ? elements[0] : `(${elements.join(" | ")})`}[]`), type === "union" ? type = elements.join(" | ") : type === "intersection" && (type = elements.join(" & "));
     }
   }
   let required = "required" in docgenInfo ? docgenInfo.required ?? false : false;
-  return { name: docgenInfo.name, description: docgenInfo.description, type: sbType ? { ...sbType, required } : { name: "other", value: type ?? "" }, table: { type: type ? { summary: type } : void 0, defaultValue: (extractedProp == null ? void 0 : extractedProp.propDef.defaultValue) ?? void 0, jsDocTags: extractedProp == null ? void 0 : extractedProp.propDef.jsDocTags, category: section } };
+  return { name: docgenInfo.name, description: docgenInfo.description, type: sbType ? { ...sbType, required } : { name: "other", value: type ?? "" }, table: { type: type ? { summary: type } : void 0, defaultValue: extractedProp?.propDef.defaultValue ?? void 0, jsDocTags: extractedProp?.propDef.jsDocTags, category: section } };
 }, extractFromVueComponentMeta = (docgenInfo, section) => {
   if ("global" in docgenInfo && docgenInfo.global) return;
   let tableType = { summary: docgenInfo.type.replace(" | undefined", "") };
@@ -62348,16 +62242,15 @@ var ARG_TYPE_SECTIONS = ["props", "events", "slots", "exposed", "expose"], extra
     return { name: propInfo.name, description: formatDescriptionWithTags(propInfo.description, propInfo.tags), defaultValue, type: convertVueComponentMetaProp(propInfo), table: { type: tableType, defaultValue, category: section } };
   } else return { name: docgenInfo.name, description: "description" in docgenInfo ? docgenInfo.description : "", type: { name: "other", value: docgenInfo.type }, table: { type: tableType, category: section } };
 }, convertVueComponentMetaProp = (propInfo) => {
-  var _a3, _b3;
   let schema = propInfo.schema, required = propInfo.required, fallbackSbType = { name: "other", value: propInfo.type, required }, KNOWN_SCHEMAS = ["string", "number", "function", "boolean", "symbol"];
   if (typeof schema == "string") return KNOWN_SCHEMAS.includes(schema) ? { name: schema, required } : fallbackSbType;
   switch (schema.kind) {
     case "enum": {
-      let definedSchemas = ((_a3 = schema.schema) == null ? void 0 : _a3.filter((item) => item !== "undefined")) ?? [];
+      let definedSchemas = schema.schema?.filter((item) => item !== "undefined") ?? [];
       return isBooleanSchema(definedSchemas) ? { name: "boolean", required } : isLiteralUnionSchema(definedSchemas) || isEnumSchema(definedSchemas) ? { name: "enum", value: definedSchemas.map((literal) => literal.replace(/"/g, "")), required } : definedSchemas.length === 1 ? convertVueComponentMetaProp({ schema: definedSchemas[0], type: propInfo.type, required }) : (definedSchemas.length > 2 && definedSchemas.includes("true") && definedSchemas.includes("false") && (definedSchemas = definedSchemas.filter((i) => i !== "true" && i !== "false"), definedSchemas.push("boolean")), { name: "union", value: definedSchemas.map((i) => convertVueComponentMetaProp(typeof i == "object" ? { schema: i, type: i.type, required: false } : { schema: i, type: i, required: false })), required });
     }
     case "array": {
-      let definedSchemas = ((_b3 = schema.schema) == null ? void 0 : _b3.filter((item) => item !== "undefined")) ?? [];
+      let definedSchemas = schema.schema?.filter((item) => item !== "undefined") ?? [];
       return definedSchemas.length === 0 ? fallbackSbType : definedSchemas.length === 1 ? { name: "array", value: convertVueComponentMetaProp({ schema: definedSchemas[0], type: propInfo.type, required: false }), required } : { name: "union", value: definedSchemas.map((i) => convertVueComponentMetaProp(typeof i == "object" ? { schema: i, type: i.type, required: false } : { schema: i, type: i, required: false })), required };
     }
     case "object":
@@ -62365,7 +62258,7 @@ var ARG_TYPE_SECTIONS = ["props", "events", "slots", "exposed", "expose"], extra
     default:
       return fallbackSbType;
   }
-}, formatDescriptionWithTags = (description, tags) => !(tags == null ? void 0 : tags.length) || !description ? description ?? "" : `${tags.map((tag) => `@${tag.name}: ${tag.text}`).join("<br>")}<br><br>${description}`, isLiteralUnionSchema = (schemas) => schemas.every((schema) => typeof schema == "string" && schema.startsWith('"') && schema.endsWith('"')), isEnumSchema = (schemas) => schemas.every((schema) => typeof schema == "string" && schema.includes(".")), isBooleanSchema = (schemas) => schemas.length === 2 && schemas.includes("true") && schemas.includes("false");
+}, formatDescriptionWithTags = (description, tags) => !tags?.length || !description ? description ?? "" : `${tags.map((tag) => `@${tag.name}: ${tag.text}`).join("<br>")}<br><br>${description}`, isLiteralUnionSchema = (schemas) => schemas.every((schema) => typeof schema == "string" && schema.startsWith('"') && schema.endsWith('"')), isEnumSchema = (schemas) => schemas.every((schema) => typeof schema == "string" && schema.includes(".")), isBooleanSchema = (schemas) => schemas.length === 2 && schemas.includes("true") && schemas.includes("false");
 var render = (props, context) => {
   let { id, component: Component } = context;
   if (!Component) throw new Error(`Unable to render story ${id} as the component annotation is missing from the default export`);
@@ -62388,8 +62281,7 @@ async function renderToCanvas({ storyFn, forceRemount, showMain, showException, 
     return map.set(canvasElement, appState), () => h(rootElement);
   } });
   return vueApp.config.errorHandler = (e, instance, info) => {
-    var _a3;
-    ((_a3 = window.__STORYBOOK_PREVIEW__) == null ? void 0 : _a3.storyRenders.some((renderer2) => renderer2.id === id && renderer2.phase === "playing")) ? setTimeout(() => {
+    window.__STORYBOOK_PREVIEW__?.storyRenders.some((renderer2) => renderer2.id === id && renderer2.phase === "playing") ? setTimeout(() => {
       throw e;
     }, 0) : showException(e);
   }, await runSetupFunctions(vueApp, storyContext), vueApp.mount(canvasElement), showMain(), () => {
@@ -62397,10 +62289,7 @@ async function renderToCanvas({ storyFn, forceRemount, showMain, showException, 
   };
 }
 function getSlots(props, context) {
-  let { argTypes } = context, slots = Object.entries(props).filter(([key]) => {
-    var _a3, _b3;
-    return ((_b3 = (_a3 = argTypes[key]) == null ? void 0 : _a3.table) == null ? void 0 : _b3.category) === "slots";
-  }).map(([key, value]) => [key, typeof value == "function" ? value : () => value]);
+  let { argTypes } = context, slots = Object.entries(props).filter(([key]) => argTypes[key]?.table?.category === "slots").map(([key, value]) => [key, typeof value == "function" ? value : () => value]);
   return Object.fromEntries(slots);
 }
 function getArgs(element, storyContext) {
@@ -62414,7 +62303,7 @@ function updateArgs(reactiveArgs, nextArgs) {
   }), Object.assign(currentArgs, nextArgs);
 }
 function teardown(storybookApp, canvasElement) {
-  storybookApp == null ? void 0 : storybookApp.unmount(), map.has(canvasElement) && map.delete(canvasElement);
+  storybookApp?.unmount(), map.has(canvasElement) && map.delete(canvasElement);
 }
 function normalizeFunctionalComponent(options) {
   return typeof options == "function" ? { render: options, name: options.name } : options;
@@ -62434,7 +62323,7 @@ function decorateStory(storyFn, decorators2) {
     return story || (story = decorated(context)), decoratedStory === story ? story : prepare(decoratedStory, () => h(story));
   }, (context) => prepare(storyFn(context)));
 }
-var mount = (context) => async (Component, options) => (Component && (context.originalStoryFn = () => () => h(Component, options == null ? void 0 : options.props, options == null ? void 0 : options.slots)), await context.renderToCanvas(), context.canvas);
+var mount = (context) => async (Component, options) => (Component && (context.originalStoryFn = () => () => h(Component, options?.props, options?.slots)), await context.renderToCanvas(), context.canvas);
 var parameters$2 = { renderer: "vue3", docs: { story: { inline: true }, extractArgTypes, extractComponentDescription: ia } }, argTypesEnhancers = [ya];
 const entry_preview_10550 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
@@ -62467,11 +62356,10 @@ ${variablesCode}` : variablesCode}
 
 ${template}`;
 }, shouldSkipSourceCodeGeneration = (context) => {
-  var _a3;
-  let sourceParams = (_a3 = context == null ? void 0 : context.parameters.docs) == null ? void 0 : _a3.source;
-  return (sourceParams == null ? void 0 : sourceParams.type) === Tn.DYNAMIC ? false : !(context == null ? void 0 : context.parameters.__isArgsStory) || (sourceParams == null ? void 0 : sourceParams.code) || (sourceParams == null ? void 0 : sourceParams.type) === Tn.CODE;
+  let sourceParams = context?.parameters.docs?.source;
+  return sourceParams?.type === Tn.DYNAMIC ? false : !context?.parameters.__isArgsStory || sourceParams?.code || sourceParams?.type === Tn.CODE;
 }, parseDocgenInfo = (component) => {
-  if (!component || !("__docgenInfo" in component) || !component.__docgenInfo || typeof component.__docgenInfo != "object") return { displayName: component == null ? void 0 : component.__name, eventNames: [], slotNames: [] };
+  if (!component || !("__docgenInfo" in component) || !component.__docgenInfo || typeof component.__docgenInfo != "object") return { displayName: component?.__name, eventNames: [], slotNames: [] };
   let docgenInfo = component.__docgenInfo, displayName = "displayName" in docgenInfo && typeof docgenInfo.displayName == "string" ? docgenInfo.displayName : void 0, parseNames = (key) => !(key in docgenInfo) || !Array.isArray(docgenInfo[key]) ? [] : docgenInfo[key].map((i) => i && typeof i == "object" && "name" in i ? i.name : void 0).filter((i) => typeof i == "string");
   return { displayName: displayName || component.__name, slotNames: parseNames("slots").sort((a, b) => a === "default" ? -1 : b === "default" ? 1 : a.localeCompare(b)), eventNames: parseNames("events") };
 }, generatePropsSourceCode = (args, slotNames, eventNames, ctx) => {
@@ -62612,21 +62500,20 @@ var { document: document2 } = global$1, channel = addons.getChannel(), DEFAULT_P
   let next = queue.shift();
   next && await next(), runNext();
 }, run = async (input = DEFAULT_PARAMETERS, storyId) => {
-  var _a3;
-  let axe = ((_a3 = await __vitePreload(async () => {
-    const { default: __vite_default__ } = await import("./axe-B2EvhcZK.js").then((n) => n.a);
+  let axe = (await __vitePreload(async () => {
+    const { default: __vite_default__ } = await import("./axe-bkyre2PD.js").then((n) => n.a);
     return { default: __vite_default__ };
-  }, true ? __vite__mapDeps([17,2]) : void 0, import.meta.url)) == null ? void 0 : _a3.default) || globalThis.axe, { config = {}, options = {} } = input;
+  }, true ? __vite__mapDeps([17,2]) : void 0, import.meta.url))?.default || globalThis.axe, { config = {}, options = {} } = input;
   if (input.element) throw new ElementA11yParameterError();
-  let context = { include: document2 == null ? void 0 : document2.body, exclude: [".sb-wrapper", "#storybook-docs", "#storybook-highlights-root"] };
+  let context = { include: document2?.body, exclude: [".sb-wrapper", "#storybook-docs", "#storybook-highlights-root"] };
   if (input.context) {
     let hasInclude = typeof input.context == "object" && "include" in input.context && input.context.include !== void 0, hasExclude = typeof input.context == "object" && "exclude" in input.context && input.context.exclude !== void 0;
     hasInclude ? context.include = input.context.include : !hasInclude && !hasExclude && (context.include = input.context), hasExclude && (context.exclude = context.exclude.concat(input.context.exclude));
   }
   axe.reset();
-  let configWithDefault = { ...config, rules: [...DISABLED_RULES.map((id) => ({ id, enabled: false })), ...(config == null ? void 0 : config.rules) ?? []] };
+  let configWithDefault = { ...config, rules: [...DISABLED_RULES.map((id) => ({ id, enabled: false })), ...config?.rules ?? []] };
   return axe.configure(configWithDefault), new Promise((resolve2, reject) => {
-    let highlightsRoot = document2 == null ? void 0 : document2.getElementById("storybook-highlights-root");
+    let highlightsRoot = document2?.getElementById("storybook-highlights-root");
     highlightsRoot && (highlightsRoot.style.display = "none");
     let task = async () => {
       try {
@@ -62656,8 +62543,8 @@ function getIsVitestStandaloneRun() {
   }
 }
 var vitestMatchersExtended = false, afterEach = async ({ id: storyId, reporting, parameters: parameters2, globals, viewMode }) => {
-  let a11yParameter = parameters2.a11y, a11yGlobals = globals.a11y, shouldRunEnvironmentIndependent = (a11yParameter == null ? void 0 : a11yParameter.disable) !== true && (a11yParameter == null ? void 0 : a11yParameter.test) !== "off" && (a11yGlobals == null ? void 0 : a11yGlobals.manual) !== true, getMode = () => {
-    switch (a11yParameter == null ? void 0 : a11yParameter.test) {
+  let a11yParameter = parameters2.a11y, a11yGlobals = globals.a11y, shouldRunEnvironmentIndependent = a11yParameter?.disable !== true && a11yParameter?.test !== "off" && a11yGlobals?.manual !== true, getMode = () => {
+    switch (a11yParameter?.test) {
       case "todo":
         return "warning";
       case "error":
@@ -62668,11 +62555,11 @@ var vitestMatchersExtended = false, afterEach = async ({ id: storyId, reporting,
   if (shouldRunEnvironmentIndependent && viewMode === "story") try {
     let result = await run(a11yParameter, storyId);
     if (result) {
-      let hasViolations = ((result == null ? void 0 : result.violations.length) ?? 0) > 0;
+      let hasViolations = (result?.violations.length ?? 0) > 0;
       if (reporting.addReport({ type: "a11y", version: 1, result, status: hasViolations ? getMode() : "passed" }), getIsVitestStandaloneRun() && hasViolations && getMode() === "failed") {
         if (!vitestMatchersExtended) {
           let { toHaveNoViolations } = await __vitePreload(async () => {
-            const { toHaveNoViolations: toHaveNoViolations2 } = await import("./matchers-7Z3WT2CE-slkB5ylZ.js");
+            const { toHaveNoViolations: toHaveNoViolations2 } = await import("./matchers-7Z3WT2CE-H-u2N6oT.js");
             return { toHaveNoViolations: toHaveNoViolations2 };
           }, true ? [] : void 0, import.meta.url);
           expect.extend({ toHaveNoViolations }), vitestMatchersExtended = true;
@@ -62694,12 +62581,9 @@ var excludeTags = Object.entries(globalThis.TAGS_OPTIONS ?? {}).reduce((acc, ent
   let [tag, option] = entry;
   return option.excludeFromDocsStories && (acc[tag] = true), acc;
 }, {}), parameters = { docs: { renderer: async () => {
-  let { DocsRenderer } = await __vitePreload(() => import("./DocsRenderer-PQXLIZUC-BoZ9C2S8.js"), true ? __vite__mapDeps([18,4,10,2,3]) : void 0, import.meta.url);
+  let { DocsRenderer } = await __vitePreload(() => import("./DocsRenderer-PQXLIZUC-D11oMOud.js"), true ? __vite__mapDeps([18,4,10,2,3]) : void 0, import.meta.url);
   return new DocsRenderer();
-}, stories: { filter: (story) => {
-  var _a3;
-  return (story.tags || []).filter((tag) => excludeTags[tag]).length === 0 && !((_a3 = story.parameters.docs) == null ? void 0 : _a3.disable);
-} } } };
+}, stories: { filter: (story) => (story.tags || []).filter((tag) => excludeTags[tag]).length === 0 && !story.parameters.docs?.disable } } };
 const preview_10544 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   parameters

@@ -1,11 +1,10 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./Color-AVL7NMMY-GBiCu1VF.js","./preload-helper-BbOs9S9B.js","./_commonjsHelpers-C7MPfNLY.js","./iframe-DqFFGcXv.js","./iframe-DYSf04IM.css","./index-BdOSk9or.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./Color-AVL7NMMY-CgcKMBwJ.js","./preload-helper-DChMlIcJ.js","./_commonjsHelpers-C7MPfNLY.js","./iframe-BuF6-a_E.js","./iframe-DYSf04IM.css","./index-BdOSk9or.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __defNormalProp = (obj, key, value2) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value: value2 }) : obj[key] = value2;
 var __publicField = (obj, key, value2) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value2);
-var _a2, _b, _c, _d2;
-import { _ as __vitePreload } from "./preload-helper-BbOs9S9B.js";
+import { _ as __vitePreload } from "./preload-helper-DChMlIcJ.js";
 import { g as getDefaultExportFromCjs } from "./_commonjsHelpers-C7MPfNLY.js";
-import { k as ha$2, T as Tn$4 } from "./iframe-DqFFGcXv.js";
+import { k as ha$2, T as Tn$4 } from "./iframe-BuF6-a_E.js";
 import { d as dedent } from "./index-BdOSk9or.js";
 function _mergeNamespaces(n3, m4) {
   for (var i3 = 0; i3 < m4.length; i3++) {
@@ -85,8 +84,8 @@ i$1(Ge$4, "a");
 Ge$4.open = "";
 Ge$4.close = "";
 function Ft$3(e3 = false) {
-  let t3 = typeof process < "u" ? process : void 0, n3 = (t3 == null ? void 0 : t3.env) || {}, r3 = (t3 == null ? void 0 : t3.argv) || [];
-  return !("NO_COLOR" in n3 || r3.includes("--no-color")) && ("FORCE_COLOR" in n3 || r3.includes("--color") || (t3 == null ? void 0 : t3.platform) === "win32" || e3 && n3.TERM !== "dumb" || "CI" in n3) || typeof window < "u" && !!window.chrome;
+  let t3 = typeof process < "u" ? process : void 0, n3 = t3?.env || {}, r3 = t3?.argv || [];
+  return !("NO_COLOR" in n3 || r3.includes("--no-color")) && ("FORCE_COLOR" in n3 || r3.includes("--color") || t3?.platform === "win32" || e3 && n3.TERM !== "dumb" || "CI" in n3) || typeof window < "u" && !!window.chrome;
 }
 i$1(Ft$3, "C");
 function jt$2(e3 = false) {
@@ -833,34 +832,34 @@ function Ro$2() {
 }
 i$1(Ro$2, "getColorsEmpty");
 function gn$1(e3) {
-  return (e3 == null ? void 0 : e3.printFunctionName) ?? ee$3.printFunctionName;
+  return e3?.printFunctionName ?? ee$3.printFunctionName;
 }
 i$1(gn$1, "getPrintFunctionName");
 function hn$2(e3) {
-  return (e3 == null ? void 0 : e3.escapeRegex) ?? ee$3.escapeRegex;
+  return e3?.escapeRegex ?? ee$3.escapeRegex;
 }
 i$1(hn$2, "getEscapeRegex");
 function dn$2(e3) {
-  return (e3 == null ? void 0 : e3.escapeString) ?? ee$3.escapeString;
+  return e3?.escapeString ?? ee$3.escapeString;
 }
 i$1(dn$2, "getEscapeString");
 function Jt$3(e3) {
   return {
-    callToJSON: (e3 == null ? void 0 : e3.callToJSON) ?? ee$3.callToJSON,
-    colors: (e3 == null ? void 0 : e3.highlight) ? wo$2() : Ro$2(),
-    compareKeys: typeof (e3 == null ? void 0 : e3.compareKeys) == "function" || (e3 == null ? void 0 : e3.compareKeys) === null ? e3.compareKeys : ee$3.compareKeys,
+    callToJSON: e3?.callToJSON ?? ee$3.callToJSON,
+    colors: e3?.highlight ? wo$2() : Ro$2(),
+    compareKeys: typeof e3?.compareKeys == "function" || e3?.compareKeys === null ? e3.compareKeys : ee$3.compareKeys,
     escapeRegex: hn$2(e3),
     escapeString: dn$2(e3),
-    indent: (e3 == null ? void 0 : e3.min) ? "" : Ao$2((e3 == null ? void 0 : e3.indent) ?? ee$3.indent),
-    maxDepth: (e3 == null ? void 0 : e3.maxDepth) ?? ee$3.maxDepth,
-    maxWidth: (e3 == null ? void 0 : e3.maxWidth) ?? ee$3.maxWidth,
-    min: (e3 == null ? void 0 : e3.min) ?? ee$3.min,
-    plugins: (e3 == null ? void 0 : e3.plugins) ?? ee$3.plugins,
-    printBasicPrototype: (e3 == null ? void 0 : e3.printBasicPrototype) ?? true,
+    indent: e3?.min ? "" : Ao$2(e3?.indent ?? ee$3.indent),
+    maxDepth: e3?.maxDepth ?? ee$3.maxDepth,
+    maxWidth: e3?.maxWidth ?? ee$3.maxWidth,
+    min: e3?.min ?? ee$3.min,
+    plugins: e3?.plugins ?? ee$3.plugins,
+    printBasicPrototype: e3?.printBasicPrototype ?? true,
     printFunctionName: gn$1(e3),
-    spacingInner: (e3 == null ? void 0 : e3.min) ? " " : `
+    spacingInner: e3?.min ? " " : `
 `,
-    spacingOuter: (e3 == null ? void 0 : e3.min) ? "" : `
+    spacingOuter: e3?.min ? "" : `
 `
   };
 }
@@ -2053,7 +2052,7 @@ function _s(e3, t3, n3, r3, o3) {
 }
 i$1(_s, "diffLinesUnified2");
 function Qn$1(e3, t3, n3) {
-  let r3 = (n3 == null ? void 0 : n3.truncateThreshold) ?? false, o3 = Math.max(Math.floor((n3 == null ? void 0 : n3.truncateThreshold) ?? 0), 0), s2 = r3 ? Math.min(e3.length, o3) : e3.length, c4 = r3 ? Math.min(t3.length, o3) : t3.length, a4 = s2 !== e3.length || c4 !== t3.length, u2 = /* @__PURE__ */ i$1((g4, h4) => e3[g4] === t3[h4], "isCommon"), m4 = [], p2 = 0, l4 = 0;
+  let r3 = n3?.truncateThreshold ?? false, o3 = Math.max(Math.floor(n3?.truncateThreshold ?? 0), 0), s2 = r3 ? Math.min(e3.length, o3) : e3.length, c4 = r3 ? Math.min(t3.length, o3) : t3.length, a4 = s2 !== e3.length || c4 !== t3.length, u2 = /* @__PURE__ */ i$1((g4, h4) => e3[g4] === t3[h4], "isCommon"), m4 = [], p2 = 0, l4 = 0;
   for (Gn$1(s2, c4, u2, /* @__PURE__ */ i$1((g4, h4, f2) => {
     for (; p2 !== h4; p2 += 1)
       m4.push(new P$2(z$3, e3[p2]));
@@ -2110,7 +2109,7 @@ function Fn$3(e3) {
 }
 i$1(Fn$3, "getNewLineSymbol");
 function Ts(e3, t3, n3) {
-  let r3 = (n3 == null ? void 0 : n3.truncateThreshold) ?? false, o3 = Math.max(Math.floor((n3 == null ? void 0 : n3.truncateThreshold) ?? 0), 0), s2 = e3.length, c4 = t3.length;
+  let r3 = n3?.truncateThreshold ?? false, o3 = Math.max(Math.floor(n3?.truncateThreshold ?? 0), 0), s2 = e3.length, c4 = t3.length;
   if (r3) {
     let g4 = e3.includes(`
 `), h4 = t3.includes(`
@@ -2554,8 +2553,8 @@ function It$3(e3, t3, n3 = /* @__PURE__ */ new WeakSet()) {
   try {
     return le$3(r3);
   } catch (o3) {
-    return le$3(new Error(`Failed to fully serialize error: ${o3 == null ? void 0 : o3.message}
-Inner error message: ${r3 == null ? void 0 : r3.message}`));
+    return le$3(new Error(`Failed to fully serialize error: ${o3?.message}
+Inner error message: ${r3?.message}`));
   }
 }
 i$1(It$3, "processError");
@@ -2612,9 +2611,8 @@ var Hs = new Error(
     this.initialized = false;
     this.state = {};
     this.loadParentWindowState = /* @__PURE__ */ i$1(() => {
-      var _a3, _b2;
       try {
-        this.state = ((_b2 = (_a3 = Z$4.window) == null ? void 0 : _a3.parent) == null ? void 0 : _b2.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER_STATE__) || {};
+        this.state = Z$4.window?.parent?.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER_STATE__ || {};
       } catch {
         this.detached = true;
       }
@@ -2652,39 +2650,29 @@ var Hs = new Error(
       }));
       let l4 = this.getLog(m4);
       this.setState(m4, ({ shadowCalls: b4 }) => {
-        var _a3;
         if (p2 || !l4.length)
           return { playUntil: p2 };
         let g4 = b4.findIndex((h4) => h4.id === l4[0].callId);
         return {
-          playUntil: (_a3 = b4.slice(0, g4).filter((h4) => {
-            var _a4;
-            return h4.interceptable && !((_a4 = h4.ancestors) == null ? void 0 : _a4.length);
-          }).slice(-1)[0]) == null ? void 0 : _a3.id
+          playUntil: b4.slice(0, g4).filter((h4) => h4.interceptable && !h4.ancestors?.length).slice(-1)[0]?.id
         };
       }), u2.emit(ir$2, { storyId: m4, isDebugging: true });
     }, "start"), r3 = /* @__PURE__ */ i$1((u2) => ({ storyId: m4 }) => {
-      var _a3;
-      let p2 = this.getLog(m4).filter((b4) => {
-        var _a4;
-        return !((_a4 = b4.ancestors) == null ? void 0 : _a4.length);
-      }), l4 = p2.reduceRight((b4, g4, h4) => b4 >= 0 || g4.status === "waiting" ? b4 : h4, -1);
-      n3(u2)({ storyId: m4, playUntil: (_a3 = p2[l4 - 1]) == null ? void 0 : _a3.callId });
+      let p2 = this.getLog(m4).filter((b4) => !b4.ancestors?.length), l4 = p2.reduceRight((b4, g4, h4) => b4 >= 0 || g4.status === "waiting" ? b4 : h4, -1);
+      n3(u2)({ storyId: m4, playUntil: p2[l4 - 1]?.callId });
     }, "back"), o3 = /* @__PURE__ */ i$1((u2) => ({ storyId: m4, callId: p2 }) => {
-      var _a3;
       let { calls: l4, shadowCalls: b4, resolvers: g4 } = this.getState(m4), h4 = l4.find(({ id: d2 }) => d2 === p2), f2 = b4.find(({ id: d2 }) => d2 === p2);
       if (!h4 && f2 && Object.values(g4).length > 0) {
-        let d2 = (_a3 = this.getLog(m4).find((S3) => S3.status === "waiting")) == null ? void 0 : _a3.callId;
+        let d2 = this.getLog(m4).find((S3) => S3.status === "waiting")?.callId;
         f2.id !== d2 && this.setState(m4, { playUntil: f2.id }), Object.values(g4).forEach((S3) => S3());
       } else
         n3(u2)({ storyId: m4, playUntil: p2 });
     }, "goto"), s2 = /* @__PURE__ */ i$1((u2) => ({ storyId: m4 }) => {
-      var _a3;
       let { resolvers: p2 } = this.getState(m4);
       if (Object.values(p2).length > 0)
         Object.values(p2).forEach((l4) => l4());
       else {
-        let l4 = (_a3 = this.getLog(m4).find((b4) => b4.status === "waiting")) == null ? void 0 : _a3.callId;
+        let l4 = this.getLog(m4).find((b4) => b4.status === "waiting")?.callId;
         l4 ? n3(u2)({ storyId: m4, playUntil: l4 }) : c4({ storyId: m4 });
       }
     }, "next"), c4 = /* @__PURE__ */ i$1(({ storyId: u2 }) => {
@@ -2731,7 +2719,6 @@ var Hs = new Error(
     }
   }
   cleanup() {
-    var _a3;
     this.state = Object.entries(this.state).reduce(
       (r3, [o3, s2]) => {
         let c4 = ur$3(s2);
@@ -2747,7 +2734,7 @@ var Hs = new Error(
       next: false,
       end: false
     }, logItems: [] };
-    (_a3 = this.channel) == null ? void 0 : _a3.emit(ne$4.SYNC, n3), this.updateParentWindowState();
+    this.channel?.emit(ne$4.SYNC, n3), this.updateParentWindowState();
   }
   getLog(t3) {
     let { calls: n3, shadowCalls: r3 } = this.getState(t3), o3 = [...r3];
@@ -2756,7 +2743,7 @@ var Hs = new Error(
     });
     let s2 = /* @__PURE__ */ new Set();
     return o3.reduceRight((c4, a4) => (a4.args.forEach((u2) => {
-      (u2 == null ? void 0 : u2.__callId__) && s2.add(u2.__callId__);
+      u2?.__callId__ && s2.add(u2.__callId__);
     }), a4.path.forEach((u2) => {
       u2.__callId__ && s2.add(u2.__callId__);
     }), (a4.interceptable || a4.exception) && !s2.has(a4.id) && (c4.unshift({ callId: a4.id, status: a4.status, ancestors: a4.ancestors }), s2.add(a4.id)), c4), []);
@@ -2771,12 +2758,9 @@ var Hs = new Error(
     return r3 += 1, c4.reduce(
       (a4, u2) => {
         let m4 = vs$1(t3, u2);
-        if (typeof (m4 == null ? void 0 : m4.get) == "function") {
+        if (typeof m4?.get == "function") {
           if (m4.configurable) {
-            let l4 = /* @__PURE__ */ i$1(() => {
-              var _a3, _b2;
-              return (_b2 = (_a3 = m4 == null ? void 0 : m4.get) == null ? void 0 : _a3.bind(t3)) == null ? void 0 : _b2();
-            }, "getter");
+            let l4 = /* @__PURE__ */ i$1(() => m4?.get?.bind(t3)?.(), "getter");
             Object.defineProperty(a4, u2, {
               get: /* @__PURE__ */ i$1(() => this.instrument(l4(), { ...n3, path: s2.concat(u2) }, r3), "get")
             });
@@ -2800,8 +2784,7 @@ var Hs = new Error(
   // Returns a function that invokes the original function, records the invocation ("call") and
   // returns the original result.
   track(t3, n3, r3, o3, s2) {
-    var _a3, _b2, _c2, _d3;
-    let c4 = ((_a3 = o3 == null ? void 0 : o3[0]) == null ? void 0 : _a3.__storyId__) || ((_d3 = (_c2 = (_b2 = Z$4.__STORYBOOK_PREVIEW__) == null ? void 0 : _b2.selectionStore) == null ? void 0 : _c2.selection) == null ? void 0 : _d3.storyId), { cursor: a4, ancestors: u2 } = this.getState(
+    let c4 = o3?.[0]?.__storyId__ || Z$4.__STORYBOOK_PREVIEW__?.selectionStore?.selection?.storyId, { cursor: a4, ancestors: u2 } = this.getState(
       c4
     );
     this.setState(c4, { cursor: a4 + 1 });
@@ -2825,7 +2808,6 @@ var Hs = new Error(
   }
   invoke(t3, n3, r3, o3) {
     let { callRefsByResult: s2, renderPhase: c4 } = this.getState(r3.storyId), a4 = 25, u2 = /* @__PURE__ */ i$1((l4, b4, g4) => {
-      var _a3, _b2, _c2;
       if (g4.includes(l4))
         return "[Circular]";
       if (g4 = [...g4, l4], b4 > a4)
@@ -2844,13 +2826,13 @@ var Hs = new Error(
         let { flags: h4, source: f2 } = l4;
         return { __regexp__: { flags: h4, source: f2 } };
       }
-      if (l4 instanceof ((_a3 = Z$4.window) == null ? void 0 : _a3.HTMLElement)) {
+      if (l4 instanceof Z$4.window?.HTMLElement) {
         let { prefix: h4, localName: f2, id: d2, classList: S3, innerText: _2 } = l4, O2 = Array.from(S3);
         return { __element__: { prefix: h4, localName: f2, id: d2, classNames: O2, innerText: _2 } };
       }
       return typeof l4 == "function" ? {
         __function__: { name: "getMockName" in l4 ? l4.getMockName() : l4.name }
-      } : typeof l4 == "symbol" ? { __symbol__: { description: l4.description } } : typeof l4 == "object" && ((_b2 = l4 == null ? void 0 : l4.constructor) == null ? void 0 : _b2.name) && ((_c2 = l4 == null ? void 0 : l4.constructor) == null ? void 0 : _c2.name) !== "Object" ? { __class__: { name: l4.constructor.name } } : Object.prototype.toString.call(l4) === "[object Object]" ? Object.fromEntries(
+      } : typeof l4 == "symbol" ? { __symbol__: { description: l4.description } } : typeof l4 == "object" && l4?.constructor?.name && l4?.constructor?.name !== "Object" ? { __class__: { name: l4.constructor.name } } : Object.prototype.toString.call(l4) === "[object Object]" ? Object.fromEntries(
         Object.entries(l4).map(([h4, f2]) => [h4, u2(f2, ++b4, g4)])
       ) : l4;
     }, "serializeValues"), m4 = {
@@ -2858,12 +2840,11 @@ var Hs = new Error(
       args: r3.args.map((l4) => u2(l4, 0, []))
     };
     r3.path.forEach((l4) => {
-      (l4 == null ? void 0 : l4.__callId__) && this.setState(r3.storyId, ({ chainedCallIds: b4 }) => ({
+      l4?.__callId__ && this.setState(r3.storyId, ({ chainedCallIds: b4 }) => ({
         chainedCallIds: new Set(Array.from(b4).concat(l4.__callId__))
       }));
     });
     let p2 = /* @__PURE__ */ i$1((l4) => {
-      var _a3;
       if (l4 instanceof Error) {
         let { name: b4, message: g4, stack: h4, callId: f2 = r3.id } = l4, {
           showDiff: d2 = void 0,
@@ -2876,7 +2857,7 @@ var Hs = new Error(
             ...Array.from(E3.callRefsByResult.entries()),
             [l4, { __callId__: r3.id, retain: r3.retain }]
           ])
-        })), (_a3 = r3.ancestors) == null ? void 0 : _a3.length)
+        })), r3.ancestors?.length)
           throw Object.prototype.hasOwnProperty.call(l4, "callId") || Object.defineProperty(l4, "callId", { value: r3.id }), l4;
       }
       throw l4;
@@ -2910,8 +2891,7 @@ var Hs = new Error(
   }
   // Sends the call info to the manager and synchronizes the log.
   update(t3) {
-    var _a3;
-    (_a3 = this.channel) == null ? void 0 : _a3.emit(ne$4.CALL, t3), this.setState(t3.storyId, ({ calls: n3 }) => {
+    this.channel?.emit(ne$4.CALL, t3), this.setState(t3.storyId, ({ calls: n3 }) => {
       let r3 = n3.concat(t3).reduce((o3, s2) => Object.assign(o3, { [s2.id]: s2 }), {});
       return {
         // Calls are sorted to ensure parent calls always come before calls in their callback.
@@ -2925,8 +2905,7 @@ var Hs = new Error(
   // Uses a 0ms debounce because this might get called many times in one tick.
   sync(t3) {
     let n3 = /* @__PURE__ */ i$1(() => {
-      var _a3, _b2, _c2;
-      let { isLocked: r3, isPlaying: o3 } = this.getState(t3), s2 = this.getLog(t3), c4 = (_a3 = s2.filter(({ ancestors: l4 }) => !l4.length).find((l4) => l4.status === "waiting")) == null ? void 0 : _a3.callId, a4 = s2.some((l4) => l4.status === "active");
+      let { isLocked: r3, isPlaying: o3 } = this.getState(t3), s2 = this.getLog(t3), c4 = s2.filter(({ ancestors: l4 }) => !l4.length).find((l4) => l4.status === "waiting")?.callId, a4 = s2.some((l4) => l4.status === "active");
       if (this.detached || r3 || a4 || s2.length === 0) {
         let b4 = { controlStates: {
           detached: this.detached,
@@ -2936,7 +2915,7 @@ var Hs = new Error(
           next: false,
           end: false
         }, logItems: s2 };
-        (_b2 = this.channel) == null ? void 0 : _b2.emit(ne$4.SYNC, b4);
+        this.channel?.emit(ne$4.SYNC, b4);
         return;
       }
       let u2 = s2.some(
@@ -2949,7 +2928,7 @@ var Hs = new Error(
         next: o3,
         end: o3
       }, logItems: s2, pausedAt: c4 };
-      (_c2 = this.channel) == null ? void 0 : _c2.emit(ne$4.SYNC, p2);
+      this.channel?.emit(ne$4.SYNC, p2);
     }, "synchronize");
     this.setState(t3, ({ syncTimeout: r3 }) => (clearTimeout(r3), { syncTimeout: setTimeout(n3, 0) }));
   }
@@ -2957,10 +2936,9 @@ var Hs = new Error(
 i$1(xt$3, "Instrumenter");
 var Lt$3 = xt$3;
 function Qs$1(e3, t3 = {}) {
-  var _a3, _b2, _c2, _d3, _e2, _f2, _g2, _h;
   try {
     let n3 = false, r3 = false;
-    return ((_c2 = (_b2 = (_a3 = Z$4.window) == null ? void 0 : _a3.location) == null ? void 0 : _b2.search) == null ? void 0 : _c2.includes("instrument=true")) ? n3 = true : ((_f2 = (_e2 = (_d3 = Z$4.window) == null ? void 0 : _d3.location) == null ? void 0 : _e2.search) == null ? void 0 : _f2.includes("instrument=false")) && (r3 = true), ((_g2 = Z$4.window) == null ? void 0 : _g2.parent) === Z$4.window && !n3 || r3 ? e3 : (Z$4.window && !Z$4.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ && (Z$4.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ = new Lt$3()), ((_h = Z$4.window) == null ? void 0 : _h.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__).instrument(e3, t3));
+    return Z$4.window?.location?.search?.includes("instrument=true") ? n3 = true : Z$4.window?.location?.search?.includes("instrument=false") && (r3 = true), Z$4.window?.parent === Z$4.window && !n3 || r3 ? e3 : (Z$4.window && !Z$4.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ && (Z$4.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ = new Lt$3()), (Z$4.window?.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__).instrument(e3, t3));
   } catch (n3) {
     return qs.warn(n3), e3;
   }
@@ -3156,8 +3134,7 @@ var Ie$2 = class Ie {
     this.hasUpdates = void 0;
     this.currentContext = void 0;
     this.renderListener = /* @__PURE__ */ n$1((t3) => {
-      var _a3;
-      t3 === ((_a3 = this.currentContext) == null ? void 0 : _a3.id) && (this.triggerEffects(), this.currentContext = null, this.removeRenderListeners());
+      t3 === this.currentContext?.id && (this.triggerEffects(), this.currentContext = null, this.removeRenderListeners());
     }, "renderListener");
     this.init();
   }
@@ -3312,17 +3289,17 @@ See https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#hoisted-csf-
 function _e$3(e3, t3, r3) {
   let o3 = t3, i3 = typeof t3 == "function" ? t3 : null, { story: s2 } = o3;
   s2 && (no$2.debug("deprecated story", s2), oo$1(ao$2));
-  let a4 = cc$1(e3), p2 = typeof o3 != "function" && o3.name || o3.storyName || (s2 == null ? void 0 : s2.name) || a4, c4 = [
+  let a4 = cc$1(e3), p2 = typeof o3 != "function" && o3.name || o3.storyName || s2?.name || a4, c4 = [
     ...b$1(o3.decorators),
-    ...b$1(s2 == null ? void 0 : s2.decorators)
-  ], l4 = { ...s2 == null ? void 0 : s2.parameters, ...o3.parameters }, y4 = { ...s2 == null ? void 0 : s2.args, ...o3.args }, u2 = { ...s2 == null ? void 0 : s2.argTypes, ...o3.argTypes }, h4 = [...b$1(o3.loaders), ...b$1(
-    s2 == null ? void 0 : s2.loaders
+    ...b$1(s2?.decorators)
+  ], l4 = { ...s2?.parameters, ...o3.parameters }, y4 = { ...s2?.args, ...o3.args }, u2 = { ...s2?.argTypes, ...o3.argTypes }, h4 = [...b$1(o3.loaders), ...b$1(
+    s2?.loaders
   )], T2 = [
     ...b$1(o3.beforeEach),
-    ...b$1(s2 == null ? void 0 : s2.beforeEach)
+    ...b$1(s2?.beforeEach)
   ], R4 = [
     ...b$1(o3.afterEach),
-    ...b$1(s2 == null ? void 0 : s2.afterEach)
+    ...b$1(s2?.afterEach)
   ], { render: P2, play: L2, tags: O2 = [], globals: F2 = {} } = o3, A3 = l4.__id || lc$1(r3.id, a4);
   return {
     moduleExport: t3,
@@ -3478,10 +3455,10 @@ function Ne$3(e3, t3, r3) {
       await m4(w3);
     }
   }, "applyAfterEach"), y4 = /* @__PURE__ */ n$1((w3) => w3.originalStoryFn(w3.args, w3), "undecoratedStoryFn"), { applyDecorators: u2 = He$3, runStep: h4 } = r3, T2 = [
-    ...b$1(e3 == null ? void 0 : e3.decorators),
-    ...b$1(t3 == null ? void 0 : t3.decorators),
-    ...b$1(r3 == null ? void 0 : r3.decorators)
-  ], R4 = (e3 == null ? void 0 : e3.userStoryFn) || (e3 == null ? void 0 : e3.render) || t3.render || r3.render, P2 = Et$1(u2)(y4, T2), L2 = /* @__PURE__ */ n$1((w3) => P2(w3), "unboundStoryFn"), O2 = (e3 == null ? void 0 : e3.play) ?? (t3 == null ? void 0 : t3.play), F2 = Ot$1(O2);
+    ...b$1(e3?.decorators),
+    ...b$1(t3?.decorators),
+    ...b$1(r3?.decorators)
+  ], R4 = e3?.userStoryFn || e3?.render || t3.render || r3.render, P2 = Et$1(u2)(y4, T2), L2 = /* @__PURE__ */ n$1((w3) => P2(w3), "unboundStoryFn"), O2 = e3?.play ?? t3?.play, F2 = Ot$1(O2);
   if (!R4 && !F2)
     throw new uo$2({ id: i3 });
   let A3 = /* @__PURE__ */ n$1((w3) => async () => (await w3.renderToCanvas(), w3.canvas), "defaultMount"), S3 = e3.mount ?? t3.mount ?? r3.mount ?? A3, v3 = r3.testingLibraryRender;
@@ -3508,42 +3485,41 @@ function Ne$3(e3, t3, r3) {
 }
 n$1(Ne$3, "prepareStory");
 function go$1(e3, t3, r3) {
-  var _a3;
-  let o3 = ["dev", "test"], i3 = ((_a3 = yo$2.DOCS_OPTIONS) == null ? void 0 : _a3.autodocs) === true ? ["autodocs"] : [], s2 = uc$1(
+  let o3 = ["dev", "test"], i3 = yo$2.DOCS_OPTIONS?.autodocs === true ? ["autodocs"] : [], s2 = uc$1(
     ...o3,
     ...i3,
     ...r3.tags ?? [],
     ...t3.tags ?? [],
-    ...(e3 == null ? void 0 : e3.tags) ?? []
+    ...e3?.tags ?? []
   ), a4 = D$2(
     r3.parameters,
     t3.parameters,
-    e3 == null ? void 0 : e3.parameters
+    e3?.parameters
   ), { argTypesEnhancers: p2 = [], argsEnhancers: c4 = [] } = r3, l4 = D$2(
     r3.argTypes,
     t3.argTypes,
-    e3 == null ? void 0 : e3.argTypes
+    e3?.argTypes
   );
   if (e3) {
-    let O2 = (e3 == null ? void 0 : e3.userStoryFn) || (e3 == null ? void 0 : e3.render) || t3.render || r3.render;
+    let O2 = e3?.userStoryFn || e3?.render || t3.render || r3.render;
     a4.__isArgsStory = O2 && O2.length > 0;
   }
   let y4 = {
     ...r3.args,
     ...t3.args,
-    ...e3 == null ? void 0 : e3.args
+    ...e3?.args
   }, u2 = {
     ...t3.globals,
-    ...e3 == null ? void 0 : e3.globals
+    ...e3?.globals
   }, h4 = {
     componentId: t3.id,
     title: t3.title,
     kind: t3.title,
     // Back compat
-    id: (e3 == null ? void 0 : e3.id) || t3.id,
+    id: e3?.id || t3.id,
     // if there's no story name, we create a fake one since enhancers expect a name
-    name: (e3 == null ? void 0 : e3.name) || "__meta",
-    story: (e3 == null ? void 0 : e3.name) || "__meta",
+    name: e3?.name || "__meta",
+    story: e3?.name || "__meta",
     // Back compat
     component: t3.component,
     subcomponents: t3.subcomponents,
@@ -3573,13 +3549,12 @@ function go$1(e3, t3, r3) {
 }
 n$1(go$1, "preparePartialAnnotations");
 function Ft$2(e3) {
-  var _a3;
   let { args: t3 } = e3, r3 = {
     ...e3,
     allArgs: void 0,
     argsByTarget: void 0
   };
-  if ((_a3 = fo$2.FEATURES) == null ? void 0 : _a3.argTypeTargetsV7) {
+  if (fo$2.FEATURES?.argTypeTargetsV7) {
     let s2 = Ct$2(e3);
     r3 = {
       ...e3,
@@ -3589,8 +3564,7 @@ function Ft$2(e3) {
     };
   }
   let o3 = Object.entries(r3.args).reduce((s2, [a4, p2]) => {
-    var _a4;
-    if (!((_a4 = r3.argTypes[a4]) == null ? void 0 : _a4.mapping))
+    if (!r3.argTypes[a4]?.mapping)
       return s2[a4] = p2, s2;
     let c4 = /* @__PURE__ */ n$1((l4) => {
       let y4 = r3.argTypes[a4].mapping;
@@ -3663,7 +3637,7 @@ var bo$2 = /* @__PURE__ */ n$1((e3, t3, r3) => {
         return { control: { type: "number" } };
       case "enum": {
         let { value: s2 } = o3;
-        return { control: { type: (s2 == null ? void 0 : s2.length) <= 5 ? "radio" : "select" }, options: s2 };
+        return { control: { type: s2?.length <= 5 ? "radio" : "select" }, options: s2 };
       }
       case "function":
       case "symbol":
@@ -3679,7 +3653,7 @@ var bo$2 = /* @__PURE__ */ n$1((e3, t3, r3) => {
   } = e3;
   if (!r3)
     return t3;
-  let a4 = ze$3(t3, o3, i3), p2 = U$2(a4, (c4, l4) => (c4 == null ? void 0 : c4.type) && bo$2(c4, l4.toString(), s2));
+  let a4 = ze$3(t3, o3, i3), p2 = U$2(a4, (c4, l4) => c4?.type && bo$2(c4, l4.toString(), s2));
   return D$2(p2, a4);
 }, "inferControls");
 me$3.secondPass = true;
@@ -3748,10 +3722,7 @@ function Ue$3(e3) {
 }
 n$1(Ue$3, "composeStepRunners");
 function oe$2(e3, t3) {
-  return e3.map((r3) => {
-    var _a3;
-    return ((_a3 = r3.default) == null ? void 0 : _a3[t3]) ?? r3[t3];
-  }).filter(Boolean);
+  return e3.map((r3) => r3.default?.[t3] ?? r3[t3]).filter(Boolean);
 }
 n$1(oe$2, "getField");
 function Y$1(e3, t3, r3 = {}) {
@@ -3770,12 +3741,11 @@ function re$2(e3, t3) {
 }
 n$1(re$2, "getSingletonField");
 function ne$3(e3) {
-  var _a3;
   let t3 = Y$1(e3, "argTypesEnhancers"), r3 = oe$2(e3, "runStep"), o3 = Y$1(e3, "beforeAll");
   return {
     parameters: D$2(...oe$2(e3, "parameters")),
     decorators: Y$1(e3, "decorators", {
-      reverseFileOrder: !(((_a3 = To$1.FEATURES) == null ? void 0 : _a3.legacyDecoratorFileOrder) ?? false)
+      reverseFileOrder: !(To$1.FEATURES?.legacyDecoratorFileOrder ?? false)
     }),
     args: ue$1(e3, "args"),
     argsEnhancers: Y$1(e3, "argsEnhancers"),
@@ -3802,11 +3772,10 @@ function ne$3(e3) {
 n$1(ne$3, "composeConfigs");
 const { MountMustBeDestructuredError: Ao$1 } = __STORYBOOK_MODULE_CORE_EVENTS_PREVIEW_ERRORS__;
 function Dt$2() {
-  var _a3, _b2, _c2;
   try {
     return (
       // @ts-expect-error This property exists in Vitest browser mode
-      !!globalThis.__vitest_browser__ || !!((_c2 = (_b2 = (_a3 = globalThis.window) == null ? void 0 : _a3.navigator) == null ? void 0 : _b2.userAgent) == null ? void 0 : _c2.match(/StorybookTestRunner/))
+      !!globalThis.__vitest_browser__ || !!globalThis.window?.navigator?.userAgent?.match(/StorybookTestRunner/)
     );
   } catch {
     return false;
@@ -3828,8 +3797,7 @@ function _t$2(e3 = true) {
     animation-play-state: paused !important;
     transition: none !important;
   }`, document.head.appendChild(r3), document.body.clientHeight, document.head.removeChild(t3), () => {
-    var _a3;
-    (_a3 = r3.parentNode) == null ? void 0 : _a3.removeChild(r3);
+    r3.parentNode?.removeChild(r3);
   };
 }
 n$1(_t$2, "pauseAnimations");
@@ -3843,12 +3811,9 @@ async function Ht$1(e3) {
     new Promise((r3) => {
       setTimeout(() => {
         let o3 = [globalThis.document, ...Nt$2(globalThis.document)], i3 = /* @__PURE__ */ n$1(async () => {
-          if (t3 || (e3 == null ? void 0 : e3.aborted))
+          if (t3 || e3?.aborted)
             return;
-          let s2 = o3.flatMap((a4) => {
-            var _a3;
-            return ((_a3 = a4 == null ? void 0 : a4.getAnimations) == null ? void 0 : _a3.call(a4)) || [];
-          }).filter((a4) => a4.playState === "running" && !So$1(a4));
+          let s2 = o3.flatMap((a4) => a4?.getAnimations?.() || []).filter((a4) => a4.playState === "running" && !So$1(a4));
           s2.length > 0 && (await Promise.all(s2.map((a4) => a4.finished)), await i3());
         }, "checkAnimationsFinished");
         i3().then(r3);
@@ -3871,9 +3836,8 @@ function Nt$2(e3) {
 }
 n$1(Nt$2, "getShadowRoots");
 function So$1(e3) {
-  var _a3;
   if (e3 instanceof CSSAnimation && e3.effect instanceof KeyframeEffect && e3.effect.target) {
-    let t3 = getComputedStyle(e3.effect.target, e3.effect.pseudoElement), r3 = (_a3 = t3.animationName) == null ? void 0 : _a3.split(", ").indexOf(e3.animationName);
+    let t3 = getComputedStyle(e3.effect.target, e3.effect.pseudoElement), r3 = t3.animationName?.split(", ").indexOf(e3.animationName);
     return t3.animationIterationCount.split(", ")[r3] === "infinite";
   }
   return false;
@@ -3892,11 +3856,10 @@ var fe$2 = Ge$3;
 var Ro$1 = "ComposedStory", wo$1 = "Unnamed Story";
 var V$2 = [];
 function We$3(e3, t3, r3, o3, i3) {
-  var _a3;
   if (e3 === void 0)
     throw new Error("Expected a story but received undefined.");
   t3.title = t3.title ?? Ro$1;
-  let s2 = kt$1(t3), a4 = i3 || e3.storyName || ((_a3 = e3.story) == null ? void 0 : _a3.name) || e3.name || wo$1, p2 = _e$3(
+  let s2 = kt$1(t3), a4 = i3 || e3.storyName || e3.story?.name || e3.name || wo$1, p2 = _e$3(
     a4,
     e3,
     s2
@@ -3932,9 +3895,7 @@ function We$3(e3, t3, r3, o3, i3) {
       mount: null
     });
     return A3.parameters.__isPortableStory = true, A3.context = A3, l4.renderToCanvas && (A3.renderToCanvas = async () => {
-      var _a4;
-      let S3 = await ((_a4 = l4.renderToCanvas) == null ? void 0 : _a4.call(
-        l4,
+      let S3 = await l4.renderToCanvas?.(
         {
           componentId: l4.componentId,
           title: l4.title,
@@ -3956,13 +3917,12 @@ ${v3.description}`);
           unboundStoryFn: l4.unboundStoryFn
         },
         A3.canvasElement
-      ));
+      );
       S3 && V$2.push(S3);
     }), A3.mount = l4.mount(A3), A3;
   }, "initializeContext"), R4, P2 = /* @__PURE__ */ n$1(async (A3) => {
-    var _a4;
     let S3 = T2();
-    return S3.canvasElement ?? (S3.canvasElement = (_a4 = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _a4.body), R4 && (S3.loaded = R4.loaded), Object.assign(S3, A3), l4.playFunction(S3);
+    return S3.canvasElement ?? (S3.canvasElement = globalThis?.document?.body), R4 && (S3.loaded = R4.loaded), Object.assign(S3, A3), l4.playFunction(S3);
   }, "play"), L2 = /* @__PURE__ */ n$1((A3) => {
     let S3 = T2();
     return Object.assign(S3, A3), Eo$1(l4, S3);
@@ -3998,14 +3958,12 @@ ${v3.description}`);
 }
 n$1(We$3, "composeStory");
 async function Eo$1(e3, t3) {
-  var _a3, _b2;
   for (let s2 of [...V$2].reverse())
     await s2();
   if (V$2.length = 0, !t3.canvasElement) {
     let s2 = document.createElement("div");
-    (_b2 = (_a3 = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _a3.body) == null ? void 0 : _b2.appendChild(s2), t3.canvasElement = s2, V$2.push(() => {
-      var _a4, _b3, _c2, _d3;
-      ((_b3 = (_a4 = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _a4.body) == null ? void 0 : _b3.contains(s2)) && ((_d3 = (_c2 = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _c2.body) == null ? void 0 : _d3.removeChild(s2));
+    globalThis?.document?.body?.appendChild(s2), t3.canvasElement = s2, V$2.push(() => {
+      globalThis?.document?.body?.contains(s2) && globalThis?.document?.body?.removeChild(s2);
     });
   }
   if (t3.loaded = await e3.applyLoaders(t3), t3.abortSignal.aborted)
@@ -4018,7 +3976,7 @@ async function Eo$1(e3, t3) {
     throw new Ao$1({ playFunction: r3.toString() });
   }), await r3(t3));
   let i3;
-  Dt$2() ? i3 = _t$2() : await Ht$1(t3.abortSignal), await e3.applyAfterEach(t3), await (i3 == null ? void 0 : i3());
+  Dt$2() ? i3 = _t$2() : await Ht$1(t3.abortSignal), await e3.applyAfterEach(t3), await i3?.();
 }
 n$1(Eo$1, "runStory");
 var Ye$1 = "Invariant failed";
@@ -4052,8 +4010,8 @@ var Ut$2 = /* @__PURE__ */ n$1((e3, t3) => {
       Object.getOwnPropertyDescriptors(e3)
     );
     t3.persist();
-    let r3 = Object.getOwnPropertyDescriptor(t3, "view"), o3 = r3 == null ? void 0 : r3.value;
-    return typeof o3 == "object" && (o3 == null ? void 0 : o3.constructor.name) === "Window" && Object.defineProperty(t3, "view", {
+    let r3 = Object.getOwnPropertyDescriptor(t3, "view"), o3 = r3?.value;
+    return typeof o3 == "object" && o3?.constructor.name === "Window" && Object.defineProperty(t3, "view", {
       ...r3,
       value: Object.create(o3.constructor.prototype)
     }), t3;
@@ -4065,13 +4023,12 @@ function ie$2(e3, t3 = {}) {
     ...Bt$1,
     ...t3
   }, o3 = /* @__PURE__ */ n$1(function(...s2) {
-    var _a3, _b2;
     if (t3.implicit) {
-      let T2 = (_a3 = "__STORYBOOK_PREVIEW__" in zt$2 ? zt$2.__STORYBOOK_PREVIEW__ : void 0) == null ? void 0 : _a3.storyRenders.find(
+      let T2 = ("__STORYBOOK_PREVIEW__" in zt$2 ? zt$2.__STORYBOOK_PREVIEW__ : void 0)?.storyRenders.find(
         (R4) => R4.phase === "playing" || R4.phase === "rendering"
       );
       if (T2) {
-        let R4 = !((_b2 = globalThis == null ? void 0 : globalThis.FEATURES) == null ? void 0 : _b2.disallowImplicitActionsInRenderV8), P2 = new vo$2({
+        let R4 = !globalThis?.FEATURES?.disallowImplicitActionsInRenderV8, P2 = new vo$2({
           phase: T2.phase,
           name: e3,
           deprecated: R4
@@ -4115,7 +4072,7 @@ var Gt$2 = /* @__PURE__ */ n$1((e3, t3) => typeof t3[e3] > "u" && !(e3 in t3), "
     argTypes: r3,
     parameters: { actions: o3 }
   } = e3;
-  return (o3 == null ? void 0 : o3.disable) || !r3 ? {} : Object.entries(r3).filter(([s2, a4]) => !!a4.action).reduce((s2, [a4, p2]) => (Gt$2(a4, t3) && (s2[a4] = ie$2(typeof p2.action == "string" ? p2.action : a4)), s2), {});
+  return o3?.disable || !r3 ? {} : Object.entries(r3).filter(([s2, a4]) => !!a4.action).reduce((s2, [a4, p2]) => (Gt$2(a4, t3) && (s2[a4] = ie$2(typeof p2.action == "string" ? p2.action : a4)), s2), {});
 }, "addActionsFromArgTypes");
 var Mo$1 = [
   Yt$2,
@@ -4127,9 +4084,8 @@ xt$2(qe$2, {
 });
 const { onMockCall: $o$1 } = __STORYBOOK_MODULE_TEST__;
 var Vt = false, Fo$1 = /* @__PURE__ */ n$1((e3) => {
-  var _a3;
   let { parameters: t3 } = e3;
-  ((_a3 = t3 == null ? void 0 : t3.actions) == null ? void 0 : _a3.disable) || Vt || ($o$1((r3, o3) => {
+  t3?.actions?.disable || Vt || ($o$1((r3, o3) => {
     let i3 = r3.getMockName();
     i3 !== "spy" && (!/^next\/.*::/.test(i3) || [
       "next/router::useRouter()",
@@ -4153,10 +4109,7 @@ var Kt$2 = {
   light: { name: "light", value: "#F8F8F8" },
   dark: { name: "dark", value: "#333" }
 };
-var { document: N$3 } = globalThis, qt$2 = /* @__PURE__ */ n$1(() => {
-  var _a3;
-  return (globalThis == null ? void 0 : globalThis.matchMedia) ? !!((_a3 = globalThis.matchMedia("(prefers-reduced-motion: reduce)")) == null ? void 0 : _a3.matches) : false;
-}, "isReduceMotionEnabled"), Ze$3 = /* @__PURE__ */ n$1((e3) => {
+var { document: N$3 } = globalThis, qt$2 = /* @__PURE__ */ n$1(() => globalThis?.matchMedia ? !!globalThis.matchMedia("(prefers-reduced-motion: reduce)")?.matches : false, "isReduceMotionEnabled"), Ze$3 = /* @__PURE__ */ n$1((e3) => {
   (Array.isArray(e3) ? e3 : [e3]).forEach(_o);
 }, "clearStyles"), _o = /* @__PURE__ */ n$1((e3) => {
   if (!N$3)
@@ -4174,7 +4127,6 @@ var { document: N$3 } = globalThis, qt$2 = /* @__PURE__ */ n$1(() => {
     o3.setAttribute("id", e3), o3.innerHTML = t3, N$3.head.appendChild(o3);
   }
 }, "addGridStyle"), Zt$1 = /* @__PURE__ */ n$1((e3, t3, r3) => {
-  var _a3;
   if (!N$3)
     return;
   let o3 = N$3.getElementById(e3);
@@ -4184,7 +4136,7 @@ var { document: N$3 } = globalThis, qt$2 = /* @__PURE__ */ n$1(() => {
     let i3 = N$3.createElement("style");
     i3.setAttribute("id", e3), i3.innerHTML = t3;
     let s2 = `addon-backgrounds-grid${r3 ? `-docs-${r3}` : ""}`, a4 = N$3.getElementById(s2);
-    a4 ? (_a3 = a4.parentElement) == null ? void 0 : _a3.insertBefore(i3, a4) : N$3.head.appendChild(i3);
+    a4 ? a4.parentElement?.insertBefore(i3, a4) : N$3.head.appendChild(i3);
   }
 }, "addBackgroundStyle");
 var Ho$1 = {
@@ -4196,7 +4148,7 @@ var Ho$1 = {
     options: a4 = Kt$2,
     disable: p2,
     grid: c4 = Ho$1
-  } = o3[Z$3] || {}, l4 = r3[Z$3] || {}, y4 = typeof l4 == "string" ? l4 : l4 == null ? void 0 : l4.value, u2 = y4 ? a4[y4] : void 0, h4 = typeof u2 == "string" ? u2 : (u2 == null ? void 0 : u2.value) || "transparent", T2 = typeof l4 == "string" ? false : l4.grid || false, R4 = !!u2 && !p2, P2 = i3 === "docs" ? `#anchor--${s2} .docs-story` : ".sb-show-main", L2 = i3 === "docs" ? `#anchor--${s2} .docs-story` : ".sb-show-main", O2 = o3.layout === void 0 || o3.layout === "padded", F2 = i3 === "docs" ? 20 : O2 ? 16 : 0, { cellAmount: A3, cellSize: S3, opacity: v3, offsetX: w3 = F2, offsetY: d2 = F2 } = c4, m4 = i3 === "docs" ? `${Qt$2}-docs-${s2}` : `${Qt$2}-color`, f2 = i3 === "docs" ? s2 : null;
+  } = o3[Z$3] || {}, l4 = r3[Z$3] || {}, y4 = typeof l4 == "string" ? l4 : l4?.value, u2 = y4 ? a4[y4] : void 0, h4 = typeof u2 == "string" ? u2 : u2?.value || "transparent", T2 = typeof l4 == "string" ? false : l4.grid || false, R4 = !!u2 && !p2, P2 = i3 === "docs" ? `#anchor--${s2} .docs-story` : ".sb-show-main", L2 = i3 === "docs" ? `#anchor--${s2} .docs-story` : ".sb-show-main", O2 = o3.layout === void 0 || o3.layout === "padded", F2 = i3 === "docs" ? 20 : O2 ? 16 : 0, { cellAmount: A3, cellSize: S3, opacity: v3, offsetX: w3 = F2, offsetY: d2 = F2 } = c4, m4 = i3 === "docs" ? `${Qt$2}-docs-${s2}` : `${Qt$2}-color`, f2 = i3 === "docs" ? s2 : null;
   Jt$2(() => {
     let g4 = `
     ${P2} {
@@ -4234,7 +4186,7 @@ var Ho$1 = {
     Xt$2(x4, E3);
   }, [A3, S3, L2, x4, T2, w3, d2, v3]), e3();
 }, "withBackgroundAndGrid");
-var Bo$1 = ((_a2 = globalThis.FEATURES) == null ? void 0 : _a2.backgrounds) ? [tr$1] : [], zo$1 = {
+var Bo$1 = globalThis.FEATURES?.backgrounds ? [tr$1] : [], zo$1 = {
   [Z$3]: {
     grid: {
       cellSize: 20,
@@ -4294,7 +4246,7 @@ var Vo$1 = "svg,path,rect,circle,line,polyline,polygon,ellipse,text".split(","),
       i3,
       s2
     );
-  }), r3 == null ? void 0 : r3.forEach((i3) => {
+  }), r3?.forEach((i3) => {
     if (!(i3 == null || i3 === false))
       try {
         o3.appendChild(i3);
@@ -4341,26 +4293,19 @@ var Vo$1 = "svg,path,rect,circle,line,polyline,polygon,ellipse,text".split(","),
 }, "normalizeOptions"), Ko$1 = /* @__PURE__ */ n$1((e3) => e3 instanceof Function, "isFunction"), se$2 = /* @__PURE__ */ new Map(), q$2 = /* @__PURE__ */ new Map(), he$2 = /* @__PURE__ */ new Map(), z$2 = /* @__PURE__ */ n$1((e3) => {
   let t3 = Symbol();
   return q$2.set(t3, []), se$2.set(t3, e3), { get: /* @__PURE__ */ n$1(() => se$2.get(t3), "get"), set: /* @__PURE__ */ n$1((a4) => {
-    var _a3;
     let p2 = se$2.get(t3), c4 = Ko$1(a4) ? a4(p2) : a4;
-    c4 !== p2 && (se$2.set(t3, c4), (_a3 = q$2.get(t3)) == null ? void 0 : _a3.forEach((l4) => {
-      var _a4;
-      (_a4 = he$2.get(l4)) == null ? void 0 : _a4(), he$2.set(l4, l4(c4));
+    c4 !== p2 && (se$2.set(t3, c4), q$2.get(t3)?.forEach((l4) => {
+      he$2.get(l4)?.(), he$2.set(l4, l4(c4));
     }));
-  }, "set"), subscribe: /* @__PURE__ */ n$1((a4) => {
-    var _a3;
-    return (_a3 = q$2.get(t3)) == null ? void 0 : _a3.push(a4), () => {
-      let p2 = q$2.get(t3);
-      p2 && q$2.set(
-        t3,
-        p2.filter((c4) => c4 !== a4)
-      );
-    };
-  }, "subscribe"), teardown: /* @__PURE__ */ n$1(() => {
-    var _a3;
-    (_a3 = q$2.get(t3)) == null ? void 0 : _a3.forEach((a4) => {
-      var _a4;
-      (_a4 = he$2.get(a4)) == null ? void 0 : _a4(), he$2.delete(a4);
+  }, "set"), subscribe: /* @__PURE__ */ n$1((a4) => (q$2.get(t3)?.push(a4), () => {
+    let p2 = q$2.get(t3);
+    p2 && q$2.set(
+      t3,
+      p2.filter((c4) => c4 !== a4)
+    );
+  }), "subscribe"), teardown: /* @__PURE__ */ n$1(() => {
+    q$2.get(t3)?.forEach((a4) => {
+      he$2.get(a4)?.(), he$2.delete(a4);
     }), q$2.delete(t3), se$2.delete(t3);
   }, "teardown") };
 }, "useStore"), rt$2 = /* @__PURE__ */ n$1((e3) => {
@@ -4375,14 +4320,14 @@ var Vo$1 = "svg,path,rect,circle,line,polyline,polygon,ellipse,text".split(","),
           `:is(${s2}):not([id^="storybook-"], [id^="storybook-"] *, [class^="sb-"], [class^="sb-"] *)`
         ),
         // Elements matching the selector inside the storybook root, as these were excluded above.
-        ...(t3 == null ? void 0 : t3.querySelectorAll(s2)) || []
+        ...t3?.querySelectorAll(s2) || []
       ];
       for (let p2 of a4) {
         let c4 = r3.get(p2);
         (!c4 || c4.priority <= i3) && r3.set(p2, {
           ...o3,
           priority: i3,
-          selectors: Array.from(new Set(((c4 == null ? void 0 : c4.selectors) || []).concat(s2)))
+          selectors: Array.from(new Set((c4?.selectors || []).concat(s2)))
         });
       }
     }
@@ -4410,7 +4355,7 @@ var Vo$1 = "svg,path,rect,circle,line,polyline,polygon,ellipse,text".split(","),
   };
 }).sort((t3, r3) => r3.width * r3.height - t3.width * t3.height), "mapBoxes"), ot$1 = /* @__PURE__ */ n$1((e3, t3) => {
   let r3 = e3.getBoundingClientRect(), { x: o3, y: i3 } = t3;
-  return (r3 == null ? void 0 : r3.top) && (r3 == null ? void 0 : r3.left) && o3 >= r3.left && o3 <= r3.left + r3.width && i3 >= r3.top && i3 <= r3.top + r3.height;
+  return r3?.top && r3?.left && o3 >= r3.left && o3 <= r3.left + r3.width && i3 >= r3.top && i3 <= r3.top + r3.height;
 }, "isOverMenu"), nt$1 = /* @__PURE__ */ n$1((e3, t3, r3) => {
   if (!t3 || !r3)
     return false;
@@ -4491,7 +4436,7 @@ var C$3 = "storybook-highlights-menu", dr$1 = "storybook-highlights-root", Xo = 
   }), o3.subscribe((d2) => {
     p2.set((m4) => m4.filter(({ element: f2 }) => d2.has(f2)));
   }), p2.subscribe((d2) => {
-    d2.length ? (y4.set((m4) => d2.some((f2) => f2.element === (m4 == null ? void 0 : m4.element)) ? m4 : void 0), l4.set((m4) => d2.some((f2) => f2.element === (m4 == null ? void 0 : m4.element)) ? m4 : void 0)) : (y4.set(void 0), l4.set(void 0), s2.set(void 0));
+    d2.length ? (y4.set((m4) => d2.some((f2) => f2.element === m4?.element) ? m4 : void 0), l4.set((m4) => d2.some((f2) => f2.element === m4?.element) ? m4 : void 0)) : (y4.set(void 0), l4.set(void 0), s2.set(void 0));
   });
   let h4 = new Map(/* @__PURE__ */ new Map());
   r3.subscribe((d2) => {
@@ -4553,10 +4498,9 @@ var C$3 = "storybook-highlights-menu", dr$1 = "storybook-highlights-root", Xo = 
   let P2 = /* @__PURE__ */ n$1(() => {
     let d2 = y4.get(), m4 = d2 ? [d2] : p2.get(), f2 = m4.length === 1 ? m4[0] : l4.get(), x4 = s2.get() !== void 0;
     i3.get().forEach((g4) => {
-      var _a3;
       let E3 = T2.get(g4.element);
       if (E3) {
-        let I2 = f2 === g4, k2 = x4 ? f2 ? I2 : m4.includes(g4) : (_a3 = c4.get()) == null ? void 0 : _a3.includes(g4);
+        let I2 = f2 === g4, k2 = x4 ? f2 ? I2 : m4.includes(g4) : c4.get()?.includes(g4);
         Object.assign(E3.style, {
           animation: "none",
           background: "transparent",
@@ -4594,7 +4538,6 @@ var C$3 = "storybook-highlights-menu", dr$1 = "storybook-highlights-root", Xo = 
   }, "updateBoxStyles");
   i3.subscribe(P2), p2.subscribe(P2), c4.subscribe(P2), l4.subscribe(P2), y4.subscribe(P2);
   let L2 = /* @__PURE__ */ n$1(() => {
-    var _a3;
     if (!u2)
       return;
     let d2 = t3.getElementById(C$3);
@@ -4709,12 +4652,11 @@ var C$3 = "storybook-highlights-menu", dr$1 = "storybook-highlights-root", Xo = 
         "ul",
         { class: "element-list" },
         f2.map((g4) => {
-          var _a4;
-          let E3 = f2.length > 1 && !!((_a4 = g4.menu) == null ? void 0 : _a4.some(
+          let E3 = f2.length > 1 && !!g4.menu?.some(
             (H2) => H2.some(
               (X2) => !X2.selectors || X2.selectors.some((le2) => g4.selectors.includes(le2))
             )
-          )), I2 = E3 ? {
+          ), I2 = E3 ? {
             class: "selectable",
             onClick: /* @__PURE__ */ n$1(() => y4.set(g4), "onClick"),
             onMouseEnter: /* @__PURE__ */ n$1(() => l4.set(g4), "onMouseEnter"),
@@ -4730,12 +4672,12 @@ var C$3 = "storybook-highlights-menu", dr$1 = "storybook-highlights-root", Xo = 
         })
       )
     )), y4.get() || p2.get().length === 1) {
-      let g4 = y4.get() || p2.get()[0], E3 = (_a3 = g4.menu) == null ? void 0 : _a3.filter(
+      let g4 = y4.get() || p2.get()[0], E3 = g4.menu?.filter(
         (I2) => I2.some(
           (k2) => !k2.selectors || k2.selectors.some((H2) => g4.selectors.includes(H2))
         )
       );
-      (E3 == null ? void 0 : E3.length) && d2.appendChild(
+      E3?.length && d2.appendChild(
         M$2(
           "ul",
           { class: "menu-list" },
@@ -4780,9 +4722,8 @@ var C$3 = "storybook-highlights-menu", dr$1 = "storybook-highlights-root", Xo = 
   let O2 = /* @__PURE__ */ n$1((d2) => {
     let m4 = sr$2(d2);
     r3.set((f2) => {
-      var _a3;
       let x4 = m4.id ? f2.filter((g4) => g4.id !== m4.id) : f2;
-      return ((_a3 = m4.selectors) == null ? void 0 : _a3.length) ? [...x4, m4] : x4;
+      return m4.selectors?.length ? [...x4, m4] : x4;
     });
   }, "addHighlight"), F2 = /* @__PURE__ */ n$1((d2) => {
     d2 && r3.set((m4) => m4.filter((f2) => f2.id !== d2));
@@ -4826,7 +4767,7 @@ var C$3 = "storybook-highlights-menu", dr$1 = "storybook-highlights-root", Xo = 
     d2 === "loading" && A3();
   });
 }, "useHighlights");
-((_b = globalThis == null ? void 0 : globalThis.FEATURES) == null ? void 0 : _b.highlight) && (ur$2 == null ? void 0 : ur$2.ready) && ur$2.ready().then(mr$1);
+globalThis?.FEATURES?.highlight && ur$2?.ready && ur$2.ready().then(mr$1);
 var st2 = /* @__PURE__ */ n$1(() => rc$1({}), "default");
 var fr$2 = "measureEnabled";
 const { useEffect: kr$2 } = __STORYBOOK_MODULE_PREVIEW_API__;
@@ -4874,8 +4815,7 @@ function br$2() {
 }
 n$1(br$2, "rescale");
 function Tr$1() {
-  var _a3;
-  $$2.canvas && (hr$1(), (_a3 = $$2.canvas.parentNode) == null ? void 0 : _a3.removeChild($$2.canvas), $$2 = {});
+  $$2.canvas && (hr$1(), $$2.canvas.parentNode?.removeChild($$2.canvas), $$2 = {});
 }
 n$1(Tr$1, "destroy");
 const { global: j$1 } = __STORYBOOK_MODULE_GLOBAL__;
@@ -4954,10 +4894,7 @@ function pe$2(e3, t3, r3, o3) {
 }
 n$1(pe$2, "drawStack");
 function wr$1(e3, t3, r3, o3) {
-  let i3 = r3.reduce((s2, a4) => {
-    var _a3;
-    return Object.prototype.hasOwnProperty.call(s2, a4.position) || (s2[a4.position] = []), (_a3 = s2[a4.position]) == null ? void 0 : _a3.push(a4), s2;
-  }, {});
+  let i3 = r3.reduce((s2, a4) => (Object.prototype.hasOwnProperty.call(s2, a4.position) || (s2[a4.position] = []), s2[a4.position]?.push(a4), s2), {});
   i3.top && pe$2(e3, t3, i3.top, o3), i3.right && pe$2(e3, t3, i3.right, o3), i3.bottom && pe$2(e3, t3, i3.bottom, o3), i3.left && pe$2(e3, t3, i3.left, o3), i3.center && pe$2(e3, t3, i3.center, o3);
 }
 n$1(wr$1, "labelStacks");
@@ -5234,7 +5171,7 @@ var Mr = /* @__PURE__ */ n$1((e3, t3) => {
     };
   }, [r3, t3.viewMode]), e3();
 }, "withMeasure");
-var gn = ((_c = globalThis.FEATURES) == null ? void 0 : _c.measure) ? [Mr] : [], hn$1 = {
+var gn = globalThis.FEATURES?.measure ? [Mr] : [], hn$1 = {
   [fr$2]: false
 }, lt = /* @__PURE__ */ n$1(() => rc$1({
   decorators: gn,
@@ -5665,7 +5602,7 @@ var Fr$2 = /* @__PURE__ */ n$1((e3, t3) => {
     };
   }, [o3, s2, t3]), e3();
 }, "withOutline");
-var An$1 = ((_d2 = globalThis.FEATURES) == null ? void 0 : _d2.outline) ? [Fr$2] : [], Rn$1 = {
+var An$1 = globalThis.FEATURES?.outline ? [Fr$2] : [], Rn$1 = {
   [Ae$2]: false
 }, mt$1 = /* @__PURE__ */ n$1(() => rc$1({ decorators: An$1, initialGlobals: Rn$1 }), "default");
 const {
@@ -5678,10 +5615,8 @@ const {
   within: $n$1
 } = __STORYBOOK_MODULE_TEST__;
 var Fn$2 = /* @__PURE__ */ n$1(({ parameters: e3 }) => {
-  var _a3, _b2, _c2;
-  ((_a3 = e3 == null ? void 0 : e3.test) == null ? void 0 : _a3.mockReset) === true ? Pn$2() : ((_b2 = e3 == null ? void 0 : e3.test) == null ? void 0 : _b2.clearMocks) === true ? Cn$2() : ((_c2 = e3 == null ? void 0 : e3.test) == null ? void 0 : _c2.restoreMocks) !== false && On$2();
+  e3?.test?.mockReset === true ? Pn$2() : e3?.test?.clearMocks === true ? Cn$2() : e3?.test?.restoreMocks !== false && On$2();
 }, "resetAllMocksLoader"), ut$1 = /* @__PURE__ */ n$1((e3, t3 = 0, r3) => {
-  var _a3, _b2;
   if (t3 > 5 || e3 == null)
     return e3;
   if (kn$2(e3))
@@ -5693,22 +5628,21 @@ var Fn$2 = /* @__PURE__ */ n$1(({ parameters: e3 }) => {
   if (Array.isArray(e3)) {
     t3++;
     for (let o3 = 0; o3 < e3.length; o3++)
-      ((_a3 = Object.getOwnPropertyDescriptor(e3, o3)) == null ? void 0 : _a3.writable) && (e3[o3] = ut$1(e3[o3], t3));
+      Object.getOwnPropertyDescriptor(e3, o3)?.writable && (e3[o3] = ut$1(e3[o3], t3));
     return e3;
   }
   if (typeof e3 == "object" && e3.constructor === Object) {
     t3++;
     for (let [o3, i3] of Object.entries(e3))
-      ((_b2 = Object.getOwnPropertyDescriptor(e3, o3)) == null ? void 0 : _b2.writable) && (e3[o3] = ut$1(i3, t3, o3));
+      Object.getOwnPropertyDescriptor(e3, o3)?.writable && (e3[o3] = ut$1(i3, t3, o3));
     return e3;
   }
   return e3;
 }, "traverseArgs"), In$1 = /* @__PURE__ */ n$1(({ initialArgs: e3 }) => {
   ut$1(e3);
 }, "nameSpiesAndWrapActionsInSpies"), Ir$2 = false, Ln$1 = /* @__PURE__ */ n$1(async (e3) => {
-  var _a3, _b2;
   globalThis.HTMLElement && e3.canvasElement instanceof globalThis.HTMLElement && (e3.canvas = $n$1(e3.canvasElement));
-  let t3 = (_b2 = (_a3 = globalThis.window) == null ? void 0 : _a3.navigator) == null ? void 0 : _b2.clipboard;
+  let t3 = globalThis.window?.navigator?.clipboard;
   if (t3) {
     e3.userEvent = Qs$1(
       { userEvent: Mn$1.setup() },
@@ -5782,11 +5716,11 @@ function rc$1(e3) {
 }
 n$1(rc$1, "definePreviewAddon");
 function oc$1(e3) {
-  return e3 != null && typeof e3 == "object" && "_tag" in e3 && (e3 == null ? void 0 : e3._tag) === "Preview";
+  return e3 != null && typeof e3 == "object" && "_tag" in e3 && e3?._tag === "Preview";
 }
 n$1(oc$1, "isPreview");
 function nc$1(e3) {
-  return e3 != null && typeof e3 == "object" && "_tag" in e3 && (e3 == null ? void 0 : e3._tag) === "Meta";
+  return e3 != null && typeof e3 == "object" && "_tag" in e3 && e3?._tag === "Meta";
 }
 n$1(nc$1, "isMeta");
 function Nn$2(e3, t3) {
@@ -5805,7 +5739,7 @@ function Nn$2(e3, t3) {
 }
 n$1(Nn$2, "defineMeta");
 function ic$1(e3) {
-  return e3 != null && typeof e3 == "object" && "_tag" in e3 && (e3 == null ? void 0 : e3._tag) === "Story";
+  return e3 != null && typeof e3 == "object" && "_tag" in e3 && e3?._tag === "Story";
 }
 n$1(ic$1, "isStory");
 function Hr$2(e3, t3) {
@@ -5825,8 +5759,7 @@ function Hr$2(e3, t3) {
       return { args: s2, argTypes: a4, parameters: p2, id: c4, tags: l4, name: u2, globals: y4 };
     },
     get play() {
-      var _a3;
-      return e3.play ?? ((_a3 = t3.input) == null ? void 0 : _a3.play) ?? (async () => {
+      return e3.play ?? t3.input?.play ?? (async () => {
       });
     },
     get run() {
@@ -5834,7 +5767,6 @@ function Hr$2(e3, t3) {
       });
     },
     extend(i3) {
-      var _a3, _b2, _c2, _d3;
       return Hr$2(
         {
           ...this.input,
@@ -5842,20 +5774,20 @@ function Hr$2(e3, t3) {
           args: { ...this.input.args, ...i3.args },
           argTypes: D$2(this.input.argTypes, i3.argTypes),
           afterEach: [
-            ...b$1(((_a3 = this.input) == null ? void 0 : _a3.afterEach) ?? []),
+            ...b$1(this.input?.afterEach ?? []),
             ...b$1(i3.afterEach ?? [])
           ],
           beforeEach: [
-            ...b$1(((_b2 = this.input) == null ? void 0 : _b2.beforeEach) ?? []),
+            ...b$1(this.input?.beforeEach ?? []),
             ...b$1(i3.beforeEach ?? [])
           ],
           decorators: [
-            ...b$1(((_c2 = this.input) == null ? void 0 : _c2.decorators) ?? []),
+            ...b$1(this.input?.decorators ?? []),
             ...b$1(i3.decorators ?? [])
           ],
           globals: { ...this.input.globals, ...i3.globals },
           loaders: [
-            ...b$1(((_d3 = this.input) == null ? void 0 : _d3.loaders) ?? []),
+            ...b$1(this.input?.loaders ?? []),
             ...b$1(i3.loaders ?? [])
           ],
           parameters: D$2(this.input.parameters, i3.parameters),
@@ -6414,12 +6346,12 @@ function debounce$1(func, debounceMs, { signal, edges } = {}) {
   }, flush = () => {
     cancelTimer(), invoke();
   }, debounced = function(...args) {
-    if (signal == null ? void 0 : signal.aborted) return;
+    if (signal?.aborted) return;
     pendingThis = this, pendingArgs = args;
     let isFirstCall = timeoutId == null;
     schedule(), leading && isFirstCall && invoke();
   };
-  return debounced.schedule = schedule, debounced.cancel = cancel, debounced.flush = flush, signal == null ? void 0 : signal.addEventListener("abort", cancel, { once: true }), debounced;
+  return debounced.schedule = schedule, debounced.cancel = cancel, debounced.flush = flush, signal?.addEventListener("abort", cancel, { once: true }), debounced;
 }
 function debounce2(func, debounceMs = 0, options = {}) {
   typeof options != "object" && (options = {});
@@ -6473,7 +6405,7 @@ function cloneDeepWith(obj, cloneValue) {
   return cloneDeepWithImpl(obj, void 0, obj, /* @__PURE__ */ new Map(), cloneValue);
 }
 function cloneDeepWithImpl(valueToClone, keyToClone, objectToClone, stack = /* @__PURE__ */ new Map(), cloneValue = void 0) {
-  let cloned = cloneValue == null ? void 0 : cloneValue(valueToClone, keyToClone, objectToClone, stack);
+  let cloned = cloneValue?.(valueToClone, keyToClone, objectToClone, stack);
   if (cloned != null) return cloned;
   if (isPrimitive(valueToClone)) return valueToClone;
   if (stack.has(valueToClone)) return stack.get(valueToClone);
@@ -6578,7 +6510,7 @@ function cloneDeepWith2(obj, cloneValue) {
       case numberTag:
       case stringTag:
       case booleanTag: {
-        let result = new obj.constructor(obj == null ? void 0 : obj.valueOf());
+        let result = new obj.constructor(obj?.valueOf());
         return copyProperties(result, obj), result;
       }
       case argumentsTag: {
@@ -6606,7 +6538,7 @@ function isBuffer(x4) {
   return typeof Buffer < "u" && Buffer.isBuffer(x4);
 }
 function isPrototype(value2) {
-  let constructor = value2 == null ? void 0 : value2.constructor, prototype = typeof constructor == "function" ? constructor.prototype : Object.prototype;
+  let constructor = value2?.constructor, prototype = typeof constructor == "function" ? constructor.prototype : Object.prototype;
   return value2 === prototype;
 }
 function isTypedArray2(x4) {
@@ -10842,7 +10774,7 @@ var Ec = H$1((Fb, xc) => {
   }
   o$1(z2, "merge");
 });
-var _n = H$1((_b2, Sc) => {
+var _n = H$1((_b, Sc) => {
   Sc.exports = T2;
   function T2(e3) {
     return e3.toLowerCase();
@@ -10967,9 +10899,9 @@ var Dc = H$1((e9, Fc) => {
   }
   o$1($2, "caseSensitiveTransform");
 });
-var wa = H$1((r9, _c2) => {
+var wa = H$1((r9, _c) => {
   var V2 = Dc();
-  _c2.exports = j2;
+  _c.exports = j2;
   function j2(e3, t3) {
     return V2(e3, t3.toLowerCase());
   }
@@ -13548,10 +13480,10 @@ var v1, w1, b1 = C$1(() => {
   v1 = me$1(g1()), w1 = v1.default;
 });
 var R1 = H$1((ly, y1) => {
-  y1.exports = _a3;
-  _a3.displayName = "json";
-  _a3.aliases = ["webmanifest"];
-  function _a3(e3) {
+  y1.exports = _a2;
+  _a2.displayName = "json";
+  _a2.aliases = ["webmanifest"];
+  function _a2(e3) {
     e3.languages.json = {
       property: {
         pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"(?=\s*:)/,
@@ -13577,7 +13509,7 @@ var R1 = H$1((ly, y1) => {
       }
     }, e3.languages.webmanifest = e3.languages.json;
   }
-  o$1(_a3, "json");
+  o$1(_a2, "json");
 });
 var x1, E1, S1 = C$1(() => {
   x1 = me$1(R1()), E1 = x1.default;
@@ -14246,9 +14178,8 @@ function zm(e3, t3) {
   return { ...e3, ...r3 };
 }
 function Tm(e3) {
-  var _a3, _b2;
-  let t3 = (_a3 = Object.getOwnPropertyDescriptor(e3.props, "ref")) == null ? void 0 : _a3.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning;
-  return r3 ? e3.ref : (t3 = (_b2 = Object.getOwnPropertyDescriptor(e3, "ref")) == null ? void 0 : _b2.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning, r3 ? e3.props.ref : e3.props.ref || e3.ref);
+  let t3 = Object.getOwnPropertyDescriptor(e3.props, "ref")?.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning;
+  return r3 ? e3.ref : (t3 = Object.getOwnPropertyDescriptor(e3, "ref")?.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning, r3 ? e3.props.ref : e3.props.ref || e3.ref);
 }
 var Qa, Ja, Lm, t5 = C$1(() => {
   Yn();
@@ -14307,7 +14238,7 @@ var km, gr, n5 = C$1(() => {
   }, {});
 });
 var an, ei = C$1(() => {
-  an = (globalThis == null ? void 0 : globalThis.document) ? reactExports.useLayoutEffect : () => {
+  an = globalThis?.document ? reactExports.useLayoutEffect : () => {
   };
 });
 function Om(e3, t3) {
@@ -14334,7 +14265,7 @@ function Bm(e3) {
     let u2 = n3.current, f2 = a4.current;
     if (f2 !== e3) {
       let m4 = i3.current, v3 = Xn(u2);
-      e3 ? s2("MOUNT") : v3 === "none" || (u2 == null ? void 0 : u2.display) === "none" ? s2("UNMOUNT") : s2(f2 && m4 !== v3 ? "ANIMATION_OUT" : "UNMOUNT"), a4.current = e3;
+      e3 ? s2("MOUNT") : v3 === "none" || u2?.display === "none" ? s2("UNMOUNT") : s2(f2 && m4 !== v3 ? "ANIMATION_OUT" : "UNMOUNT"), a4.current = e3;
     }
   }, [e3, s2]), an(() => {
     if (t3) {
@@ -14357,12 +14288,11 @@ function Bm(e3) {
   };
 }
 function Xn(e3) {
-  return (e3 == null ? void 0 : e3.animationName) || "none";
+  return e3?.animationName || "none";
 }
 function Nm(e3) {
-  var _a3, _b2;
-  let t3 = (_a3 = Object.getOwnPropertyDescriptor(e3.props, "ref")) == null ? void 0 : _a3.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning;
-  return r3 ? e3.ref : (t3 = (_b2 = Object.getOwnPropertyDescriptor(e3, "ref")) == null ? void 0 : _b2.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning, r3 ? e3.props.ref : e3.props.ref || e3.ref);
+  let t3 = Object.getOwnPropertyDescriptor(e3.props, "ref")?.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning;
+  return r3 ? e3.ref : (t3 = Object.getOwnPropertyDescriptor(e3, "ref")?.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning, r3 ? e3.props.ref : e3.props.ref || e3.ref);
 }
 var vr, l5 = C$1(() => {
   "use client";
@@ -14384,12 +14314,12 @@ function c5(e3, t3 = []) {
     let l4 = reactExports.createContext(c4), s2 = r3.length;
     r3 = [...r3, c4];
     function u2(d2) {
-      let { scope: m4, children: v3, ...y4 } = d2, p2 = (m4 == null ? void 0 : m4[e3][s2]) || l4, h4 = reactExports.useMemo(() => y4, Object.values(y4));
+      let { scope: m4, children: v3, ...y4 } = d2, p2 = m4?.[e3][s2] || l4, h4 = reactExports.useMemo(() => y4, Object.values(y4));
       return /* @__PURE__ */ jsxRuntimeExports.jsx(p2.Provider, { value: h4, children: v3 });
     }
     o$1(u2, "Provider");
     function f2(d2, m4) {
-      let v3 = (m4 == null ? void 0 : m4[e3][s2]) || l4, y4 = reactExports.useContext(v3);
+      let v3 = m4?.[e3][s2] || l4, y4 = reactExports.useContext(v3);
       if (y4) return y4;
       if (c4 !== void 0) return c4;
       throw new Error(`\`${d2}\` must be used within \`${i3}\``);
@@ -14400,7 +14330,7 @@ function c5(e3, t3 = []) {
   let a4 = /* @__PURE__ */ o$1(() => {
     let i3 = r3.map((c4) => reactExports.createContext(c4));
     return /* @__PURE__ */ o$1(function(l4) {
-      let s2 = (l4 == null ? void 0 : l4[e3]) || i3;
+      let s2 = l4?.[e3] || i3;
       return reactExports.useMemo(
         () => ({ [`__scope${e3}`]: { ...l4, [e3]: s2 } }),
         [l4, s2]
@@ -14435,10 +14365,7 @@ function xt2(e3) {
   let t3 = reactExports.useRef(e3);
   return reactExports.useEffect(() => {
     t3.current = e3;
-  }), reactExports.useMemo(() => (...r3) => {
-    var _a3;
-    return (_a3 = t3.current) == null ? void 0 : _a3.call(t3, ...r3);
-  }, []);
+  }), reactExports.useMemo(() => (...r3) => t3.current?.(...r3), []);
 }
 var u5 = C$1(() => {
   o$1(xt2, "useCallbackRef");
@@ -14459,8 +14386,8 @@ var m5 = C$1(() => {
 });
 function Et(e3, t3, { checkForDefaultPrevented: r3 = true } = {}) {
   return /* @__PURE__ */ o$1(function(a4) {
-    if (e3 == null ? void 0 : e3(a4), r3 === false || !a4.defaultPrevented)
-      return t3 == null ? void 0 : t3(a4);
+    if (e3?.(a4), r3 === false || !a4.defaultPrevented)
+      return t3?.(a4);
   }, "handleEvent");
 }
 var h5 = C$1(() => {
@@ -14911,7 +14838,7 @@ var ti, w5, mR, Wm, _e$1, b5, y5, R5, rt, x5, Um, qm, E5, ri, Gm, Ym, Xm, S5, C5
     return o$1(A3, "handleDragScroll"), reactExports.useEffect(() => {
       let M3 = /* @__PURE__ */ o$1((L2) => {
         let P2 = L2.target;
-        (y4 == null ? void 0 : y4.contains(P2)) && E3(L2, x4);
+        y4?.contains(P2) && E3(L2, x4);
       }, "handleWheel");
       return document.addEventListener("wheel", M3, { passive: false }), () => document.removeEventListener("wheel", M3, { passive: false });
     }, [b4, y4, x4, E3]), reactExports.useEffect(R4, [n3, R4]), br(y4, S3), br(v3.content, S3), /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -14997,12 +14924,10 @@ var ti, w5, mR, Wm, _e$1, b5, y5, R5, rt, x5, Um, qm, E5, ri, Gm, Ym, Xm, S5, C5
   Km = reactExports.forwardRef((e3, t3) => {
     let { __scopeScrollArea: r3, ...n3 } = e3, a4 = _e$1(ni, r3), [i3, c4] = reactExports.useState(0), [l4, s2] = reactExports.useState(0), u2 = !!(i3 && l4);
     return br(a4.scrollbarX, () => {
-      var _a3;
-      let f2 = ((_a3 = a4.scrollbarX) == null ? void 0 : _a3.offsetHeight) || 0;
+      let f2 = a4.scrollbarX?.offsetHeight || 0;
       a4.onCornerHeightChange(f2), s2(f2);
     }), br(a4.scrollbarY, () => {
-      var _a3;
-      let f2 = ((_a3 = a4.scrollbarY) == null ? void 0 : _a3.offsetWidth) || 0;
+      let f2 = a4.scrollbarY?.offsetWidth || 0;
       a4.onCornerWidthChange(f2), c4(f2);
     }), u2 ? /* @__PURE__ */ jsxRuntimeExports.jsx(
       gr.div,
@@ -15135,11 +15060,9 @@ Zr(ai, {
 const { logger: lh } = __STORYBOOK_MODULE_CLIENT_LOGGER__;
 const { global: ch } = __STORYBOOK_MODULE_GLOBAL__;
 function oi() {
-  var _a3;
-  return ((_a3 = no.navigator) == null ? void 0 : _a3.clipboard) ? async (e3) => {
-    var _a4;
+  return no.navigator?.clipboard ? async (e3) => {
     try {
-      await ((_a4 = no.top) == null ? void 0 : _a4.navigator.clipboard.writeText(e3));
+      await no.top?.navigator.clipboard.writeText(e3);
     } catch {
       await no.navigator.clipboard.writeText(e3);
     }
@@ -16309,11 +16232,11 @@ function M7(e3) {
         0,
         S3[z2],
         pe2[z2]
-      ), Ot2 = b4 ? S3[z2] / 2 - j2 - Se2 - ue2 - L2.mainAxis : O2 - Se2 - ue2 - L2.mainAxis, Yr2 = b4 ? -S3[z2] / 2 + j2 + Se2 + ve2 + L2.mainAxis : G2 + Se2 + ve2 + L2.mainAxis, Xo2 = t3.elements.arrow && et(t3.elements.arrow), pp = Xo2 ? x4 === "y" ? Xo2.clientTop || 0 : Xo2.clientLeft || 0 : 0, xl = (D2 = P2 == null ? void 0 : P2[x4]) != null ? D2 : 0, mp = k2 + Ot2 - xl - pp, hp = k2 + Yr2 - xl, El = tr(v3 ? Jt(V2, mp) : V2, k2, v3 ? Qe$1(F2, hp) : F2);
+      ), Ot2 = b4 ? S3[z2] / 2 - j2 - Se2 - ue2 - L2.mainAxis : O2 - Se2 - ue2 - L2.mainAxis, Yr2 = b4 ? -S3[z2] / 2 + j2 + Se2 + ve2 + L2.mainAxis : G2 + Se2 + ve2 + L2.mainAxis, Xo2 = t3.elements.arrow && et(t3.elements.arrow), pp = Xo2 ? x4 === "y" ? Xo2.clientTop || 0 : Xo2.clientLeft || 0 : 0, xl = (D2 = P2?.[x4]) != null ? D2 : 0, mp = k2 + Ot2 - xl - pp, hp = k2 + Yr2 - xl, El = tr(v3 ? Jt(V2, mp) : V2, k2, v3 ? Qe$1(F2, hp) : F2);
       R4[x4] = El, _2[x4] = El - k2;
     }
     if (l4) {
-      var Sl, gp = x4 === "x" ? te$1 : ne$1, vp = x4 === "x" ? le$1 : ae$1, Bt2 = R4[E3], zn2 = E3 === "y" ? "height" : "width", Cl = Bt2 + h4[gp], Ml = Bt2 - h4[vp], Zo2 = [te$1, ne$1].indexOf(g4) !== -1, Al = (Sl = P2 == null ? void 0 : P2[E3]) != null ? Sl : 0, Ll = Zo2 ? Cl : Bt2 - S3[zn2] - A3[zn2] - Al + L2.altAxis, Il = Zo2 ? Bt2 + S3[zn2] + A3[zn2] - Al - L2.altAxis : Ml, zl = v3 && Zo2 ? Uf(Ll, Bt2, Il) : tr(v3 ? Ll : Cl, Bt2, v3 ? Il : Ml);
+      var Sl, gp = x4 === "x" ? te$1 : ne$1, vp = x4 === "x" ? le$1 : ae$1, Bt2 = R4[E3], zn2 = E3 === "y" ? "height" : "width", Cl = Bt2 + h4[gp], Ml = Bt2 - h4[vp], Zo2 = [te$1, ne$1].indexOf(g4) !== -1, Al = (Sl = P2?.[E3]) != null ? Sl : 0, Ll = Zo2 ? Cl : Bt2 - S3[zn2] - A3[zn2] - Al + L2.altAxis, Il = Zo2 ? Bt2 + S3[zn2] + A3[zn2] - Al - L2.altAxis : Ml, zl = v3 && Zo2 ? Uf(Ll, Bt2, Il) : tr(v3 ? Ll : Cl, Bt2, v3 ? Il : Ml);
       R4[E3] = zl, _2[E3] = zl - Bt2;
     }
     t3.modifiersData[n3] = _2;
@@ -16871,7 +16794,7 @@ function Vd(e3, t3) {
     if (!i3.followCursor || u2 == null) return;
     function T2(z2) {
       var k2 = z2.clientX, V2 = z2.clientY;
-      Fd.getBoundingClientRect = $d(k2, V2), R4 == null ? void 0 : R4();
+      Fd.getBoundingClientRect = $d(k2, V2), R4?.();
     }
     return o$1(T2, "setMousePosition"), u2.addEventListener("mousemove", T2), function() {
       return u2.removeEventListener("mousemove", T2);
@@ -17032,15 +16955,9 @@ var $o, U7, q7, Yd, ol, Vo = C$1(() => {
   qd();
   ({ document: $o } = W7), U7 = xr$1.div`
   display: inline-block;
-  cursor: ${(e3) => {
-    var _a3;
-    return e3.trigger === "hover" || ((_a3 = e3.trigger) == null ? void 0 : _a3.includes("hover")) ? "default" : "pointer";
-  }};
+  cursor: ${(e3) => e3.trigger === "hover" || e3.trigger?.includes("hover") ? "default" : "pointer"};
 `, q7 = xr$1.g`
-  cursor: ${(e3) => {
-    var _a3;
-    return e3.trigger === "hover" || ((_a3 = e3.trigger) == null ? void 0 : _a3.includes("hover")) ? "default" : "pointer";
-  }};
+  cursor: ${(e3) => e3.trigger === "hover" || e3.trigger?.includes("hover") ? "default" : "pointer"};
 `, Yd = /* @__PURE__ */ o$1(({
     svg: e$1 = false,
     trigger: t3 = "click",
@@ -17113,7 +17030,7 @@ var $o, U7, q7, Yd, ol, Vo = C$1(() => {
     ), _2 = L2 ? /* @__PURE__ */ e.createElement(
       nl,
       {
-        placement: P2 == null ? void 0 : P2.placement,
+        placement: P2?.placement,
         ref: A3,
         hasChrome: i3,
         arrowProps: R4(),
@@ -18112,7 +18029,7 @@ var yh = /[\n\r]/g, Rh = xr$1.code(
     {
       bordered: true,
       copyable: true,
-      language: (n3 == null ? void 0 : n3[1]) ?? "text",
+      language: n3?.[1] ?? "text",
       format: false,
       ...r3
     },
@@ -18975,8 +18892,8 @@ Zr(Ro, {
 });
 function Er(e3, t3, { checkForDefaultPrevented: r3 = true } = {}) {
   return /* @__PURE__ */ o$1(function(a4) {
-    if (e3 == null ? void 0 : e3(a4), r3 === false || !a4.defaultPrevented)
-      return t3 == null ? void 0 : t3(a4);
+    if (e3?.(a4), r3 === false || !a4.defaultPrevented)
+      return t3?.(a4);
   }, "handleEvent");
 }
 o$1(Er, "composeEventHandlers");
@@ -19027,14 +18944,12 @@ function lu(e3, t3 = []) {
     let l4 = reactExports.createContext(c4), s2 = r3.length;
     r3 = [...r3, c4];
     let u2 = /* @__PURE__ */ o$1((d2) => {
-      var _a3;
-      let { scope: m4, children: v3, ...y4 } = d2, p2 = ((_a3 = m4 == null ? void 0 : m4[e3]) == null ? void 0 : _a3[s2]) || l4, h4 = reactExports.useMemo(() => y4, Object.values(y4));
+      let { scope: m4, children: v3, ...y4 } = d2, p2 = m4?.[e3]?.[s2] || l4, h4 = reactExports.useMemo(() => y4, Object.values(y4));
       return /* @__PURE__ */ jsxRuntimeExports.jsx(p2.Provider, { value: h4, children: v3 });
     }, "Provider");
     u2.displayName = i3 + "Provider";
     function f2(d2, m4) {
-      var _a3;
-      let v3 = ((_a3 = m4 == null ? void 0 : m4[e3]) == null ? void 0 : _a3[s2]) || l4, y4 = reactExports.useContext(v3);
+      let v3 = m4?.[e3]?.[s2] || l4, y4 = reactExports.useContext(v3);
       if (y4) return y4;
       if (c4 !== void 0) return c4;
       throw new Error(`\`${d2}\` must be used within \`${i3}\``);
@@ -19045,7 +18960,7 @@ function lu(e3, t3 = []) {
   let a4 = /* @__PURE__ */ o$1(() => {
     let i3 = r3.map((c4) => reactExports.createContext(c4));
     return /* @__PURE__ */ o$1(function(l4) {
-      let s2 = (l4 == null ? void 0 : l4[e3]) || i3;
+      let s2 = l4?.[e3] || i3;
       return reactExports.useMemo(
         () => ({ [`__scope${e3}`]: { ...l4, [e3]: s2 } }),
         [l4, s2]
@@ -19074,7 +18989,7 @@ function ag(...e3) {
   return r3.scopeName = t3.scopeName, r3;
 }
 o$1(ag, "composeContextScopes");
-var ct = (globalThis == null ? void 0 : globalThis.document) ? reactExports.useLayoutEffect : () => {
+var ct = globalThis?.document ? reactExports.useLayoutEffect : () => {
 };
 var ig = Ve$2[" useId ".trim().toString()] || (() => {
 }), lg = 0;
@@ -19108,10 +19023,9 @@ function su({
   }
   let u2 = reactExports.useCallback(
     (f2) => {
-      var _a3;
       if (l4) {
         let d2 = ug(f2) ? f2(e3) : f2;
-        d2 !== e3 && ((_a3 = c4.current) == null ? void 0 : _a3.call(c4, d2));
+        d2 !== e3 && c4.current?.(d2);
       } else
         i3(f2);
     },
@@ -19128,8 +19042,7 @@ function sg({
   return cg(() => {
     i3.current = t3;
   }, [t3]), reactExports.useEffect(() => {
-    var _a3;
-    a4.current !== r3 && ((_a3 = i3.current) == null ? void 0 : _a3.call(i3, r3), a4.current = r3);
+    a4.current !== r3 && (i3.current?.(r3), a4.current = r3);
   }, [r3, a4]), [r3, n3, i3];
 }
 o$1(sg, "useUncontrolledState");
@@ -19139,8 +19052,8 @@ function ug(e3) {
 o$1(ug, "isFunction");
 function lo(e3, t3, { checkForDefaultPrevented: r3 = true } = {}) {
   return /* @__PURE__ */ o$1(function(a4) {
-    if (e3 == null ? void 0 : e3(a4), r3 === false || !a4.defaultPrevented)
-      return t3 == null ? void 0 : t3(a4);
+    if (e3?.(a4), r3 === false || !a4.defaultPrevented)
+      return t3?.(a4);
   }, "handleEvent");
 }
 o$1(lo, "composeEventHandlers");
@@ -19188,9 +19101,8 @@ function mg(e3, t3) {
 }
 o$1(mg, "mergeProps");
 function hg(e3) {
-  var _a3, _b2;
-  let t3 = (_a3 = Object.getOwnPropertyDescriptor(e3.props, "ref")) == null ? void 0 : _a3.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning;
-  return r3 ? e3.ref : (t3 = (_b2 = Object.getOwnPropertyDescriptor(e3, "ref")) == null ? void 0 : _b2.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning, r3 ? e3.props.ref : e3.props.ref || e3.ref);
+  let t3 = Object.getOwnPropertyDescriptor(e3.props, "ref")?.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning;
+  return r3 ? e3.ref : (t3 = Object.getOwnPropertyDescriptor(e3, "ref")?.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning, r3 ? e3.props.ref : e3.props.ref || e3.ref);
 }
 o$1(hg, "getElementRef");
 var vg = [
@@ -19226,13 +19138,10 @@ function St(e3) {
   let t3 = reactExports.useRef(e3);
   return reactExports.useEffect(() => {
     t3.current = e3;
-  }), reactExports.useMemo(() => (...r3) => {
-    var _a3;
-    return (_a3 = t3.current) == null ? void 0 : _a3.call(t3, ...r3);
-  }, []);
+  }), reactExports.useMemo(() => (...r3) => t3.current?.(...r3), []);
 }
 o$1(St, "useCallbackRef");
-function gu(e3, t3 = globalThis == null ? void 0 : globalThis.document) {
+function gu(e3, t3 = globalThis?.document) {
   let r3 = St(e3);
   reactExports.useEffect(() => {
     let n3 = /* @__PURE__ */ o$1((a4) => {
@@ -19256,17 +19165,17 @@ var wg = "DismissableLayer", zi = "dismissableLayer.update", bg = "dismissableLa
       onInteractOutside: c4,
       onDismiss: l4,
       ...s2
-    } = e3, u2 = reactExports.useContext(yu), [f2, d2] = reactExports.useState(null), m4 = (f2 == null ? void 0 : f2.ownerDocument) ?? (globalThis == null ? void 0 : globalThis.document), [, v3] = reactExports.useState({}), y4 = Xe$1(t3, (S3) => d2(
+    } = e3, u2 = reactExports.useContext(yu), [f2, d2] = reactExports.useState(null), m4 = f2?.ownerDocument ?? globalThis?.document, [, v3] = reactExports.useState({}), y4 = Xe$1(t3, (S3) => d2(
       S3
     )), p2 = Array.from(u2.layers), [h4] = [...u2.layersWithOutsidePointerEventsDisabled].slice(-1), g4 = p2.indexOf(h4), w3 = f2 ? p2.indexOf(f2) : -1, b4 = u2.layersWithOutsidePointerEventsDisabled.size > 0, x4 = w3 >= g4, E3 = Eg((S3) => {
       let A3 = S3.target, M3 = [...u2.branches].some((L2) => L2.contains(A3));
-      !x4 || M3 || (a4 == null ? void 0 : a4(S3), c4 == null ? void 0 : c4(S3), S3.defaultPrevented || (l4 == null ? void 0 : l4()));
+      !x4 || M3 || (a4?.(S3), c4?.(S3), S3.defaultPrevented || l4?.());
     }, m4), R4 = Sg((S3) => {
       let A3 = S3.target;
-      [...u2.branches].some((L2) => L2.contains(A3)) || (i3 == null ? void 0 : i3(S3), c4 == null ? void 0 : c4(S3), S3.defaultPrevented || (l4 == null ? void 0 : l4()));
+      [...u2.branches].some((L2) => L2.contains(A3)) || (i3?.(S3), c4?.(S3), S3.defaultPrevented || l4?.());
     }, m4);
     return gu((S3) => {
-      w3 === u2.layers.size - 1 && (n3 == null ? void 0 : n3(S3), !S3.defaultPrevented && l4 && (S3.preventDefault(), l4()));
+      w3 === u2.layers.size - 1 && (n3?.(S3), !S3.defaultPrevented && l4 && (S3.preventDefault(), l4()));
     }, m4), reactExports.useEffect(() => {
       if (f2)
         return r3 && (u2.layersWithOutsidePointerEventsDisabled.size === 0 && (vu = m4.body.style.pointerEvents, m4.body.style.pointerEvents = "none"), u2.layersWithOutsidePointerEventsDisabled.add(f2)), u2.layers.add(f2), wu(), () => {
@@ -19308,7 +19217,7 @@ var Rg = "DismissableLayerBranch", xg = reactExports.forwardRef((e3, t3) => {
   }, [r3.branches]), /* @__PURE__ */ jsxRuntimeExports.jsx(Pe$1.div, { ...e3, ref: a4 });
 });
 xg.displayName = Rg;
-function Eg(e3, t3 = globalThis == null ? void 0 : globalThis.document) {
+function Eg(e3, t3 = globalThis?.document) {
   let r3 = St(e3), n3 = reactExports.useRef(false), a4 = reactExports.useRef(() => {
   });
   return reactExports.useEffect(() => {
@@ -19339,7 +19248,7 @@ function Eg(e3, t3 = globalThis == null ? void 0 : globalThis.document) {
   };
 }
 o$1(Eg, "usePointerDownOutside");
-function Sg(e3, t3 = globalThis == null ? void 0 : globalThis.document) {
+function Sg(e3, t3 = globalThis?.document) {
   let r3 = St(e3), n3 = reactExports.useRef(false);
   return reactExports.useEffect(() => {
     let a4 = /* @__PURE__ */ o$1((i3) => {
@@ -19490,11 +19399,10 @@ function Tg() {
   return {
     add(t3) {
       let r3 = e3[0];
-      t3 !== r3 && (r3 == null ? void 0 : r3.pause()), e3 = Cu(e3, t3), e3.unshift(t3);
+      t3 !== r3 && r3?.pause(), e3 = Cu(e3, t3), e3.unshift(t3);
     },
     remove(t3) {
-      var _a3;
-      e3 = Cu(e3, t3), (_a3 = e3[0]) == null ? void 0 : _a3.resume();
+      e3 = Cu(e3, t3), e3[0]?.resume();
     }
   };
 }
@@ -19509,10 +19417,9 @@ function Hg(e3) {
 }
 o$1(Hg, "removeLinks");
 var Og = "Portal", Oi = reactExports.forwardRef((e3, t3) => {
-  var _a3;
   let { container: r3, ...n3 } = e3, [a4, i3] = reactExports.useState(false);
   ct(() => i3(true), []);
-  let c4 = r3 || a4 && ((_a3 = globalThis == null ? void 0 : globalThis.document) == null ? void 0 : _a3.body);
+  let c4 = r3 || a4 && globalThis?.document?.body;
   return c4 ? Pg.createPortal(/* @__PURE__ */ jsxRuntimeExports.jsx(Pe$1.div, { ...n3, ref: t3 }), c4) : null;
 });
 Oi.displayName = Og;
@@ -19549,7 +19456,7 @@ function Ng(e3) {
     let u2 = n3.current, f2 = a4.current;
     if (f2 !== e3) {
       let m4 = i3.current, v3 = so(u2);
-      e3 ? s2("MOUNT") : v3 === "none" || (u2 == null ? void 0 : u2.display) === "none" ? s2("UNMOUNT") : s2(f2 && m4 !== v3 ? "ANIMATION_OUT" : "UNMOUNT"), a4.current = e3;
+      e3 ? s2("MOUNT") : v3 === "none" || u2?.display === "none" ? s2("UNMOUNT") : s2(f2 && m4 !== v3 ? "ANIMATION_OUT" : "UNMOUNT"), a4.current = e3;
     }
   }, [e3, s2]), ct(() => {
     if (t3) {
@@ -19578,13 +19485,12 @@ function Ng(e3) {
 }
 o$1(Ng, "usePresence");
 function so(e3) {
-  return (e3 == null ? void 0 : e3.animationName) || "none";
+  return e3?.animationName || "none";
 }
 o$1(so, "getAnimationName");
 function Fg(e3) {
-  var _a3, _b2;
-  let t3 = (_a3 = Object.getOwnPropertyDescriptor(e3.props, "ref")) == null ? void 0 : _a3.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning;
-  return r3 ? e3.ref : (t3 = (_b2 = Object.getOwnPropertyDescriptor(e3, "ref")) == null ? void 0 : _b2.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning, r3 ? e3.props.ref : e3.props.ref || e3.ref);
+  let t3 = Object.getOwnPropertyDescriptor(e3.props, "ref")?.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning;
+  return r3 ? e3.ref : (t3 = Object.getOwnPropertyDescriptor(e3, "ref")?.get, r3 = t3 && "isReactWarning" in t3 && t3.isReactWarning, r3 ? e3.props.ref : e3.props.ref || e3.ref);
 }
 o$1(Fg, "getElementRef");
 var Bi = 0;
@@ -20264,8 +20170,7 @@ var hv = reactExports.forwardRef(
         trapFocus: r3.open,
         disableOutsidePointerEvents: true,
         onCloseAutoFocus: Er(e3.onCloseAutoFocus, (i3) => {
-          var _a3;
-          i3.preventDefault(), (_a3 = r3.triggerRef.current) == null ? void 0 : _a3.focus();
+          i3.preventDefault(), r3.triggerRef.current?.focus();
         }),
         onPointerDownOutside: Er(e3.onPointerDownOutside, (i3) => {
           let c4 = i3.detail.originalEvent, l4 = c4.button === 0 && c4.ctrlKey === true;
@@ -20289,14 +20194,12 @@ var hv = reactExports.forwardRef(
         trapFocus: false,
         disableOutsidePointerEvents: false,
         onCloseAutoFocus: /* @__PURE__ */ o$1((i3) => {
-          var _a3, _b2;
-          (_a3 = e3.onCloseAutoFocus) == null ? void 0 : _a3.call(e3, i3), i3.defaultPrevented || (n3.current || ((_b2 = r3.triggerRef.current) == null ? void 0 : _b2.focus()), i3.preventDefault()), n3.current = false, a4.current = false;
+          e3.onCloseAutoFocus?.(i3), i3.defaultPrevented || (n3.current || r3.triggerRef.current?.focus(), i3.preventDefault()), n3.current = false, a4.current = false;
         }, "onCloseAutoFocus"),
         onInteractOutside: /* @__PURE__ */ o$1((i3) => {
-          var _a3, _b2;
-          (_a3 = e3.onInteractOutside) == null ? void 0 : _a3.call(e3, i3), i3.defaultPrevented || (n3.current = true, i3.detail.originalEvent.type === "pointerdown" && (a4.current = true));
+          e3.onInteractOutside?.(i3), i3.defaultPrevented || (n3.current = true, i3.detail.originalEvent.type === "pointerdown" && (a4.current = true));
           let c4 = i3.target;
-          ((_b2 = r3.triggerRef.current) == null ? void 0 : _b2.contains(c4)) && i3.preventDefault(), i3.detail.originalEvent.type === "focusin" && a4.current && i3.preventDefault();
+          r3.triggerRef.current?.contains(c4) && i3.preventDefault(), i3.detail.originalEvent.type === "focusin" && a4.current && i3.preventDefault();
         }, "onInteractOutside")
       }
     );
@@ -20383,8 +20286,7 @@ For more information, see https://radix-ui.com/primitives/docs/components/${t3.d
 }, "TitleWarning"), bv = "DialogDescriptionWarning", yv = /* @__PURE__ */ o$1(({ contentRef: e3, descriptionId: t3 }) => {
   let n3 = `Warning: Missing \`Description\` or \`aria-describedby={undefined}\` for {${lf(bv).contentName}}.`;
   return reactExports.useEffect(() => {
-    var _a3;
-    let a4 = (_a3 = e3.current) == null ? void 0 : _a3.getAttribute("aria-describedby");
+    let a4 = e3.current?.getAttribute("aria-describedby");
     t3 && a4 && (document.getElementById(t3) || console.warn(n3));
   }, [n3, e3, t3]), null;
 }, "DescriptionWarning"), s0 = Ji, Rv = Qi, u0 = t0, f0 = r0, d0 = n0, p0 = a0, m0 = i0, h0 = l0;
@@ -20869,12 +20771,12 @@ ${t3}`);
     null,
     a4
   ), /* @__PURE__ */ e.createElement("br", null), c4.map(
-    (l4, s2) => (l4 == null ? void 0 : l4.name) ? /* @__PURE__ */ e.createElement(reactExports.Fragment, { key: s2 }, "  ", "at ", /* @__PURE__ */ e.createElement(f3, null, l4.name), " (", /* @__PURE__ */ e.createElement(wf, null, l4.location), ")", /* @__PURE__ */ e.createElement("br", null)) : /* @__PURE__ */ e.createElement(
+    (l4, s2) => l4?.name ? /* @__PURE__ */ e.createElement(reactExports.Fragment, { key: s2 }, "  ", "at ", /* @__PURE__ */ e.createElement(f3, null, l4.name), " (", /* @__PURE__ */ e.createElement(wf, null, l4.location), ")", /* @__PURE__ */ e.createElement("br", null)) : /* @__PURE__ */ e.createElement(
       reactExports.Fragment,
       { key: s2 },
       "  ",
       "at ",
-      /* @__PURE__ */ e.createElement(wf, null, l4 == null ? void 0 : l4.location),
+      /* @__PURE__ */ e.createElement(wf, null, l4?.location),
       /* @__PURE__ */ e.createElement("br", null)
     )
   ));
@@ -21068,11 +20970,10 @@ var L3 = xr$1.input({
   }
 }), Ef = /* @__PURE__ */ o$1((e$1) => /* @__PURE__ */ e.createElement(L3, { ...e$1, type: "radio" }), "Radio");
 function Sf() {
-  var _a3, _b2, _c2;
   try {
     return (
       // @ts-expect-error This property exists in Vitest browser mode
-      !!globalThis.__vitest_browser__ || !!((_c2 = (_b2 = (_a3 = globalThis.window) == null ? void 0 : _a3.navigator) == null ? void 0 : _b2.userAgent) == null ? void 0 : _c2.match(/StorybookTestRunner/))
+      !!globalThis.__vitest_browser__ || !!globalThis.window?.navigator?.userAgent?.match(/StorybookTestRunner/)
     );
   } catch {
     return false;
@@ -21568,7 +21469,7 @@ var v6 = xr$1.div(
   }
 })), b6 = /* @__PURE__ */ o$1(({ id: e$1, onClick: t3, ...r3 }) => {
   let { active: n3, disabled: a4, title: i3, href: c4 } = r3, l4 = reactExports.useCallback(
-    (s2) => t3 == null ? void 0 : t3(s2, { id: e$1, active: n3, disabled: a4, title: i3, href: c4 }),
+    (s2) => t3?.(s2, { id: e$1, active: n3, disabled: a4, title: i3, href: c4 }),
     [t3, e$1, n3, a4, i3, c4]
   );
   return /* @__PURE__ */ e.createElement(il, { id: `list-item-${e$1}`, ...r3, ...t3 && { onClick: l4 } });
@@ -21852,7 +21753,7 @@ function op(e$1) {
     if (!t3.current || !r3.current)
       return;
     let { x: m4, width: v3 } = t3.current.getBoundingClientRect(), { width: y4 } = r3.current.getBoundingClientRect(), p2 = l4.length ? m4 + v3 - y4 : m4 + v3, h4 = [], g4 = 0, w3 = e$1.filter((b4) => {
-      let { id: x4 } = b4, E3 = n3.current.get(x4), { width: R4 = 0 } = (E3 == null ? void 0 : E3.getBoundingClientRect()) || {}, S3 = m4 + g4 + R4 > p2;
+      let { id: x4 } = b4, E3 = n3.current.get(x4), { width: R4 = 0 } = E3?.getBoundingClientRect() || {}, S3 = m4 + g4 + R4 > p2;
       return (!S3 || !E3) && h4.push(b4), g4 += R4, S3;
     });
     (h4.length !== i3.length || u2.current !== e$1) && (c4(h4), s2(w3), u2.current = e$1);
@@ -23400,7 +23301,7 @@ var PositionedToolbar = xr$1(Toolbar)({ position: "absolute", top: 0, left: 0, r
     createCopyToClipboardFunction();
   }, []), onCopyCapture = (e23) => {
     let selection = globalWindow4.getSelection();
-    selection && selection.type === "Range" || (e23.preventDefault(), additionalActionItems.filter((item) => item.title === "Copied").length === 0 && copyToClipboard((source == null ? void 0 : source.props.code) ?? "").then(() => {
+    selection && selection.type === "Range" || (e23.preventDefault(), additionalActionItems.filter((item) => item.title === "Copied").length === 0 && copyToClipboard(source?.props.code ?? "").then(() => {
       setAdditionalActionItems([...additionalActionItems, { title: "Copied", onClick: () => {
       } }]), globalWindow4.setTimeout(() => setAdditionalActionItems(additionalActionItems.filter((item) => item.title !== "Copied")), 1500);
     }));
@@ -23476,9 +23377,8 @@ function build_html_default(options) {
     return obj && obj.className !== className && (obj.className = className), obj;
   }
   function updateToc(headingsArray, event) {
-    var _a3, _b2;
     options.positionFixedSelector && updateFixedSidebarClass();
-    let headings = headingsArray, clickedHref = ((_a3 = event == null ? void 0 : event.target) == null ? void 0 : _a3.getAttribute) ? (_b2 = event == null ? void 0 : event.target) == null ? void 0 : _b2.getAttribute("href") : null, isBottomMode = clickedHref && clickedHref.charAt(0) === "#" ? getIsHeaderBottomMode(clickedHref.replace("#", "")) : false, shouldUpdate = currentlyHighlighting || isBottomMode;
+    let headings = headingsArray, clickedHref = event?.target?.getAttribute ? event?.target?.getAttribute("href") : null, isBottomMode = clickedHref && clickedHref.charAt(0) === "#" ? getIsHeaderBottomMode(clickedHref.replace("#", "")) : false, shouldUpdate = currentlyHighlighting || isBottomMode;
     if (event && eventCount < 5 && eventCount++, shouldUpdate && tocElement && headings.length > 0) {
       let topHeader = getTopHeader(headings), oldActiveTocLink = tocElement.querySelector(`.${options.activeLinkClass}`), topHeaderId = topHeader.id.replace(/([ #;&,.+*~':"!^$[\]()=>|/\\@])/g, "\\$1"), hashId = window.location.hash.replace("#", ""), activeId = topHeaderId, isPageBottomMode = getIsPageBottomMode();
       clickedHref && isBottomMode ? activeId = clickedHref.replace("#", "") : hashId && hashId !== topHeaderId && isPageBottomMode && (getIsHeaderBottomMode(topHeaderId) || eventCount <= 2) && (activeId = hashId);
@@ -23492,12 +23392,12 @@ function build_html_default(options) {
       forEach.call(tocLis, (tocLi) => {
         updateClassname(tocLi, tocLi.className.replace(SPACE_CHAR + options.activeListItemClass, ""));
       }), activeTocLink && activeTocLink.className.indexOf(options.activeLinkClass) === -1 && (activeTocLink.className += SPACE_CHAR + options.activeLinkClass);
-      let li2 = activeTocLink == null ? void 0 : activeTocLink.parentNode;
+      let li2 = activeTocLink?.parentNode;
       li2 && li2.className.indexOf(options.activeListItemClass) === -1 && (li2.className += SPACE_CHAR + options.activeListItemClass);
       let tocLists = tocElement.querySelectorAll(`.${options.listClass}.${options.collapsibleClass}`);
       forEach.call(tocLists, (list) => {
         list.className.indexOf(options.isCollapsedClass) === -1 && (list.className += SPACE_CHAR + options.isCollapsedClass);
-      }), (activeTocLink == null ? void 0 : activeTocLink.nextSibling) && activeTocLink.nextSibling.className.indexOf(options.isCollapsedClass) !== -1 && updateClassname(activeTocLink.nextSibling, activeTocLink.nextSibling.className.replace(SPACE_CHAR + options.isCollapsedClass, "")), removeCollapsedFromParents(activeTocLink == null ? void 0 : activeTocLink.parentNode.parentNode);
+      }), activeTocLink?.nextSibling && activeTocLink.nextSibling.className.indexOf(options.isCollapsedClass) !== -1 && updateClassname(activeTocLink.nextSibling, activeTocLink.nextSibling.className.replace(SPACE_CHAR + options.isCollapsedClass, "")), removeCollapsedFromParents(activeTocLink?.parentNode.parentNode);
     }
   }
   function removeCollapsedFromParents(element) {
@@ -23515,7 +23415,7 @@ function build_html_default(options) {
   }
   function getIsHeaderBottomMode(headerId) {
     let scrollEl = getScrollEl();
-    return (document == null ? void 0 : document.getElementById(headerId)).offsetTop > scrollEl.offsetHeight - scrollEl.clientHeight * 1.4 - options.bottomModeThreshold;
+    return (document?.getElementById(headerId)).offsetTop > scrollEl.offsetHeight - scrollEl.clientHeight * 1.4 - options.bottomModeThreshold;
   }
   function getIsPageBottomMode() {
     let scrollEl = getScrollEl(), isScrollable = scrollEl.scrollHeight > scrollEl.clientHeight, isBottomMode = getScrollTop() + scrollEl.clientHeight > scrollEl.offsetHeight - options.bottomModeThreshold;
@@ -23526,8 +23426,7 @@ function build_html_default(options) {
     return options.scrollContainer && document.querySelector(options.scrollContainer) ? el2 = document.querySelector(options.scrollContainer) : el2 = document.documentElement || body, el2;
   }
   function getScrollTop() {
-    var _a3;
-    return ((_a3 = getScrollEl()) == null ? void 0 : _a3.scrollTop) || 0;
+    return getScrollEl()?.scrollTop || 0;
   }
   function getTopHeader(headings, scrollTop = getScrollTop()) {
     let topHeader;
@@ -23659,10 +23558,9 @@ function init(customOptions) {
   else return this;
   let isClick = false, scrollHandlerTimeout = _options.scrollHandlerTimeout || _options.throttleTimeout;
   _scrollListener = ((fn2, delay) => getScrollHandler(fn2, delay, _options.scrollHandlerType))((e23) => {
-    var _a3, _b2, _c2;
     _buildHtml.updateToc(_headingsArray, e23), !_options.disableTocScrollSync && !isClick && updateTocScroll(_options), _options.enableUrlHashUpdateOnScroll && hasInitialized && _buildHtml.getCurrentlyHighlighting() && _buildHtml.updateUrlHashForHeader(_headingsArray);
-    let isTop = ((_b2 = (_a3 = e23 == null ? void 0 : e23.target) == null ? void 0 : _a3.scrollingElement) == null ? void 0 : _b2.scrollTop) === 0;
-    (e23 && (e23.eventPhase === 0 || e23.currentTarget === null) || isTop) && (_buildHtml.updateToc(_headingsArray), (_c2 = _options.scrollEndCallback) == null ? void 0 : _c2.call(_options, e23));
+    let isTop = e23?.target?.scrollingElement?.scrollTop === 0;
+    (e23 && (e23.eventPhase === 0 || e23.currentTarget === null) || isTop) && (_buildHtml.updateToc(_headingsArray), _options.scrollEndCallback?.(e23));
   }, scrollHandlerTimeout), hasInitialized || (_scrollListener(), hasInitialized = true), window.onhashchange = window.onscrollend = (e23) => {
     _scrollListener(e23);
   }, _options.scrollContainer && document.querySelector(_options.scrollContainer) ? (document.querySelector(_options.scrollContainer).addEventListener("scroll", _scrollListener, false), document.querySelector(_options.scrollContainer).addEventListener("resize", _scrollListener, false)) : (document.addEventListener("scroll", _scrollListener, false), document.addEventListener("resize", _scrollListener, false));
@@ -23927,7 +23825,7 @@ function Xe(n22 = "", i22 = {}) {
     return i22.createElement((function(e3, t22) {
       let n4 = Ve(t22, e3);
       return n4 ? typeof n4 == "function" || typeof n4 == "object" && "render" in n4 ? n4 : Ve(t22, `${e3}.component`, e3) : e3;
-    })(e23, i22.overrides), t({}, n3, l22, { className: Qe(n3 == null ? void 0 : n3.className, l22.className) || void 0 }), ...r22);
+    })(e23, i22.overrides), t({}, n3, l22, { className: Qe(n3?.className, l22.className) || void 0 }), ...r22);
   }
   function Z2(e23) {
     e23 = e23.replace(w, "");
@@ -24090,8 +23988,7 @@ var index_modern_default = (t22) => {
   return reactExports.cloneElement(Xe(r22, i22), l22);
 };
 var Label2 = xr$1.label(({ theme }) => ({ lineHeight: "18px", alignItems: "center", marginBottom: 8, display: "inline-block", position: "relative", whiteSpace: "nowrap", background: theme.boolean.background, borderRadius: "3em", padding: 1, '&[aria-disabled="true"]': { opacity: 0.5, input: { cursor: "not-allowed" } }, input: { appearance: "none", width: "100%", height: "100%", position: "absolute", left: 0, top: 0, margin: 0, padding: 0, border: "none", background: "transparent", cursor: "pointer", borderRadius: "3em", "&:focus": { outline: "none", boxShadow: `${theme.color.secondary} 0 0 0 1px inset !important` }, "@media (forced-colors: active)": { "&:focus": { outline: "1px solid highlight" } } }, span: { textAlign: "center", fontSize: theme.typography.size.s1, fontWeight: theme.typography.weight.bold, lineHeight: "1", cursor: "pointer", display: "inline-block", padding: "7px 15px", transition: "all 100ms ease-out", userSelect: "none", borderRadius: "3em", color: curriedTransparentize$1(0.5, theme.color.defaultText), background: "transparent", "&:hover": { boxShadow: `${curriedOpacify$1(0.3, theme.appBorderColor)} 0 0 0 1px inset` }, "&:active": { boxShadow: `${curriedOpacify$1(0.05, theme.appBorderColor)} 0 0 0 2px inset`, color: curriedOpacify$1(1, theme.appBorderColor) }, "&:first-of-type": { paddingRight: 8 }, "&:last-of-type": { paddingLeft: 8 } }, "input:checked ~ span:last-of-type, input:not(:checked) ~ span:first-of-type": { background: theme.boolean.selectedBackground, boxShadow: theme.base === "light" ? `${curriedOpacify$1(0.1, theme.appBorderColor)} 0 0 2px` : `${theme.appBorderColor} 0 0 0 1px`, color: theme.color.defaultText, padding: "7px 15px", "@media (forced-colors: active)": { textDecoration: "underline" } } })), parse = (value2) => value2 === "true", BooleanControl = ({ name, value: value2, onChange, onBlur, onFocus, argType }) => {
-  var _a3;
-  let onSetFalse = reactExports.useCallback(() => onChange(false), [onChange]), readonly = !!((_a3 = argType == null ? void 0 : argType.table) == null ? void 0 : _a3.readonly);
+  let onSetFalse = reactExports.useCallback(() => onChange(false), [onChange]), readonly = !!argType?.table?.readonly;
   if (value2 === void 0) return e.createElement(Ir, { variant: "outline", size: "medium", id: getControlSetterButtonId(name), onClick: onSetFalse, disabled: readonly }, "Set boolean");
   let controlId = getControlId(name), parsedValue = typeof value2 == "string" ? parse(value2) : value2;
   return e.createElement(Label2, { "aria-disabled": readonly, htmlFor: controlId, "aria-label": name }, e.createElement("input", { id: controlId, type: "checkbox", onChange: (e23) => onChange(e23.target.checked), checked: parsedValue, role: "switch", disabled: readonly, name, onBlur, onFocus }), e.createElement("span", { "aria-hidden": "true" }, "False"), e.createElement("span", { "aria-hidden": "true" }, "True"));
@@ -24109,8 +24006,7 @@ var parseDate = (value2) => {
   let date = new Date(value2), hours = `0${date.getHours()}`.slice(-2), minutes = `0${date.getMinutes()}`.slice(-2);
   return `${hours}:${minutes}`;
 }, FormInput = xr$1(Z3.Input)(({ readOnly }) => ({ opacity: readOnly ? 0.5 : 1 })), FlexSpaced = xr$1.div(({ theme }) => ({ flex: 1, display: "flex", input: { marginLeft: 10, flex: 1, height: 32, "&::-webkit-calendar-picker-indicator": { opacity: 0.5, height: 12, filter: theme.base === "light" ? void 0 : "invert(1)" } }, "input:first-of-type": { marginLeft: 0, flexGrow: 4 }, "input:last-of-type": { flexGrow: 3 } })), DateControl = ({ name, value: value2, onChange, onFocus, onBlur, argType }) => {
-  var _a3;
-  let [valid, setValid] = reactExports.useState(true), dateRef = reactExports.useRef(), timeRef = reactExports.useRef(), readonly = !!((_a3 = argType == null ? void 0 : argType.table) == null ? void 0 : _a3.readonly);
+  let [valid, setValid] = reactExports.useState(true), dateRef = reactExports.useRef(), timeRef = reactExports.useRef(), readonly = !!argType?.table?.readonly;
   reactExports.useEffect(() => {
     valid !== false && (dateRef && dateRef.current && (dateRef.current.value = value2 ? formatDate(value2) : ""), timeRef && timeRef.current && (timeRef.current.value = value2 ? formatTime(value2) : ""));
   }, [value2]);
@@ -24133,8 +24029,7 @@ var Wrapper4 = xr$1.label({ display: "flex" }), parse2 = (value2) => {
   let result = parseFloat(value2);
   return Number.isNaN(result) ? void 0 : result;
 }, FormInput2 = xr$1(Z3.Input)(({ readOnly }) => ({ opacity: readOnly ? 0.5 : 1 })), NumberControl = ({ name, value: value2, onChange, min, max, step, onBlur, onFocus, argType }) => {
-  var _a3;
-  let [inputValue, setInputValue] = reactExports.useState(typeof value2 == "number" ? value2 : ""), [forceVisible, setForceVisible] = reactExports.useState(false), [parseError, setParseError] = reactExports.useState(null), readonly = !!((_a3 = argType == null ? void 0 : argType.table) == null ? void 0 : _a3.readonly), handleChange = reactExports.useCallback((event) => {
+  let [inputValue, setInputValue] = reactExports.useState(typeof value2 == "number" ? value2 : ""), [forceVisible, setForceVisible] = reactExports.useState(false), [parseError, setParseError] = reactExports.useState(null), readonly = !!argType?.table?.readonly, handleChange = reactExports.useCallback((event) => {
     setInputValue(event.target.value);
     let result = parseFloat(event.target.value);
     Number.isNaN(result) ? setParseError(new Error(`'${event.target.value}' is not a number`)) : (onChange(result), setParseError(null));
@@ -24155,9 +24050,8 @@ var selectedKey = (value2, options) => {
 var Wrapper5 = xr$1.div(({ isInline }) => isInline ? { display: "flex", flexWrap: "wrap", alignItems: "flex-start", label: { display: "inline-flex", marginRight: 15 } } : { label: { display: "flex" } }, (props) => {
   if (props["aria-readonly"] === "true") return { input: { cursor: "not-allowed" } };
 }), Text = xr$1.span({ "[aria-readonly=true] &": { opacity: 0.5 } }), Label3 = xr$1.label({ lineHeight: "20px", alignItems: "center", marginBottom: 8, "&:last-child": { marginBottom: 0 }, input: { margin: 0, marginRight: 6 } }), CheckboxControl = ({ name, options, value: value2, onChange, isInline, argType }) => {
-  var _a3;
   if (!options) return logger.warn(`Checkbox with no options: ${name}`), e.createElement(e.Fragment, null, "-");
-  let initial = selectedKeys(value2 || [], options), [selected, setSelected] = reactExports.useState(initial), readonly = !!((_a3 = argType == null ? void 0 : argType.table) == null ? void 0 : _a3.readonly), handleChange = (e23) => {
+  let initial = selectedKeys(value2 || [], options), [selected, setSelected] = reactExports.useState(initial), readonly = !!argType?.table?.readonly, handleChange = (e23) => {
     let option = e23.target.value, updated = [...selected];
     updated.includes(option) ? updated.splice(updated.indexOf(option), 1) : updated.push(option), onChange(selectedValues(updated, options)), setSelected(updated);
   };
@@ -24167,38 +24061,35 @@ var Wrapper5 = xr$1.div(({ isInline }) => isInline ? { display: "flex", flexWrap
   let controlId = getControlId(name);
   return e.createElement(Wrapper5, { "aria-readonly": readonly, isInline }, Object.keys(options).map((key, index2) => {
     let id2 = `${controlId}-${index2}`;
-    return e.createElement(Label3, { key: id2, htmlFor: id2 }, e.createElement("input", { type: "checkbox", disabled: readonly, id: id2, name: id2, value: key, onChange: handleChange, checked: selected == null ? void 0 : selected.includes(key) }), e.createElement(Text, null, key));
+    return e.createElement(Label3, { key: id2, htmlFor: id2 }, e.createElement("input", { type: "checkbox", disabled: readonly, id: id2, name: id2, value: key, onChange: handleChange, checked: selected?.includes(key) }), e.createElement(Text, null, key));
   }));
 };
 var Wrapper6 = xr$1.div(({ isInline }) => isInline ? { display: "flex", flexWrap: "wrap", alignItems: "flex-start", label: { display: "inline-flex", marginRight: 15 } } : { label: { display: "flex" } }, (props) => {
   if (props["aria-readonly"] === "true") return { input: { cursor: "not-allowed" } };
 }), Text2 = xr$1.span({ "[aria-readonly=true] &": { opacity: 0.5 } }), Label4 = xr$1.label({ lineHeight: "20px", alignItems: "center", marginBottom: 8, "&:last-child": { marginBottom: 0 }, input: { margin: 0, marginRight: 6 } }), RadioControl = ({ name, options, value: value2, onChange, isInline, argType }) => {
-  var _a3;
   if (!options) return logger.warn(`Radio with no options: ${name}`), e.createElement(e.Fragment, null, "-");
-  let selection = selectedKey(value2, options), controlId = getControlId(name), readonly = !!((_a3 = argType == null ? void 0 : argType.table) == null ? void 0 : _a3.readonly);
+  let selection = selectedKey(value2, options), controlId = getControlId(name), readonly = !!argType?.table?.readonly;
   return e.createElement(Wrapper6, { "aria-readonly": readonly, isInline }, Object.keys(options).map((key, index2) => {
     let id2 = `${controlId}-${index2}`;
     return e.createElement(Label4, { key: id2, htmlFor: id2 }, e.createElement("input", { type: "radio", id: id2, name: controlId, disabled: readonly, value: key, onChange: (e23) => onChange(options[e23.currentTarget.value]), checked: key === selection }), e.createElement(Text2, null, key));
   }));
 };
 var styleResets = { appearance: "none", border: "0 none", boxSizing: "inherit", display: " block", margin: " 0", background: "transparent", padding: 0, fontSize: "inherit", position: "relative" }, OptionsSelect = xr$1.select(styleResets, ({ theme }) => ({ boxSizing: "border-box", position: "relative", padding: "6px 10px", width: "100%", color: theme.input.color || "inherit", background: theme.input.background, borderRadius: theme.input.borderRadius, boxShadow: `${theme.input.border} 0 0 0 1px inset`, fontSize: theme.typography.size.s2 - 1, lineHeight: "20px", "&:focus": { boxShadow: `${theme.color.secondary} 0 0 0 1px inset`, outline: "none" }, "&[disabled]": { cursor: "not-allowed", opacity: 0.5 }, "::placeholder": { color: theme.textMutedColor }, "&[multiple]": { overflow: "auto", padding: 0, option: { display: "block", padding: "6px 10px", marginLeft: 1, marginRight: 1 } } })), SelectWrapper = xr$1.span(({ theme }) => ({ display: "inline-block", lineHeight: "normal", overflow: "hidden", position: "relative", verticalAlign: "top", width: "100%", svg: { position: "absolute", zIndex: 1, pointerEvents: "none", height: "12px", marginTop: "-6px", right: "12px", top: "50%", fill: theme.textMutedColor, path: { fill: theme.textMutedColor } } })), NO_SELECTION = "Choose option...", SingleSelect = ({ name, value: value2, options, onChange, argType }) => {
-  var _a3;
   let handleChange = (e23) => {
     onChange(options[e23.currentTarget.value]);
-  }, selection = selectedKey(value2, options) || NO_SELECTION, controlId = getControlId(name), readonly = !!((_a3 = argType == null ? void 0 : argType.table) == null ? void 0 : _a3.readonly);
+  }, selection = selectedKey(value2, options) || NO_SELECTION, controlId = getControlId(name), readonly = !!argType?.table?.readonly;
   return e.createElement(SelectWrapper, null, e.createElement(ChevronSmallDownIcon, null), e.createElement(OptionsSelect, { disabled: readonly, id: controlId, value: selection, onChange: handleChange }, e.createElement("option", { key: "no-selection", disabled: true }, NO_SELECTION), Object.keys(options).map((key) => e.createElement("option", { key, value: key }, key))));
 }, MultiSelect = ({ name, value: value2, options, onChange, argType }) => {
-  var _a3;
   let handleChange = (e23) => {
     let selection2 = Array.from(e23.currentTarget.options).filter((option) => option.selected).map((option) => option.value);
     onChange(selectedValues(selection2, options));
-  }, selection = selectedKeys(value2, options), controlId = getControlId(name), readonly = !!((_a3 = argType == null ? void 0 : argType.table) == null ? void 0 : _a3.readonly);
+  }, selection = selectedKeys(value2, options), controlId = getControlId(name), readonly = !!argType?.table?.readonly;
   return e.createElement(SelectWrapper, null, e.createElement(OptionsSelect, { disabled: readonly, id: controlId, multiple: true, value: selection, onChange: handleChange }, Object.keys(options).map((key) => e.createElement("option", { key, value: key }, key))));
 }, SelectControl = (props) => {
   let { name, options } = props;
   return options ? props.isMulti ? e.createElement(MultiSelect, { ...props }) : e.createElement(SingleSelect, { ...props }) : (logger.warn(`Select with no options: ${name}`), e.createElement(e.Fragment, null, "-"));
 };
-var normalizeOptions = (options, labels) => Array.isArray(options) ? options.reduce((acc, item) => (acc[(labels == null ? void 0 : labels[item]) || String(item)] = item, acc), {}) : options, Controls = { check: CheckboxControl, "inline-check": CheckboxControl, radio: RadioControl, "inline-radio": RadioControl, select: SelectControl, "multi-select": SelectControl }, OptionsControl = (props) => {
+var normalizeOptions = (options, labels) => Array.isArray(options) ? options.reduce((acc, item) => (acc[labels?.[item] || String(item)] = item, acc), {}) : options, Controls = { check: CheckboxControl, "inline-check": CheckboxControl, radio: RadioControl, "inline-radio": RadioControl, select: SelectControl, "multi-select": SelectControl }, OptionsControl = (props) => {
   let { type = "select", labels, argType } = props, normalized = { ...props, argType, options: argType ? normalizeOptions(argType.options, labels) : {}, isInline: type.includes("inline"), isMulti: type.includes("multi") }, Control = Controls[type];
   if (Control) return e.createElement(Control, { ...normalized });
   throw new Error(`Unknown options type: ${type}`);
@@ -24534,8 +24425,7 @@ var JsonTree = class extends reactExports.Component {
     return props.data !== state.data || props.rootName !== state.rootName ? { data: props.data, rootName: props.rootName } : null;
   }
   onUpdate(key, data) {
-    var _a3, _b2;
-    this.setState({ data }), (_b2 = (_a3 = this.props).onFullyUpdate) == null ? void 0 : _b2.call(_a3, data);
+    this.setState({ data }), this.props.onFullyUpdate?.(data);
   }
   removeRoot() {
     this.onUpdate(null, null);
@@ -24569,8 +24459,7 @@ var { window: globalWindow2 } = globalThis, Wrapper7 = xr$1.div(({ theme }) => (
 }, selectValue = (event) => {
   event.currentTarget.select();
 }, getCustomStyleFunction = (theme) => () => ({ name: { color: theme.color.secondary }, collapsed: { color: theme.color.dark }, ul: { listStyle: "none", margin: "0 0 0 1rem", padding: 0 }, li: { outline: 0 } }), ObjectControl = ({ name, value: value2, onChange, argType }) => {
-  var _a3;
-  let theme = St$1(), data = reactExports.useMemo(() => value2 && cloneDeep(value2), [value2]), hasData = data != null, [showRaw, setShowRaw] = reactExports.useState(!hasData), [parseError, setParseError] = reactExports.useState(null), readonly = !!((_a3 = argType == null ? void 0 : argType.table) == null ? void 0 : _a3.readonly), updateRaw = reactExports.useCallback((raw) => {
+  let theme = St$1(), data = reactExports.useMemo(() => value2 && cloneDeep(value2), [value2]), hasData = data != null, [showRaw, setShowRaw] = reactExports.useState(!hasData), [parseError, setParseError] = reactExports.useState(null), readonly = !!argType?.table?.readonly, updateRaw = reactExports.useCallback((raw) => {
     try {
       raw && onChange(JSON.parse(raw)), setParseError(null);
     } catch (e23) {
@@ -24582,7 +24471,7 @@ var { window: globalWindow2 } = globalThis, Wrapper7 = xr$1.div(({ theme }) => (
   if (reactExports.useEffect(() => {
     forceVisible && htmlElRef.current && htmlElRef.current.select();
   }, [forceVisible]), !hasData) return e.createElement(Ir, { disabled: readonly, id: getControlSetterButtonId(name), onClick: onForceVisible }, "Set object");
-  let rawJSONForm = e.createElement(RawInput, { ref: htmlElRef, id: getControlId(name), name, defaultValue: value2 === null ? "" : JSON.stringify(value2, null, 2), onBlur: (event) => updateRaw(event.target.value), placeholder: "Edit JSON string...", autoFocus: forceVisible, valid: parseError ? "error" : void 0, readOnly: readonly }), isObjectOrArray = Array.isArray(value2) || typeof value2 == "object" && (value2 == null ? void 0 : value2.constructor) === Object;
+  let rawJSONForm = e.createElement(RawInput, { ref: htmlElRef, id: getControlId(name), name, defaultValue: value2 === null ? "" : JSON.stringify(value2, null, 2), onBlur: (event) => updateRaw(event.target.value), placeholder: "Edit JSON string...", autoFocus: forceVisible, valid: parseError ? "error" : void 0, readOnly: readonly }), isObjectOrArray = Array.isArray(value2) || typeof value2 == "object" && value2?.constructor === Object;
   return e.createElement(Wrapper7, { "aria-readonly": readonly }, isObjectOrArray && e.createElement(RawButton, { role: "switch", "aria-checked": showRaw, "aria-label": `Edit the ${name} properties in text format`, onClick: (e23) => {
     e23.preventDefault(), setShowRaw((isRaw) => !isRaw);
   } }, showRaw ? e.createElement(EyeCloseIcon, null) : e.createElement(EyeIcon, null), e.createElement("span", null, "RAW")), showRaw ? rawJSONForm : e.createElement(JsonTree, { readOnly: readonly || !isObjectOrArray, isCollapsed: isObjectOrArray ? void 0 : () => true, data, rootName: name, onFullyUpdate: onChange, getStyle: getCustomStyleFunction(theme), cancelButtonElement: e.createElement(ButtonInline, { type: "button" }, "Cancel"), addButtonElement: e.createElement(ButtonInline, { type: "submit", primary: true }, "Save"), plusMenuElement: e.createElement(ActionButton, { type: "button" }, e.createElement(AddIcon, null)), minusMenuElement: e.createElement(ActionButton, { type: "button" }, e.createElement(SubtractIcon, null)), inputElement: (_2, __, ___, key) => key ? e.createElement(Input, { onFocus: selectValue, onBlur: dispatchEnterKey }) : e.createElement(Input, null), fallback: rawJSONForm }));
@@ -24611,22 +24500,20 @@ function getNumberOfDecimalPlaces(number) {
   return match ? Math.max(0, (match[1] ? match[1].length : 0) - (match[2] ? +match[2] : 0)) : 0;
 }
 var RangeControl = ({ name, value: value2, onChange, min = 0, max = 100, step = 1, onBlur, onFocus, argType }) => {
-  var _a3;
   let handleChange = (event) => {
     onChange(parse2(event.target.value));
-  }, hasValue = value2 !== void 0, numberOFDecimalsPlaces = reactExports.useMemo(() => getNumberOfDecimalPlaces(step), [step]), readonly = !!((_a3 = argType == null ? void 0 : argType.table) == null ? void 0 : _a3.readonly);
+  }, hasValue = value2 !== void 0, numberOFDecimalsPlaces = reactExports.useMemo(() => getNumberOfDecimalPlaces(step), [step]), readonly = !!argType?.table?.readonly;
   return e.createElement(RangeWrapper, { "aria-readonly": readonly }, e.createElement(RangeLabel, null, min), e.createElement(RangeInput, { id: getControlId(name), type: "range", disabled: readonly, onChange: handleChange, name, min, max, step, onFocus, onBlur, value: value2 ?? min }), e.createElement(RangeCurrentAndMaxLabel, { numberOFDecimalsPlaces, max }, hasValue ? value2.toFixed(numberOFDecimalsPlaces) : "--", " / ", max));
 };
 var Wrapper8 = xr$1.label({ display: "flex" }), MaxLength = xr$1.div(({ isMaxed }) => ({ marginLeft: "0.75rem", paddingTop: "0.35rem", color: isMaxed ? "red" : void 0 })), TextControl = ({ name, value: value2, onChange, onFocus, onBlur, maxLength, argType }) => {
-  var _a3;
   let handleChange = (event) => {
     onChange(event.target.value);
-  }, readonly = !!((_a3 = argType == null ? void 0 : argType.table) == null ? void 0 : _a3.readonly), [forceVisible, setForceVisible] = reactExports.useState(false), onForceVisible = reactExports.useCallback(() => {
+  }, readonly = !!argType?.table?.readonly, [forceVisible, setForceVisible] = reactExports.useState(false), onForceVisible = reactExports.useCallback(() => {
     onChange(""), setForceVisible(true);
   }, [setForceVisible]);
   if (value2 === void 0) return e.createElement(Ir, { variant: "outline", size: "medium", disabled: readonly, id: getControlSetterButtonId(name), onClick: onForceVisible }, "Set string");
   let isValid = typeof value2 == "string";
-  return e.createElement(Wrapper8, null, e.createElement(Z3.Textarea, { id: getControlId(name), maxLength, onChange: handleChange, disabled: readonly, size: "flex", placeholder: "Edit string...", autoFocus: forceVisible, valid: isValid ? void 0 : "error", name, value: isValid ? value2 : "", onFocus, onBlur }), maxLength && e.createElement(MaxLength, { isMaxed: (value2 == null ? void 0 : value2.length) === maxLength }, (value2 == null ? void 0 : value2.length) ?? 0, " / ", maxLength));
+  return e.createElement(Wrapper8, null, e.createElement(Z3.Textarea, { id: getControlId(name), maxLength, onChange: handleChange, disabled: readonly, size: "flex", placeholder: "Edit string...", autoFocus: forceVisible, valid: isValid ? void 0 : "error", name, value: isValid ? value2 : "", onFocus, onBlur }), maxLength && e.createElement(MaxLength, { isMaxed: value2?.length === maxLength }, value2?.length ?? 0, " / ", maxLength));
 };
 var FileInput = xr$1(Z3.Input)({ padding: 10 });
 function revokeOldUrls(urls) {
@@ -24635,8 +24522,7 @@ function revokeOldUrls(urls) {
   });
 }
 var FilesControl = ({ onChange, name, accept = "image/*", value: value2, argType }) => {
-  var _a3;
-  let inputElement = reactExports.useRef(null), readonly = (_a3 = argType == null ? void 0 : argType.control) == null ? void 0 : _a3.readOnly;
+  let inputElement = reactExports.useRef(null), readonly = argType?.control?.readOnly;
   function handleFileChange(e23) {
     if (!e23.target.files) return;
     let fileUrls = Array.from(e23.target.files).map((file) => URL.createObjectURL(file));
@@ -24646,25 +24532,23 @@ var FilesControl = ({ onChange, name, accept = "image/*", value: value2, argType
     value2 == null && inputElement.current && (inputElement.current.value = "");
   }, [value2, name]), e.createElement(FileInput, { ref: inputElement, id: getControlId(name), type: "file", name, multiple: true, disabled: readonly, onChange: handleFileChange, accept, size: "flex" });
 };
-var LazyColorControl = reactExports.lazy(() => __vitePreload(() => import("./Color-AVL7NMMY-GBiCu1VF.js"), true ? __vite__mapDeps([0,1,2,3,4,5]) : void 0, import.meta.url)), ColorControl = (props) => e.createElement(reactExports.Suspense, { fallback: e.createElement("div", null) }, e.createElement(LazyColorControl, { ...props }));
+var LazyColorControl = reactExports.lazy(() => __vitePreload(() => import("./Color-AVL7NMMY-CgcKMBwJ.js"), true ? __vite__mapDeps([0,1,2,3,4,5]) : void 0, import.meta.url)), ColorControl = (props) => e.createElement(reactExports.Suspense, { fallback: e.createElement("div", null) }, e.createElement(LazyColorControl, { ...props }));
 var Controls2 = { array: ObjectControl, object: ObjectControl, boolean: BooleanControl, color: ColorControl, date: DateControl, number: NumberControl, check: OptionsControl, "inline-check": OptionsControl, radio: OptionsControl, "inline-radio": OptionsControl, select: OptionsControl, "multi-select": OptionsControl, range: RangeControl, text: TextControl, file: FilesControl }, NoControl = () => e.createElement(e.Fragment, null, "-"), ArgControl = ({ row, arg, updateArgs, isHovered }) => {
-  var _a3;
   let { key, control } = row, [isFocused, setFocused] = reactExports.useState(false), [boxedValue, setBoxedValue] = reactExports.useState({ value: arg });
   reactExports.useEffect(() => {
     isFocused || setBoxedValue({ value: arg });
   }, [isFocused, arg]);
   let onChange = reactExports.useCallback((argVal) => (setBoxedValue({ value: argVal }), updateArgs({ [key]: argVal }), argVal), [updateArgs, key]), onBlur = reactExports.useCallback(() => setFocused(false), []), onFocus = reactExports.useCallback(() => setFocused(true), []);
   if (!control || control.disable) {
-    let canBeSetup = (control == null ? void 0 : control.disable) !== true && ((_a3 = row == null ? void 0 : row.type) == null ? void 0 : _a3.name) !== "function";
+    let canBeSetup = control?.disable !== true && row?.type?.name !== "function";
     return isHovered && canBeSetup ? e.createElement(Ai, { href: "https://storybook.js.org/docs/essentials/controls?ref=ui", target: "_blank", withArrow: true }, "Setup controls") : e.createElement(NoControl, null);
   }
   let props = { name: key, argType: row, value: boxedValue.value, onChange, onBlur, onFocus }, Control = Controls2[control.type] || NoControl;
   return e.createElement(Control, { ...props, ...control, controlType: control.type });
 };
 var Table = xr$1.table(({ theme }) => ({ "&&": { borderCollapse: "collapse", borderSpacing: 0, border: "none", tr: { border: "none !important", background: "none" }, "td, th": { padding: 0, border: "none", width: "auto!important" }, marginTop: 0, marginBottom: 0, "th:first-of-type, td:first-of-type": { paddingLeft: 0 }, "th:last-of-type, td:last-of-type": { paddingRight: 0 }, td: { paddingTop: 0, paddingBottom: 4, "&:not(:first-of-type)": { paddingLeft: 10, paddingRight: 0 } }, tbody: { boxShadow: "none", border: "none" }, code: at({ theme }), div: { span: { fontWeight: "bold" } }, "& code": { margin: 0, display: "inline-block", fontSize: theme.typography.size.s1 } } })), ArgJsDoc = ({ tags }) => {
-  var _a3, _b2;
   let params = (tags.params || []).filter((x22) => x22.description), hasDisplayableParams = params.length !== 0, hasDisplayableDeprecated = tags.deprecated != null, hasDisplayableReturns = tags.returns != null && tags.returns.description != null;
-  return !hasDisplayableParams && !hasDisplayableReturns && !hasDisplayableDeprecated ? null : e.createElement(e.Fragment, null, e.createElement(Table, null, e.createElement("tbody", null, hasDisplayableDeprecated && e.createElement("tr", { key: "deprecated" }, e.createElement("td", { colSpan: 2 }, e.createElement("strong", null, "Deprecated"), ": ", (_a3 = tags.deprecated) == null ? void 0 : _a3.toString())), hasDisplayableParams && params.map((x22) => e.createElement("tr", { key: x22.name }, e.createElement("td", null, e.createElement("code", null, x22.name)), e.createElement("td", null, x22.description))), hasDisplayableReturns && e.createElement("tr", { key: "returns" }, e.createElement("td", null, e.createElement("code", null, "Returns")), e.createElement("td", null, (_b2 = tags.returns) == null ? void 0 : _b2.description)))));
+  return !hasDisplayableParams && !hasDisplayableReturns && !hasDisplayableDeprecated ? null : e.createElement(e.Fragment, null, e.createElement(Table, null, e.createElement("tbody", null, hasDisplayableDeprecated && e.createElement("tr", { key: "deprecated" }, e.createElement("td", { colSpan: 2 }, e.createElement("strong", null, "Deprecated"), ": ", tags.deprecated?.toString())), hasDisplayableParams && params.map((x22) => e.createElement("tr", { key: x22.name }, e.createElement("td", null, e.createElement("code", null, x22.name)), e.createElement("td", null, x22.description))), hasDisplayableReturns && e.createElement("tr", { key: "returns" }, e.createElement("td", null, e.createElement("code", null, "Returns")), e.createElement("td", null, tags.returns?.description)))));
 };
 var import_memoizerific = __toESM(require_memoizerific());
 var ITEMS_BEFORE_EXPANSION = 8, Summary = xr$1.div(({ isExpanded }) => ({ display: "flex", flexDirection: isExpanded ? "column" : "row", flexWrap: "wrap", alignItems: "flex-start", marginBottom: "-4px", minWidth: 100 })), Text3 = xr$1.span(at, ({ theme, simple = false }) => ({ flex: "0 0 auto", fontFamily: theme.typography.fonts.mono, fontSize: theme.typography.size.s1, wordBreak: "break-word", whiteSpace: "normal", maxWidth: "100%", margin: 0, marginRight: "4px", marginBottom: "4px", paddingTop: "2px", paddingBottom: "2px", lineHeight: "13px", ...simple && { background: "transparent", border: "0 none", paddingLeft: 0 } })), ExpandButton = xr$1.button(({ theme }) => ({ fontFamily: theme.typography.fonts.mono, color: theme.color.secondary, marginBottom: "4px", background: "none", border: "none" })), Expandable = xr$1.div(at, ({ theme }) => ({ fontFamily: theme.typography.fonts.mono, color: theme.color.secondary, fontSize: theme.typography.size.s1, margin: 0, whiteSpace: "nowrap", display: "flex", alignItems: "center" })), Detail = xr$1.div(({ theme, width }) => ({ width, minWidth: 200, maxWidth: 800, padding: 15, fontFamily: theme.typography.fonts.mono, fontSize: theme.typography.size.s1, boxSizing: "content-box", "& code": { padding: "0 !important" } })), ChevronUpIcon = xr$1(ChevronSmallUpIcon)({ marginLeft: 4 }), ChevronDownIcon = xr$1(ChevronSmallDownIcon)({ marginLeft: 4 }), EmptyArg = () => e.createElement("span", null, "-"), ArgText = ({ text, simple }) => e.createElement(Text3, { simple }, text), calculateDetailWidth = (0, import_memoizerific.default)(1e3)((detail) => {
@@ -24691,8 +24575,7 @@ var ITEMS_BEFORE_EXPANSION = 8, Summary = xr$1.div(({ isExpanded }) => ({ displa
   }, tooltip: e.createElement(Detail, { width: calculateDetailWidth(detail) }, e.createElement(ru, { language: "jsx", format: false }, detail)) }, e.createElement(Expandable, { className: "sbdocs-expandable" }, e.createElement("span", null, summaryAsString), isOpen ? e.createElement(ChevronUpIcon, null) : e.createElement(ChevronDownIcon, null)));
 }, ArgValue = ({ value: value2, initialExpandedArgs }) => value2 == null ? e.createElement(EmptyArg, null) : e.createElement(ArgSummary, { value: value2, initialExpandedArgs });
 var Name = xr$1.span({ fontWeight: "bold" }), Required = xr$1.span(({ theme }) => ({ color: theme.color.negative, fontFamily: theme.typography.fonts.mono, cursor: "help" })), Description = xr$1.div(({ theme }) => ({ "&&": { p: { margin: "0 0 10px 0" }, a: { color: theme.color.secondary } }, code: { ...at({ theme }), fontSize: 12, fontFamily: theme.typography.fonts.mono }, "& code": { margin: 0, display: "inline-block" }, "& pre > code": { whiteSpace: "pre-wrap" } })), Type = xr$1.div(({ theme, hasDescription }) => ({ color: theme.base === "light" ? curriedTransparentize$1(0.1, theme.color.defaultText) : curriedTransparentize$1(0.2, theme.color.defaultText), marginTop: hasDescription ? 4 : 0 })), TypeWithJsDoc = xr$1.div(({ theme, hasDescription }) => ({ color: theme.base === "light" ? curriedTransparentize$1(0.1, theme.color.defaultText) : curriedTransparentize$1(0.2, theme.color.defaultText), marginTop: hasDescription ? 12 : 0, marginBottom: 12 })), StyledTd = xr$1.td(({ expandable }) => ({ paddingLeft: expandable ? "40px !important" : "20px !important" })), toSummary = (value2) => value2 && { summary: typeof value2 == "string" ? value2 : value2.name }, ArgRow = (props) => {
-  var _a3;
-  let [isHovered, setIsHovered] = reactExports.useState(false), { row, updateArgs, compact, expandable, initialExpandedArgs } = props, { name, description } = row, table = row.table || {}, type = table.type || toSummary(row.type), defaultValue = table.defaultValue || row.defaultValue, required = (_a3 = row.type) == null ? void 0 : _a3.required, hasDescription = description != null && description !== "";
+  let [isHovered, setIsHovered] = reactExports.useState(false), { row, updateArgs, compact, expandable, initialExpandedArgs } = props, { name, description } = row, table = row.table || {}, type = table.type || toSummary(row.type), defaultValue = table.defaultValue || row.defaultValue, required = row.type?.required, hasDescription = description != null && description !== "";
   return e.createElement("tr", { onMouseEnter: () => setIsHovered(true), onMouseLeave: () => setIsHovered(false) }, e.createElement(StyledTd, { expandable: expandable ?? false }, e.createElement(Name, null, name), required ? e.createElement(Required, { title: "Required" }, "*") : null), compact ? null : e.createElement("td", null, hasDescription && e.createElement(Description, null, e.createElement(index_modern_default, null, description)), table.jsDocTags != null ? e.createElement(e.Fragment, null, e.createElement(TypeWithJsDoc, { hasDescription }, e.createElement(ArgValue, { value: type, initialExpandedArgs })), e.createElement(ArgJsDoc, { tags: table.jsDocTags })) : e.createElement(Type, { hasDescription }, e.createElement(ArgValue, { value: type, initialExpandedArgs }))), compact ? null : e.createElement("td", null, e.createElement(ArgValue, { value: defaultValue, initialExpandedArgs })), updateArgs ? e.createElement("td", null, e.createElement(ArgControl, { ...props, isHovered })) : null);
 };
 var Wrapper9 = xr$1.div(({ inAddonPanel, theme }) => ({ height: inAddonPanel ? "100%" : "auto", display: "flex", border: inAddonPanel ? "none" : `1px solid ${theme.appBorderColor}`, borderRadius: inAddonPanel ? 0 : theme.appBorderRadius, padding: inAddonPanel ? 0 : 40, alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 15, background: theme.background.content })), Links = xr$1.div(({ theme }) => ({ display: "flex", fontSize: theme.typography.size.s2 - 1, gap: 25 })), Empty = ({ inAddonPanel }) => {
@@ -24705,7 +24588,7 @@ var Wrapper9 = xr$1.div(({ inAddonPanel, theme }) => ({ height: inAddonPanel ? "
   }, []), isLoading ? null : e.createElement(Wrapper9, { inAddonPanel }, e.createElement(qo, { title: inAddonPanel ? "Interactive story playground" : "Args table with interactive controls couldn't be auto-generated", description: e.createElement(e.Fragment, null, "Controls give you an easy to use interface to test your components. Set your story args and you'll see controls appearing here automatically."), footer: e.createElement(Links, null, inAddonPanel && e.createElement(e.Fragment, null, e.createElement(Ai, { href: "https://storybook.js.org/docs/essentials/controls?ref=ui", target: "_blank", withArrow: true }, e.createElement(DocumentIcon, null), " Read docs")), !inAddonPanel && e.createElement(Ai, { href: "https://storybook.js.org/docs/essentials/controls?ref=ui", target: "_blank", withArrow: true }, e.createElement(DocumentIcon, null), " Learn how to set that up")) }));
 };
 var ExpanderIconDown = xr$1(ChevronDownIcon$1)(({ theme }) => ({ marginRight: 8, marginLeft: -10, marginTop: -2, height: 12, width: 12, color: theme.base === "light" ? curriedTransparentize$1(0.25, theme.color.defaultText) : curriedTransparentize$1(0.3, theme.color.defaultText), border: "none", display: "inline-block" })), ExpanderIconRight = xr$1(ChevronRightIcon)(({ theme }) => ({ marginRight: 8, marginLeft: -10, marginTop: -2, height: 12, width: 12, color: theme.base === "light" ? curriedTransparentize$1(0.25, theme.color.defaultText) : curriedTransparentize$1(0.3, theme.color.defaultText), border: "none", display: "inline-block" })), FlexWrapper = xr$1.span(({ theme }) => ({ display: "flex", lineHeight: "20px", alignItems: "center" })), Section = xr$1.td(({ theme }) => ({ position: "relative", letterSpacing: "0.35em", textTransform: "uppercase", fontWeight: theme.typography.weight.bold, fontSize: theme.typography.size.s1 - 1, color: theme.base === "light" ? curriedTransparentize$1(0.4, theme.color.defaultText) : curriedTransparentize$1(0.6, theme.color.defaultText), background: `${theme.background.app} !important`, "& ~ td": { background: `${theme.background.app} !important` } })), Subsection = xr$1.td(({ theme }) => ({ position: "relative", fontWeight: theme.typography.weight.bold, fontSize: theme.typography.size.s2 - 1, background: theme.background.app })), StyledTd2 = xr$1.td({ position: "relative" }), StyledTr = xr$1.tr(({ theme }) => ({ "&:hover > td": { backgroundColor: `${curriedLighten$1(5e-3, theme.background.app)} !important`, boxShadow: `${theme.color.mediumlight} 0 - 1px 0 0 inset`, cursor: "row-resize" } })), ClickIntercept = xr$1.button({ background: "none", border: "none", padding: "0", font: "inherit", position: "absolute", top: 0, bottom: 0, left: 0, right: 0, height: "100%", width: "100%", color: "transparent", cursor: "row-resize !important" }), SectionRow = ({ level = "section", label, children, initialExpanded = true, colSpan = 3 }) => {
-  let [expanded, setExpanded] = reactExports.useState(initialExpanded), Level = level === "subsection" ? Subsection : Section, itemCount = (children == null ? void 0 : children.length) || 0, caption = level === "subsection" ? `${itemCount} item${itemCount !== 1 ? "s" : ""}` : "", helperText = `${expanded ? "Hide" : "Show"} ${level === "subsection" ? itemCount : label} item${itemCount !== 1 ? "s" : ""}`;
+  let [expanded, setExpanded] = reactExports.useState(initialExpanded), Level = level === "subsection" ? Subsection : Section, itemCount = children?.length || 0, caption = level === "subsection" ? `${itemCount} item${itemCount !== 1 ? "s" : ""}` : "", helperText = `${expanded ? "Hide" : "Show"} ${level === "subsection" ? itemCount : label} item${itemCount !== 1 ? "s" : ""}`;
   return e.createElement(e.Fragment, null, e.createElement(StyledTr, { title: helperText }, e.createElement(Level, { colSpan: 1 }, e.createElement(ClickIntercept, { onClick: (e23) => setExpanded(!expanded), tabIndex: 0 }, helperText), e.createElement(FlexWrapper, null, expanded ? e.createElement(ExpanderIconDown, null) : e.createElement(ExpanderIconRight, null), label)), e.createElement(StyledTd2, { colSpan: colSpan - 1 }, e.createElement(ClickIntercept, { onClick: (e23) => setExpanded(!expanded), tabIndex: -1, style: { outline: "none" } }, helperText), expanded ? null : caption)), expanded ? children : null);
 };
 var TableWrapper = xr$1.div(({ theme }) => ({ width: "100%", borderSpacing: 0, color: theme.color.defaultText })), Row = xr$1.div(({ theme }) => ({ display: "flex", borderBottom: `1px solid ${theme.appBorderColor}`, "&:last-child": { borderBottom: 0 } })), Column = xr$1.div(({ position, theme }) => {
@@ -24722,14 +24605,11 @@ var TableWrapper = xr$1.div(({ theme }) => ({ width: "100%", borderSpacing: 0, c
   }
 }), SkeletonText = xr$1.div(({ theme, width, height }) => ({ animation: `${theme.animation.glow} 1.5s ease-in-out infinite`, background: theme.appBorderColor, width: width || "100%", height: height || 16, borderRadius: 3 })), Skeleton = () => e.createElement(TableWrapper, null, e.createElement(Row, null, e.createElement(Column, { position: "first" }, e.createElement(SkeletonText, { width: "60%" })), e.createElement(Column, { position: "second" }, e.createElement(SkeletonText, { width: "30%" })), e.createElement(Column, { position: "third" }, e.createElement(SkeletonText, { width: "60%" })), e.createElement(Column, { position: "last" }, e.createElement(SkeletonText, { width: "60%" }))), e.createElement(Row, null, e.createElement(Column, { position: "first" }, e.createElement(SkeletonText, { width: "60%" })), e.createElement(Column, { position: "second" }, e.createElement(SkeletonText, { width: "80%" }), e.createElement(SkeletonText, { width: "30%" })), e.createElement(Column, { position: "third" }, e.createElement(SkeletonText, { width: "60%" })), e.createElement(Column, { position: "last" }, e.createElement(SkeletonText, { width: "60%" }))), e.createElement(Row, null, e.createElement(Column, { position: "first" }, e.createElement(SkeletonText, { width: "60%" })), e.createElement(Column, { position: "second" }, e.createElement(SkeletonText, { width: "80%" }), e.createElement(SkeletonText, { width: "30%" })), e.createElement(Column, { position: "third" }, e.createElement(SkeletonText, { width: "60%" })), e.createElement(Column, { position: "last" }, e.createElement(SkeletonText, { width: "60%" }))), e.createElement(Row, null, e.createElement(Column, { position: "first" }, e.createElement(SkeletonText, { width: "60%" })), e.createElement(Column, { position: "second" }, e.createElement(SkeletonText, { width: "80%" }), e.createElement(SkeletonText, { width: "30%" })), e.createElement(Column, { position: "third" }, e.createElement(SkeletonText, { width: "60%" })), e.createElement(Column, { position: "last" }, e.createElement(SkeletonText, { width: "60%" }))));
 var TableWrapper2 = xr$1.table(({ theme, compact, inAddonPanel }) => ({ "&&": { borderSpacing: 0, color: theme.color.defaultText, "td, th": { padding: 0, border: "none", verticalAlign: "top", textOverflow: "ellipsis" }, fontSize: theme.typography.size.s2 - 1, lineHeight: "20px", textAlign: "left", width: "100%", marginTop: inAddonPanel ? 0 : 25, marginBottom: inAddonPanel ? 0 : 40, "thead th:first-of-type, td:first-of-type": { width: "25%" }, "th:first-of-type, td:first-of-type": { paddingLeft: 20 }, "th:nth-of-type(2), td:nth-of-type(2)": { ...compact ? null : { width: "35%" } }, "td:nth-of-type(3)": { ...compact ? null : { width: "15%" } }, "th:last-of-type, td:last-of-type": { paddingRight: 20, ...compact ? null : { width: "25%" } }, th: { color: theme.base === "light" ? curriedTransparentize$1(0.25, theme.color.defaultText) : curriedTransparentize$1(0.45, theme.color.defaultText), paddingTop: 10, paddingBottom: 10, paddingLeft: 15, paddingRight: 15 }, td: { paddingTop: "10px", paddingBottom: "10px", "&:not(:first-of-type)": { paddingLeft: 15, paddingRight: 15 }, "&:last-of-type": { paddingRight: 20 } }, marginLeft: inAddonPanel ? 0 : 1, marginRight: inAddonPanel ? 0 : 1, tbody: { ...inAddonPanel ? null : { filter: theme.base === "light" ? "drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.10))" : "drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.20))" }, "> tr > *": { background: theme.background.content, borderTop: `1px solid ${theme.appBorderColor}` }, ...inAddonPanel ? null : { "> tr:first-of-type > *": { borderBlockStart: `1px solid ${theme.appBorderColor}` }, "> tr:last-of-type > *": { borderBlockEnd: `1px solid ${theme.appBorderColor}` }, "> tr > *:first-of-type": { borderInlineStart: `1px solid ${theme.appBorderColor}` }, "> tr > *:last-of-type": { borderInlineEnd: `1px solid ${theme.appBorderColor}` }, "> tr:first-of-type > td:first-of-type": { borderTopLeftRadius: theme.appBorderRadius }, "> tr:first-of-type > td:last-of-type": { borderTopRightRadius: theme.appBorderRadius }, "> tr:last-of-type > td:first-of-type": { borderBottomLeftRadius: theme.appBorderRadius }, "> tr:last-of-type > td:last-of-type": { borderBottomRightRadius: theme.appBorderRadius } } } } })), TablePositionWrapper = xr$1.div({ position: "relative" }), ButtonPositionWrapper = xr$1.div({ position: "absolute", right: 8, top: 6 });
-var sortFns = { alpha: (a22, b22) => (a22.name ?? "").localeCompare(b22.name ?? ""), requiredFirst: (a22, b22) => {
-  var _a3, _b2;
-  return +!!((_a3 = b22.type) == null ? void 0 : _a3.required) - +!!((_b2 = a22.type) == null ? void 0 : _b2.required) || (a22.name ?? "").localeCompare(b22.name ?? "");
-}, none: null }, groupRows = (rows, sort) => {
+var sortFns = { alpha: (a22, b22) => (a22.name ?? "").localeCompare(b22.name ?? ""), requiredFirst: (a22, b22) => +!!b22.type?.required - +!!a22.type?.required || (a22.name ?? "").localeCompare(b22.name ?? ""), none: null }, groupRows = (rows, sort) => {
   let sections = { ungrouped: [], ungroupedSubsections: {}, sections: {} };
   if (!rows) return sections;
   Object.entries(rows).forEach(([key, row]) => {
-    let { category, subcategory } = (row == null ? void 0 : row.table) || {};
+    let { category, subcategory } = row?.table || {};
     if (category) {
       let section = sections.sections[category] || { ungrouped: [], subsections: {} };
       if (!subcategory) section.ungrouped.push({ key, ...row });
@@ -24758,10 +24638,7 @@ var sortFns = { alpha: (a22, b22) => (a22.name ?? "").localeCompare(b22.name ?? 
     return e.createElement(EmptyBlock, null, error, " ", e.createElement(Ai, { href: "http://storybook.js.org/docs/?ref=ui", target: "_blank", withArrow: true }, e.createElement(DocumentIcon, null), " Read the docs"));
   }
   if (isLoading) return e.createElement(Skeleton, null);
-  let { rows, args, globals } = "rows" in props ? props : { rows: void 0, args: void 0, globals: void 0 }, groups = groupRows(pickBy(rows || {}, (row) => {
-    var _a3;
-    return !((_a3 = row == null ? void 0 : row.table) == null ? void 0 : _a3.disable) && safeIncludeConditionalArg(row, args || {}, globals || {});
-  }), sort), hasNoUngrouped = groups.ungrouped.length === 0, hasNoSections = Object.entries(groups.sections).length === 0, hasNoUngroupedSubsections = Object.entries(groups.ungroupedSubsections).length === 0;
+  let { rows, args, globals } = "rows" in props ? props : { rows: void 0, args: void 0, globals: void 0 }, groups = groupRows(pickBy(rows || {}, (row) => !row?.table?.disable && safeIncludeConditionalArg(row, args || {}, globals || {})), sort), hasNoUngrouped = groups.ungrouped.length === 0, hasNoSections = Object.entries(groups.sections).length === 0, hasNoUngroupedSubsections = Object.entries(groups.ungroupedSubsections).length === 0;
   if (hasNoUngrouped && hasNoSections && hasNoUngroupedSubsections) return e.createElement(Empty, { inAddonPanel });
   let colSpan = 1;
   updateArgs && (colSpan += 1), compact || (colSpan += 2);
@@ -25147,7 +25024,7 @@ function baseIsNative(value2) {
 }
 var baseIsNative_default = baseIsNative;
 function getValue(object2, key) {
-  return object2 == null ? void 0 : object2[key];
+  return object2?.[key];
 }
 var getValue_default = getValue;
 function getNative(object2, key) {
@@ -25330,7 +25207,6 @@ function convertUnconventionalData(data) {
 var replacer = function(options) {
   let objects, map, stack, keys;
   return function(key, value2) {
-    var _a3;
     try {
       if (key === "") return keys = [], objects = /* @__PURE__ */ new Map([[value2, "[]"]]), map = /* @__PURE__ */ new Map(), stack = [], value2;
       let origin = map.get(this) || this;
@@ -25351,7 +25227,7 @@ var replacer = function(options) {
       if (stack.length >= options.maxDepth) return Array.isArray(value2) ? `[Array(${value2.length})]` : "[Object]";
       if (value2 === this) return `_duplicate_${JSON.stringify(keys)}`;
       if (value2 instanceof Error && options.allowError) return { __isConvertedError__: true, errorProperties: { ...value2.cause ? { cause: value2.cause } : {}, ...value2, name: value2.name, message: value2.message, stack: value2.stack, "_constructor-name_": value2.constructor.name } };
-      if (((_a3 = value2 == null ? void 0 : value2.constructor) == null ? void 0 : _a3.name) && value2.constructor.name !== "Object" && !Array.isArray(value2)) {
+      if (value2?.constructor?.name && value2.constructor.name !== "Object" && !Array.isArray(value2)) {
         let found2 = objects.get(value2);
         if (!found2) {
           let plainObject = { __isClassInstance__: true, __className__: value2.constructor.name, ...Object.getOwnPropertyNames(value2).reduce((acc, prop) => {
@@ -25394,7 +25270,7 @@ var SourceContext = reactExports.createContext({ sources: {} }), UNKNOWN_ARGS_HA
   }, []), e.createElement(SourceContext.Provider, { value: { sources } }, children);
 };
 function useTransformCode(source, transform, storyContext) {
-  let [transformedCode, setTransformedCode] = reactExports.useState("Transforming..."), transformed = transform ? transform == null ? void 0 : transform(source, storyContext) : source;
+  let [transformedCode, setTransformedCode] = reactExports.useState("Transforming..."), transformed = transform ? transform?.(source, storyContext) : source;
   return reactExports.useEffect(() => {
     async function getTransformedCode() {
       let transformResult = await transformed;
@@ -25404,14 +25280,12 @@ function useTransformCode(source, transform, storyContext) {
   }), typeof transformed == "object" && typeof transformed.then == "function" ? transformedCode : transformed;
 }
 var getStorySource = (storyId, args, sourceContext) => {
-  let { sources } = sourceContext, sourceMap = sources == null ? void 0 : sources[storyId];
-  return (sourceMap == null ? void 0 : sourceMap[argsHash(args)]) || (sourceMap == null ? void 0 : sourceMap[UNKNOWN_ARGS_HASH]) || { code: "" };
+  let { sources } = sourceContext, sourceMap = sources?.[storyId];
+  return sourceMap?.[argsHash(args)] || sourceMap?.[UNKNOWN_ARGS_HASH] || { code: "" };
 }, useCode = ({ snippet, storyContext, typeFromProps, transformFromProps }) => {
-  var _a3;
-  let parameters = storyContext.parameters ?? {}, { __isArgsStory: isArgsStory } = parameters, sourceParameters = ((_a3 = parameters.docs) == null ? void 0 : _a3.source) || {}, type = typeFromProps || sourceParameters.type || Tn$4.AUTO, code = type === Tn$4.DYNAMIC || type === Tn$4.AUTO && snippet && isArgsStory ? snippet : sourceParameters.originalSource || "", transformer = transformFromProps ?? sourceParameters.transform, transformedCode = transformer ? useTransformCode(code, transformer, storyContext) : code;
+  let parameters = storyContext.parameters ?? {}, { __isArgsStory: isArgsStory } = parameters, sourceParameters = parameters.docs?.source || {}, type = typeFromProps || sourceParameters.type || Tn$4.AUTO, code = type === Tn$4.DYNAMIC || type === Tn$4.AUTO && snippet && isArgsStory ? snippet : sourceParameters.originalSource || "", transformer = transformFromProps ?? sourceParameters.transform, transformedCode = transformer ? useTransformCode(code, transformer, storyContext) : code;
   return sourceParameters.code !== void 0 ? sourceParameters.code : transformedCode;
 }, useSourceProps = (props, docsContext, sourceContext) => {
-  var _a3, _b2;
   let { of: of2 } = props, story = reactExports.useMemo(() => {
     if (of2) return docsContext.resolveOf(of2, ["story"]).story;
     try {
@@ -25420,8 +25294,8 @@ var getStorySource = (storyId, args, sourceContext) => {
     }
   }, [docsContext, of2]), storyContext = story ? docsContext.getStoryContext(story) : {}, argsForSource = props.__forceInitialArgs ? storyContext.initialArgs : storyContext.unmappedArgs, source = story ? getStorySource(story.id, argsForSource, sourceContext) : null, transformedCode = useCode({ snippet: source ? source.code : "", storyContext: { ...storyContext, args: argsForSource }, typeFromProps: props.type, transformFromProps: props.transform });
   if ("of" in props && of2 === void 0) throw new Error("Unexpected `of={undefined}`, did you mistype a CSF file reference?");
-  let sourceParameters = ((_b2 = (_a3 = story == null ? void 0 : story.parameters) == null ? void 0 : _a3.docs) == null ? void 0 : _b2.source) || {}, format3 = props.format, language = props.language ?? sourceParameters.language ?? "jsx", dark = props.dark ?? sourceParameters.dark ?? false;
-  return !props.code && !story ? { error: "Oh no! The source is not available." } : props.code ? { code: props.code, format: format3, language, dark } : (format3 = (source == null ? void 0 : source.format) ?? true, { code: transformedCode, format: format3, language, dark });
+  let sourceParameters = story?.parameters?.docs?.source || {}, format3 = props.format, language = props.language ?? sourceParameters.language ?? "jsx", dark = props.dark ?? sourceParameters.dark ?? false;
+  return !props.code && !story ? { error: "Oh no! The source is not available." } : props.code ? { code: props.code, format: format3, language, dark } : (format3 = source?.format ?? true, { code: transformedCode, format: format3, language, dark });
 };
 function useStory(storyId, context) {
   let stories = useStories([storyId], context);
@@ -25463,10 +25337,9 @@ var getStoryId2 = (props, context) => {
   return storyProps ? e.createElement(Story, { ...storyProps }) : null;
 };
 var Canvas = (props) => {
-  var _a3, _b2, _c2, _d3, _e2, _f2, _g2, _h, _i2, _j, _k, _l2, _m2, _n2;
   let docsContext = reactExports.useContext(DocsContext), sourceContext = reactExports.useContext(SourceContext), { of: of2, source } = props;
   if ("of" in props && of2 === void 0) throw new Error("Unexpected `of={undefined}`, did you mistype a CSF file reference?");
-  let { story } = useOf(of2 || "story", ["story"]), sourceProps = useSourceProps({ ...source, ...of2 && { of: of2 } }, docsContext, sourceContext), layout = props.layout ?? story.parameters.layout ?? ((_b2 = (_a3 = story.parameters.docs) == null ? void 0 : _a3.canvas) == null ? void 0 : _b2.layout) ?? "padded", withToolbar = props.withToolbar ?? ((_d3 = (_c2 = story.parameters.docs) == null ? void 0 : _c2.canvas) == null ? void 0 : _d3.withToolbar) ?? false, additionalActions = props.additionalActions ?? ((_f2 = (_e2 = story.parameters.docs) == null ? void 0 : _e2.canvas) == null ? void 0 : _f2.additionalActions), sourceState = props.sourceState ?? ((_h = (_g2 = story.parameters.docs) == null ? void 0 : _g2.canvas) == null ? void 0 : _h.sourceState) ?? "hidden", className = props.className ?? ((_j = (_i2 = story.parameters.docs) == null ? void 0 : _i2.canvas) == null ? void 0 : _j.className), inline = ((_k = props.story) == null ? void 0 : _k.inline) ?? ((_n2 = (_m2 = (_l2 = story.parameters) == null ? void 0 : _l2.docs) == null ? void 0 : _m2.story) == null ? void 0 : _n2.inline) ?? false;
+  let { story } = useOf(of2 || "story", ["story"]), sourceProps = useSourceProps({ ...source, ...of2 && { of: of2 } }, docsContext, sourceContext), layout = props.layout ?? story.parameters.layout ?? story.parameters.docs?.canvas?.layout ?? "padded", withToolbar = props.withToolbar ?? story.parameters.docs?.canvas?.withToolbar ?? false, additionalActions = props.additionalActions ?? story.parameters.docs?.canvas?.additionalActions, sourceState = props.sourceState ?? story.parameters.docs?.canvas?.sourceState ?? "hidden", className = props.className ?? story.parameters.docs?.canvas?.className, inline = props.story?.inline ?? story.parameters?.docs?.story?.inline ?? false;
   return e.createElement(Preview, { withSource: sourceState === "none" ? void 0 : sourceProps, isExpanded: sourceState === "shown", withToolbar, additionalActions, className, layout, inline }, e.createElement(Story2, { of: of2 || story.moduleExport, meta: props.meta, ...props.story }));
 };
 var useArgs = (story, context) => {
@@ -25499,10 +25372,9 @@ function extractComponentArgTypes2(component, parameters) {
   return extractArgTypes(component);
 }
 var Controls3 = (props) => {
-  var _a3;
   let { of: of2 } = props;
   if ("of" in props && of2 === void 0) throw new Error("Unexpected `of={undefined}`, did you mistype a CSF file reference?");
-  let context = reactExports.useContext(DocsContext), { story } = context.resolveOf(of2 || "story", ["story"]), { parameters, argTypes, component, subcomponents } = story, controlsParameters = ((_a3 = parameters.docs) == null ? void 0 : _a3.controls) || {}, include = props.include ?? controlsParameters.include, exclude = props.exclude ?? controlsParameters.exclude, sort = props.sort ?? controlsParameters.sort, [args, updateArgs, resetArgs] = useArgs(story, context), [globals] = useGlobals(story, context), filteredArgTypes = filterArgTypes(argTypes, include, exclude);
+  let context = reactExports.useContext(DocsContext), { story } = context.resolveOf(of2 || "story", ["story"]), { parameters, argTypes, component, subcomponents } = story, controlsParameters = parameters.docs?.controls || {}, include = props.include ?? controlsParameters.include, exclude = props.exclude ?? controlsParameters.exclude, sort = props.sort ?? controlsParameters.sort, [args, updateArgs, resetArgs] = useArgs(story, context), [globals] = useGlobals(story, context), filteredArgTypes = filterArgTypes(argTypes, include, exclude);
   if (!(!!subcomponents && Object.keys(subcomponents || {}).length > 0)) return Object.keys(filteredArgTypes).length > 0 || Object.keys(args).length > 0 ? e.createElement(ArgsTable, { rows: filteredArgTypes, sort, args, globals, updateArgs, resetArgs }) : null;
   let mainComponentName = getComponentName(component) || "Story", subcomponentTabs = Object.fromEntries(Object.entries(subcomponents || {}).map(([key, comp]) => [key, { rows: filterArgTypes(extractComponentArgTypes2(comp, parameters), include, exclude), sort }])), tabs = { [mainComponentName]: { rows: filteredArgTypes, sort }, ...subcomponentTabs };
   return e.createElement(TabbedArgsTable, { tabs, sort, args, globals, updateArgs, resetArgs });
@@ -25538,7 +25410,6 @@ var A2 = yO.a, AnchorInPage = ({ hash, children }) => {
   return e.createElement(Component4, { ...J$1(withoutAs, as2) });
 }, HeadersMdx = SUPPORTED_MDX_HEADERS.reduce((acc, headerType) => ({ ...acc, [headerType]: (props) => e.createElement(HeaderMdx, { as: headerType, ...props }) }), {});
 var Markdown = (props) => {
-  var _a3;
   if (!props.children) return null;
   if (typeof props.children != "string") throw new Error(dedent`The Markdown block only accepts children as a single string, but children were of type: '${typeof props.children}'
         This is often caused by not wrapping the child in a template string.
@@ -25557,20 +25428,19 @@ var Markdown = (props) => {
         \`}
         </Markdown>
       `);
-  return e.createElement(index_modern_default, { ...props, options: { forceBlock: true, overrides: { code: CodeOrSourceMdx, a: AnchorMdx, ...HeadersMdx, ...(_a3 = props == null ? void 0 : props.options) == null ? void 0 : _a3.overrides }, ...props == null ? void 0 : props.options } });
+  return e.createElement(index_modern_default, { ...props, options: { forceBlock: true, overrides: { code: CodeOrSourceMdx, a: AnchorMdx, ...HeadersMdx, ...props?.options?.overrides }, ...props?.options } });
 };
 var DescriptionType = ((DescriptionType2) => (DescriptionType2.INFO = "info", DescriptionType2.NOTES = "notes", DescriptionType2.DOCGEN = "docgen", DescriptionType2.AUTO = "auto", DescriptionType2))(DescriptionType || {}), getDescriptionFromResolvedOf = (resolvedOf) => {
-  var _a3, _b2, _c2, _d3, _e2, _f2, _g2, _h;
   switch (resolvedOf.type) {
     case "story":
-      return ((_b2 = (_a3 = resolvedOf.story.parameters.docs) == null ? void 0 : _a3.description) == null ? void 0 : _b2.story) || null;
+      return resolvedOf.story.parameters.docs?.description?.story || null;
     case "meta": {
-      let { parameters, component } = resolvedOf.preparedMeta, metaDescription = (_d3 = (_c2 = parameters.docs) == null ? void 0 : _c2.description) == null ? void 0 : _d3.component;
-      return metaDescription || ((_f2 = (_e2 = parameters.docs) == null ? void 0 : _e2.extractComponentDescription) == null ? void 0 : _f2.call(_e2, component, { component, parameters })) || null;
+      let { parameters, component } = resolvedOf.preparedMeta, metaDescription = parameters.docs?.description?.component;
+      return metaDescription || parameters.docs?.extractComponentDescription?.(component, { component, parameters }) || null;
     }
     case "component": {
       let { component, projectAnnotations: { parameters } } = resolvedOf;
-      return ((_h = (_g2 = parameters == null ? void 0 : parameters.docs) == null ? void 0 : _g2.extractComponentDescription) == null ? void 0 : _h.call(_g2, component, { component, parameters })) || null;
+      return parameters?.docs?.extractComponentDescription?.(component, { component, parameters }) || null;
     }
     default:
       throw new Error(`Unrecognized module type resolved from 'useOf', got: ${resolvedOf.type}`);
@@ -25582,12 +25452,11 @@ var DescriptionType = ((DescriptionType2) => (DescriptionType2.INFO = "info", De
   return markdown ? e.createElement(Markdown, null, markdown) : null;
 };
 var { document: document3, window: globalWindow3 } = globalThis, DocsContainer = ({ context, theme, children }) => {
-  var _a3, _b2, _c2, _d3, _e2;
   let toc;
   try {
-    toc = (_b2 = (_a3 = context.resolveOf("meta", ["meta"]).preparedMeta.parameters) == null ? void 0 : _a3.docs) == null ? void 0 : _b2.toc;
+    toc = context.resolveOf("meta", ["meta"]).preparedMeta.parameters?.docs?.toc;
   } catch {
-    toc = (_e2 = (_d3 = (_c2 = context == null ? void 0 : context.projectAnnotations) == null ? void 0 : _c2.parameters) == null ? void 0 : _d3.docs) == null ? void 0 : _e2.toc;
+    toc = context?.projectAnnotations?.parameters?.docs?.toc;
   }
   return reactExports.useEffect(() => {
     let url;
@@ -25630,8 +25499,7 @@ var Subheading = ({ children, disableAnchor }) => {
   return e.createElement(HeaderMdx, { as: "h3", id: tagID }, children);
 };
 var DocsStory = ({ of: of2, expanded = true, withToolbar: withToolbarProp = false, __forceInitialArgs = false, __primary = false }) => {
-  var _a3, _b2;
-  let { story } = useOf(of2 || "story", ["story"]), withToolbar = ((_b2 = (_a3 = story.parameters.docs) == null ? void 0 : _a3.canvas) == null ? void 0 : _b2.withToolbar) ?? withToolbarProp;
+  let { story } = useOf(of2 || "story", ["story"]), withToolbar = story.parameters.docs?.canvas?.withToolbar ?? withToolbarProp;
   return e.createElement(Anchor, { storyId: story.id }, expanded && e.createElement(e.Fragment, null, e.createElement(Subheading, null, story.name), e.createElement(DescriptionContainer, { of: of2 })), e.createElement(Canvas, { of: of2, withToolbar, story: { __forceInitialArgs, __primary }, source: { __forceInitialArgs } }));
 };
 var Primary = (props) => {
@@ -25641,15 +25509,8 @@ var Primary = (props) => {
   return primaryStory ? e.createElement(DocsStory, { of: primaryStory.moduleExport, expanded: false, __primary: true, withToolbar: true }) : null;
 };
 var StyledHeading = xr$1(Heading2)(({ theme }) => ({ fontSize: `${theme.typography.size.s2 - 1}px`, fontWeight: theme.typography.weight.bold, lineHeight: "16px", letterSpacing: "0.35em", textTransform: "uppercase", color: theme.textMutedColor, border: 0, marginBottom: "12px", "&:first-of-type": { marginTop: "56px" } })), Stories = ({ title = "Stories", includePrimary = true }) => {
-  var _a3;
-  let { componentStories, projectAnnotations, getStoryContext } = reactExports.useContext(DocsContext), stories = componentStories(), { stories: { filter } = { filter: void 0 } } = ((_a3 = projectAnnotations.parameters) == null ? void 0 : _a3.docs) || {};
-  return filter && (stories = stories.filter((story) => filter(story, getStoryContext(story)))), stories.some((story) => {
-    var _a4;
-    return (_a4 = story.tags) == null ? void 0 : _a4.includes("autodocs");
-  }) && (stories = stories.filter((story) => {
-    var _a4;
-    return ((_a4 = story.tags) == null ? void 0 : _a4.includes("autodocs")) && !story.usesMount;
-  })), includePrimary || (stories = stories.slice(1)), !stories || stories.length === 0 ? null : e.createElement(e.Fragment, null, typeof title == "string" ? e.createElement(StyledHeading, null, title) : title, stories.map((story) => story && e.createElement(DocsStory, { key: story.id, of: story.moduleExport, expanded: true, __forceInitialArgs: true })));
+  let { componentStories, projectAnnotations, getStoryContext } = reactExports.useContext(DocsContext), stories = componentStories(), { stories: { filter } = { filter: void 0 } } = projectAnnotations.parameters?.docs || {};
+  return filter && (stories = stories.filter((story) => filter(story, getStoryContext(story)))), stories.some((story) => story.tags?.includes("autodocs")) && (stories = stories.filter((story) => story.tags?.includes("autodocs") && !story.usesMount)), includePrimary || (stories = stories.slice(1)), !stories || stories.length === 0 ? null : e.createElement(e.Fragment, null, typeof title == "string" ? e.createElement(StyledHeading, null, title) : title, stories.map((story) => story && e.createElement(DocsStory, { key: story.id, of: story.moduleExport, expanded: true, __forceInitialArgs: true })));
 };
 var DEPRECATION_MIGRATION_LINK = "https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#subtitle-block-and-parameterscomponentsubtitle", Subtitle2 = (props) => {
   let { of: of2, children } = props;
@@ -25660,14 +25521,14 @@ var DEPRECATION_MIGRATION_LINK = "https://github.com/storybookjs/storybook/blob/
   } catch (error) {
     if (children && !error.message.includes("did you forget to use <Meta of={} />?")) throw error;
   }
-  let { componentSubtitle, docs } = (preparedMeta == null ? void 0 : preparedMeta.parameters) || {};
+  let { componentSubtitle, docs } = preparedMeta?.parameters || {};
   componentSubtitle && deprecate(`Using 'parameters.componentSubtitle' property to subtitle stories is deprecated. See ${DEPRECATION_MIGRATION_LINK}`);
-  let content = children || (docs == null ? void 0 : docs.subtitle) || componentSubtitle;
+  let content = children || docs?.subtitle || componentSubtitle;
   return content ? e.createElement(Subtitle, { className: "sbdocs-subtitle sb-unstyled" }, content) : null;
 };
 var STORY_KIND_PATH_SEPARATOR = /\s*\/\s*/, extractTitle = (title) => {
   let groups = title.trim().split(STORY_KIND_PATH_SEPARATOR);
-  return (groups == null ? void 0 : groups[(groups == null ? void 0 : groups.length) - 1]) || title;
+  return groups?.[groups?.length - 1] || title;
 }, Title3 = (props) => {
   let { children, of: of2 } = props;
   if ("of" in props && of2 === void 0) throw new Error("Unexpected `of={undefined}`, did you mistype a CSF file reference?");
@@ -25677,7 +25538,7 @@ var STORY_KIND_PATH_SEPARATOR = /\s*\/\s*/, extractTitle = (title) => {
   } catch (error) {
     if (children && error instanceof Error && !error.message.includes("did you forget to use <Meta of={} />?")) throw error;
   }
-  let content = children || extractTitle((preparedMeta == null ? void 0 : preparedMeta.title) || "");
+  let content = children || extractTitle(preparedMeta?.title || "");
   return content ? e.createElement(Title, { className: "sbdocs-title sb-unstyled" }, content) : null;
 };
 var DocsPage = () => {

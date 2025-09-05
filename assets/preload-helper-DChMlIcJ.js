@@ -20,7 +20,7 @@ const __vitePreload = function preload(baseModule, deps, importerUrl) {
     const cspNonceMeta = document.querySelector(
       "meta[property=csp-nonce]"
     );
-    const cspNonce = (cspNonceMeta == null ? void 0 : cspNonceMeta.nonce) || (cspNonceMeta == null ? void 0 : cspNonceMeta.getAttribute("nonce"));
+    const cspNonce = cspNonceMeta?.nonce || cspNonceMeta?.getAttribute("nonce");
     promise = allSettled2(
       deps.map((dep) => {
         dep = assetsURL(dep, importerUrl);

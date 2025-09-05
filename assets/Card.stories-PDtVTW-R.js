@@ -1,7 +1,6 @@
-var _a, _b, _c, _d, _e, _f;
-import { d as defineComponent, r as ref, c as createElementBlock, a as createBaseVNode, t as toDisplayString, n as normalizeClass, o as openBlock } from "./iframe-DqFFGcXv.js";
-import { w as within, u as userEvent, e as expect } from "./index-D1MQ82HR.js";
-import "./preload-helper-BbOs9S9B.js";
+import { d as defineComponent, r as ref, c as createElementBlock, a as createBaseVNode, t as toDisplayString, n as normalizeClass, o as openBlock } from "./iframe-BuF6-a_E.js";
+import { w as within, u as userEvent, e as expect } from "./index-DmOD_NYz.js";
+import "./preload-helper-DChMlIcJ.js";
 import "./_commonjsHelpers-C7MPfNLY.js";
 import "./index-BdOSk9or.js";
 const _hoisted_1 = { class: "text-xl font-bold px-4 py-3 bg-gray-100" };
@@ -87,20 +86,20 @@ const InteractiveTest = {
 Default.parameters = {
   ...Default.parameters,
   docs: {
-    ...(_a = Default.parameters) == null ? void 0 : _a.docs,
+    ...Default.parameters?.docs,
     source: {
       originalSource: "{\n  args: {\n    title: 'Ma première card test',\n    content: 'Ceci est un test de composant Storybook !',\n    borderRadius: 'rounded-none'\n  }\n}",
-      ...(_c = (_b = Default.parameters) == null ? void 0 : _b.docs) == null ? void 0 : _c.source
+      ...Default.parameters?.docs?.source
     }
   }
 };
 InteractiveTest.parameters = {
   ...InteractiveTest.parameters,
   docs: {
-    ...(_d = InteractiveTest.parameters) == null ? void 0 : _d.docs,
+    ...InteractiveTest.parameters?.docs,
     source: {
       originalSource: "{\n  args: {\n    title: 'Carte interactive',\n    content: 'Clique sur le bouton pour changer le texte',\n    borderRadius: 'rounded'\n  },\n  play: async ({\n    canvasElement\n  }) => {\n    const canvas = within(canvasElement);\n\n    // 🔹 Sélectionner le bouton par son texte\n    const button = await canvas.getByRole('button', {\n      name: /Changer le texte/i\n    });\n\n    // 🔹 Simuler un clic\n    await userEvent.click(button);\n\n    // 🔹 Vérifier que le texte a changé après le clic\n    const updatedText = await canvas.findByText(/Le texte a changé après un clic ! 🎉/i);\n    expect(updatedText).toBeInTheDocument();\n  }\n}",
-      ...(_f = (_e = InteractiveTest.parameters) == null ? void 0 : _e.docs) == null ? void 0 : _f.source
+      ...InteractiveTest.parameters?.docs?.source
     }
   }
 };

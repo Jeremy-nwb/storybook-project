@@ -4608,8 +4608,8 @@ function requireAxe() {
         var require_function_bind_native = __commonJS(function(exports, module2) {
           var fails = require_fails();
           module2.exports = !fails(function() {
-            var test = (function() {
-            }).bind();
+            var test = function() {
+            }.bind();
             return typeof test != "function" || test.hasOwnProperty("prototype");
           });
         });
@@ -5601,8 +5601,8 @@ function requireAxe() {
           var FunctionPrototype = Function.prototype;
           var getDescriptor = DESCRIPTORS && Object.getOwnPropertyDescriptor;
           var EXISTS = hasOwn2(FunctionPrototype, "name");
-          var PROPER = EXISTS && (function something() {
-          }).name === "something";
+          var PROPER = EXISTS && function something() {
+          }.name === "something";
           var CONFIGURABLE = EXISTS && (!DESCRIPTORS || DESCRIPTORS && getDescriptor(FunctionPrototype, "name").configurable);
           module2.exports = {
             EXISTS,

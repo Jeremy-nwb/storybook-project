@@ -1,8 +1,7 @@
-var _a, _b, _c, _d, _e, _f;
-import { d as defineComponent, r as ref, c as createElementBlock, o as openBlock, j as createVNode, b as createStaticVNode } from "./iframe-DqFFGcXv.js";
-import { _ as _sfc_main$1 } from "./Header-CEMfjrsh.js";
-import "./preload-helper-BbOs9S9B.js";
-import "./Button-DsO1mLa8.js";
+import { d as defineComponent, r as ref, c as createElementBlock, o as openBlock, j as createVNode, b as createStaticVNode } from "./iframe-BuF6-a_E.js";
+import { _ as _sfc_main$1 } from "./Header-DGKNzgsv.js";
+import "./preload-helper-DChMlIcJ.js";
+import "./Button-CHmi8Ysk.js";
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "Page",
   setup(__props) {
@@ -68,20 +67,20 @@ const LoggedOut = {};
 LoggedIn.parameters = {
   ...LoggedIn.parameters,
   docs: {
-    ...(_a = LoggedIn.parameters) == null ? void 0 : _a.docs,
+    ...LoggedIn.parameters?.docs,
     source: {
       originalSource: "{\n  play: async ({\n    canvasElement\n  }: any) => {\n    const canvas = within(canvasElement);\n    const loginButton = canvas.getByRole('button', {\n      name: /Log in/i\n    });\n    await expect(loginButton).toBeInTheDocument();\n    await userEvent.click(loginButton);\n    await expect(loginButton).not.toBeInTheDocument();\n    const logoutButton = canvas.getByRole('button', {\n      name: /Log out/i\n    });\n    await expect(logoutButton).toBeInTheDocument();\n  }\n}",
-      ...(_c = (_b = LoggedIn.parameters) == null ? void 0 : _b.docs) == null ? void 0 : _c.source
+      ...LoggedIn.parameters?.docs?.source
     }
   }
 };
 LoggedOut.parameters = {
   ...LoggedOut.parameters,
   docs: {
-    ...(_d = LoggedOut.parameters) == null ? void 0 : _d.docs,
+    ...LoggedOut.parameters?.docs,
     source: {
       originalSource: "{}",
-      ...(_f = (_e = LoggedOut.parameters) == null ? void 0 : _e.docs) == null ? void 0 : _f.source
+      ...LoggedOut.parameters?.docs?.source
     }
   }
 };

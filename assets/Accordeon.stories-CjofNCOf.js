@@ -1,7 +1,6 @@
-var _a, _b, _c;
-import { c as createElementBlock, o as openBlock, a as createBaseVNode, d as defineComponent, r as ref, w as withDirectives, j as createVNode, t as toDisplayString, n as normalizeClass, u as unref, v as vShow } from "./iframe-DqFFGcXv.js";
-import { w as within, e as expect, u as userEvent } from "./index-D1MQ82HR.js";
-import "./preload-helper-BbOs9S9B.js";
+import { c as createElementBlock, o as openBlock, a as createBaseVNode, d as defineComponent, r as ref, w as withDirectives, j as createVNode, t as toDisplayString, n as normalizeClass, u as unref, v as vShow } from "./iframe-BuF6-a_E.js";
+import { w as within, e as expect, u as userEvent } from "./index-DmOD_NYz.js";
+import "./preload-helper-DChMlIcJ.js";
 import "./_commonjsHelpers-C7MPfNLY.js";
 import "./index-BdOSk9or.js";
 function render(_ctx, _cache) {
@@ -96,10 +95,10 @@ const Default = {
 Default.parameters = {
   ...Default.parameters,
   docs: {
-    ...(_a = Default.parameters) == null ? void 0 : _a.docs,
+    ...Default.parameters?.docs,
     source: {
       originalSource: "{\n  args: {\n    title: 'Titre',\n    content: 'Content accordéon'\n  },\n  play: async ({\n    canvasElement\n  }) => {\n    const canvas = within(canvasElement);\n\n    // 🔹 Sélectionner le bouton de l'accordéon (par son texte)\n    const button = await canvas.getByRole('button', {\n      name: /Titre/i\n    });\n\n    // 🔹 Vérifier que le contenu est caché par défaut\n    const content = canvas.getByText(/Content accordéon/i);\n    const contentWrapper = content.closest('div'); // Récupère le premier parent <div>\n    expect(contentWrapper).toHaveStyle('display: none');\n\n    // 🔹 Simuler un clic pour ouvrir l'accordéon\n    await userEvent.click(button);\n\n    // 🔹 Vérifier que le contenu est maintenant visible\n    expect(content).toHaveStyle('display: block');\n\n    // 🔹 Vérifier que l'icône du chevron a tourné (rotation de 180°)\n    const chevronIcon = canvasElement.querySelector('.w-6.h-6');\n    expect(chevronIcon).toHaveClass('rotate-180');\n\n    // 🔹 Simuler un autre clic pour fermer l'accordéon\n    await userEvent.click(button);\n\n    // 🔹 Vérifier que le contenu est de nouveau caché\n    expect(contentWrapper).toHaveStyle('display: none');\n\n    // 🔹 Vérifier que l'icône du chevron est revenu à sa position d'origine\n    expect(chevronIcon).not.toHaveClass('rotate-180');\n  }\n}",
-      ...(_c = (_b = Default.parameters) == null ? void 0 : _b.docs) == null ? void 0 : _c.source
+      ...Default.parameters?.docs?.source
     }
   }
 };

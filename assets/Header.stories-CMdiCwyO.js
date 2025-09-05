@@ -1,8 +1,7 @@
-var _a, _b, _c, _d, _e, _f;
-import { _ as _sfc_main } from "./Header-CEMfjrsh.js";
-import "./iframe-DqFFGcXv.js";
-import "./preload-helper-BbOs9S9B.js";
-import "./Button-DsO1mLa8.js";
+import { _ as _sfc_main } from "./Header-DGKNzgsv.js";
+import "./iframe-BuF6-a_E.js";
+import "./preload-helper-DChMlIcJ.js";
+import "./Button-CHmi8Ysk.js";
 const { fn } = __STORYBOOK_MODULE_TEST__;
 const meta = {
   /* 👇 The title prop is optional.
@@ -49,20 +48,20 @@ const LoggedOut = {
 LoggedIn.parameters = {
   ...LoggedIn.parameters,
   docs: {
-    ...(_a = LoggedIn.parameters) == null ? void 0 : _a.docs,
+    ...LoggedIn.parameters?.docs,
     source: {
       originalSource: "{\n  args: {\n    user: {\n      name: 'Jane Doe'\n    }\n  }\n}",
-      ...(_c = (_b = LoggedIn.parameters) == null ? void 0 : _b.docs) == null ? void 0 : _c.source
+      ...LoggedIn.parameters?.docs?.source
     }
   }
 };
 LoggedOut.parameters = {
   ...LoggedOut.parameters,
   docs: {
-    ...(_d = LoggedOut.parameters) == null ? void 0 : _d.docs,
+    ...LoggedOut.parameters?.docs,
     source: {
       originalSource: "{\n  args: {\n    user: null\n  }\n}",
-      ...(_f = (_e = LoggedOut.parameters) == null ? void 0 : _e.docs) == null ? void 0 : _f.source
+      ...LoggedOut.parameters?.docs?.source
     }
   }
 };

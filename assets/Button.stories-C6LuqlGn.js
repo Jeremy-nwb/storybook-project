@@ -1,7 +1,6 @@
-var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l;
-import { _ as _sfc_main } from "./Button-DsO1mLa8.js";
-import "./iframe-DqFFGcXv.js";
-import "./preload-helper-BbOs9S9B.js";
+import { _ as _sfc_main } from "./Button-CHmi8Ysk.js";
+import "./iframe-BuF6-a_E.js";
+import "./preload-helper-DChMlIcJ.js";
 const { fn } = __STORYBOOK_MODULE_TEST__;
 const meta = {
   title: "Example/Button",
@@ -50,40 +49,40 @@ const Small = {
 Primary.parameters = {
   ...Primary.parameters,
   docs: {
-    ...(_a = Primary.parameters) == null ? void 0 : _a.docs,
+    ...Primary.parameters?.docs,
     source: {
       originalSource: "{\n  args: {\n    primary: true,\n    label: 'Button'\n  }\n}",
-      ...(_c = (_b = Primary.parameters) == null ? void 0 : _b.docs) == null ? void 0 : _c.source
+      ...Primary.parameters?.docs?.source
     }
   }
 };
 Secondary.parameters = {
   ...Secondary.parameters,
   docs: {
-    ...(_d = Secondary.parameters) == null ? void 0 : _d.docs,
+    ...Secondary.parameters?.docs,
     source: {
       originalSource: "{\n  args: {\n    primary: false,\n    label: 'Button'\n  }\n}",
-      ...(_f = (_e = Secondary.parameters) == null ? void 0 : _e.docs) == null ? void 0 : _f.source
+      ...Secondary.parameters?.docs?.source
     }
   }
 };
 Large.parameters = {
   ...Large.parameters,
   docs: {
-    ...(_g = Large.parameters) == null ? void 0 : _g.docs,
+    ...Large.parameters?.docs,
     source: {
       originalSource: "{\n  args: {\n    label: 'Button',\n    size: 'large'\n  }\n}",
-      ...(_i = (_h = Large.parameters) == null ? void 0 : _h.docs) == null ? void 0 : _i.source
+      ...Large.parameters?.docs?.source
     }
   }
 };
 Small.parameters = {
   ...Small.parameters,
   docs: {
-    ...(_j = Small.parameters) == null ? void 0 : _j.docs,
+    ...Small.parameters?.docs,
     source: {
       originalSource: "{\n  args: {\n    label: 'Button',\n    size: 'small'\n  }\n}",
-      ...(_l = (_k = Small.parameters) == null ? void 0 : _k.docs) == null ? void 0 : _l.source
+      ...Small.parameters?.docs?.source
     }
   }
 };

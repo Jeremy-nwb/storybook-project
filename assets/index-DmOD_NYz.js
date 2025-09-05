@@ -10156,8 +10156,8 @@ function requireFunctionsHaveNames() {
   if (hasRequiredFunctionsHaveNames) return functionsHaveNames_1;
   hasRequiredFunctionsHaveNames = 1;
   var functionsHaveNames = function functionsHaveNames2() {
-    return typeof (function f() {
-    }).name === "string";
+    return typeof function f() {
+    }.name === "string";
   };
   var gOPD2 = Object.getOwnPropertyDescriptor;
   if (gOPD2) {
@@ -10177,8 +10177,8 @@ function requireFunctionsHaveNames() {
   };
   var $bind = Function.prototype.bind;
   functionsHaveNames.boundFunctionsHaveNames = function boundFunctionsHaveNames() {
-    return functionsHaveNames() && typeof $bind === "function" && (function f() {
-    }).bind().name !== "";
+    return functionsHaveNames() && typeof $bind === "function" && function f() {
+    }.bind().name !== "";
   };
   functionsHaveNames_1 = functionsHaveNames;
   return functionsHaveNames_1;
@@ -30034,31 +30034,27 @@ var CallStates$1 = ((CallStates2) => (CallStates2.DONE = "done", CallStates2.ERR
       this.getState(storyId).isDebugging || this.setState(storyId, ({ calls }) => ({ calls: [], shadowCalls: calls.map((call) => ({ ...call, status: "waiting" })), isDebugging: true }));
       let log = this.getLog(storyId);
       this.setState(storyId, ({ shadowCalls }) => {
-        var _a;
         if (playUntil || !log.length)
           return { playUntil };
         let firstRowIndex = shadowCalls.findIndex((call) => call.id === log[0].callId);
-        return { playUntil: (_a = shadowCalls.slice(0, firstRowIndex).filter((call) => call.interceptable && !call.ancestors.length).slice(-1)[0]) == null ? void 0 : _a.id };
+        return { playUntil: shadowCalls.slice(0, firstRowIndex).filter((call) => call.interceptable && !call.ancestors.length).slice(-1)[0]?.id };
       }), this.channel.emit(FORCE_REMOUNT$1, { storyId, isDebugging: true });
     }, back = ({ storyId }) => {
-      var _a;
       let log = this.getLog(storyId).filter((call) => !call.ancestors.length), last = log.reduceRight((res, item, index2) => res >= 0 || item.status === "waiting" ? res : index2, -1);
-      start({ storyId, playUntil: (_a = log[last - 1]) == null ? void 0 : _a.callId });
+      start({ storyId, playUntil: log[last - 1]?.callId });
     }, goto = ({ storyId, callId }) => {
-      var _a;
       let { calls, shadowCalls, resolvers } = this.getState(storyId), call = calls.find(({ id }) => id === callId), shadowCall = shadowCalls.find(({ id }) => id === callId);
       if (!call && shadowCall && Object.values(resolvers).length > 0) {
-        let nextId = (_a = this.getLog(storyId).find((c2) => c2.status === "waiting")) == null ? void 0 : _a.callId;
+        let nextId = this.getLog(storyId).find((c2) => c2.status === "waiting")?.callId;
         shadowCall.id !== nextId && this.setState(storyId, { playUntil: shadowCall.id }), Object.values(resolvers).forEach((resolve) => resolve());
       } else
         start({ storyId, playUntil: callId });
     }, next = ({ storyId }) => {
-      var _a;
       let { resolvers } = this.getState(storyId);
       if (Object.values(resolvers).length > 0)
         Object.values(resolvers).forEach((resolve) => resolve());
       else {
-        let nextId = (_a = this.getLog(storyId).find((c2) => c2.status === "waiting")) == null ? void 0 : _a.callId;
+        let nextId = this.getLog(storyId).find((c2) => c2.status === "waiting")?.callId;
         nextId ? start({ storyId, playUntil: nextId }) : end({ storyId });
       }
     }, end = ({ storyId }) => {
@@ -30088,7 +30084,7 @@ var CallStates$1 = ((CallStates2) => (CallStates2.DONE = "done", CallStates2.ERR
     });
     let seen = /* @__PURE__ */ new Set();
     return merged.reduceRight((acc, call) => (call.args.forEach((arg) => {
-      (arg == null ? void 0 : arg.__callId__) && seen.add(arg.__callId__);
+      arg?.__callId__ && seen.add(arg.__callId__);
     }), call.path.forEach((node) => {
       node.__callId__ && seen.add(node.__callId__);
     }), (call.interceptable || call.exception) && !seen.has(call.id) && (acc.unshift({ callId: call.id, status: call.status, ancestors: call.ancestors }), seen.add(call.id)), acc), []);
@@ -30103,8 +30099,7 @@ var CallStates$1 = ((CallStates2) => (CallStates2.DONE = "done", CallStates2.ERR
     }, mutate ? obj : construct$1(obj));
   }
   track(method, fn, args, options) {
-    var _a, _b, _c, _d;
-    let storyId = ((_a = args == null ? void 0 : args[0]) == null ? void 0 : _a.__storyId__) || ((_d = (_c = (_b = scope$1.__STORYBOOK_PREVIEW__) == null ? void 0 : _b.selectionStore) == null ? void 0 : _c.selection) == null ? void 0 : _d.storyId), { cursor, ancestors } = this.getState(storyId);
+    let storyId = args?.[0]?.__storyId__ || scope$1.__STORYBOOK_PREVIEW__?.selectionStore?.selection?.storyId, { cursor, ancestors } = this.getState(storyId);
     this.setState(storyId, { cursor: cursor + 1 });
     let id = `${ancestors.slice(-1)[0] || storyId} [${cursor}] ${method}`, { path = [], intercept = false, retain = false } = options, interceptable = typeof intercept == "function" ? intercept(method, path) : intercept, call = { id, cursor, storyId, ancestors, path, method, args, interceptable, retain }, result = (interceptable && !ancestors.length ? this.intercept : this.invoke).call(this, fn, call, options);
     return this.instrument(result, { ...options, mutate: true, path: [{ __callId__: call.id }] });
@@ -30120,7 +30115,6 @@ var CallStates$1 = ((CallStates2) => (CallStates2.DONE = "done", CallStates2.ERR
   }
   invoke(fn, call, options) {
     let { callRefsByResult, renderPhase } = this.getState(call.storyId), serializeValues = (value) => {
-      var _a, _b;
       if (callRefsByResult.has(value))
         return callRefsByResult.get(value);
       if (value instanceof Array)
@@ -30139,10 +30133,10 @@ var CallStates$1 = ((CallStates2) => (CallStates2.DONE = "done", CallStates2.ERR
         let { prefix, localName, id, classList, innerText } = value, classNames = Array.from(classList);
         return { __element__: { prefix, localName, id, classNames, innerText } };
       }
-      return typeof value == "function" ? { __function__: { name: value.name } } : typeof value == "symbol" ? { __symbol__: { description: value.description } } : typeof value == "object" && ((_a = value == null ? void 0 : value.constructor) == null ? void 0 : _a.name) && ((_b = value == null ? void 0 : value.constructor) == null ? void 0 : _b.name) !== "Object" ? { __class__: { name: value.constructor.name } } : Object.prototype.toString.call(value) === "[object Object]" ? Object.fromEntries(Object.entries(value).map(([key, val]) => [key, serializeValues(val)])) : value;
+      return typeof value == "function" ? { __function__: { name: value.name } } : typeof value == "symbol" ? { __symbol__: { description: value.description } } : typeof value == "object" && value?.constructor?.name && value?.constructor?.name !== "Object" ? { __class__: { name: value.constructor.name } } : Object.prototype.toString.call(value) === "[object Object]" ? Object.fromEntries(Object.entries(value).map(([key, val]) => [key, serializeValues(val)])) : value;
     }, info = { ...call, args: call.args.map(serializeValues) };
     call.path.forEach((ref2) => {
-      (ref2 == null ? void 0 : ref2.__callId__) && this.setState(call.storyId, ({ chainedCallIds }) => ({ chainedCallIds: new Set(Array.from(chainedCallIds).concat(ref2.__callId__)) }));
+      ref2?.__callId__ && this.setState(call.storyId, ({ chainedCallIds }) => ({ chainedCallIds: new Set(Array.from(chainedCallIds).concat(ref2.__callId__)) }));
     });
     let handleException = (e2) => {
       if (e2 instanceof Error) {
@@ -30181,8 +30175,7 @@ var CallStates$1 = ((CallStates2) => (CallStates2.DONE = "done", CallStates2.ERR
   }
   sync(storyId) {
     let synchronize = () => {
-      var _a;
-      let { isLocked, isPlaying } = this.getState(storyId), logItems = this.getLog(storyId), pausedAt = (_a = logItems.filter(({ ancestors }) => !ancestors.length).find((item) => item.status === "waiting")) == null ? void 0 : _a.callId, hasActive = logItems.some((item) => item.status === "active");
+      let { isLocked, isPlaying } = this.getState(storyId), logItems = this.getLog(storyId), pausedAt = logItems.filter(({ ancestors }) => !ancestors.length).find((item) => item.status === "waiting")?.callId, hasActive = logItems.some((item) => item.status === "active");
       if (isLocked || hasActive || logItems.length === 0) {
         let payload2 = { controlStates: controlsDisabled$1, logItems };
         this.channel.emit(EVENTS$1.SYNC, payload2);
@@ -30195,10 +30188,9 @@ var CallStates$1 = ((CallStates2) => (CallStates2.DONE = "done", CallStates2.ERR
   }
 };
 function instrument$1(obj, options = {}) {
-  var _a, _b, _c, _d;
   try {
     let forceInstrument = false, skipInstrument = false;
-    return ((_b = (_a = scope$1.window.location) == null ? void 0 : _a.search) == null ? void 0 : _b.includes("instrument=true")) ? forceInstrument = true : ((_d = (_c = scope$1.window.location) == null ? void 0 : _c.search) == null ? void 0 : _d.includes("instrument=false")) && (skipInstrument = true), scope$1.window.parent === scope$1.window && !forceInstrument || skipInstrument ? obj : (scope$1.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ || (scope$1.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ = new Instrumenter$1()), scope$1.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__.instrument(obj, options));
+    return scope$1.window.location?.search?.includes("instrument=true") ? forceInstrument = true : scope$1.window.location?.search?.includes("instrument=false") && (skipInstrument = true), scope$1.window.parent === scope$1.window && !forceInstrument || skipInstrument ? obj : (scope$1.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ || (scope$1.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__ = new Instrumenter$1()), scope$1.window.__STORYBOOK_ADDON_INTERACTIONS_INSTRUMENTER__.instrument(obj, options));
   } catch (e2) {
     return once$1.warn(e2), obj;
   }
@@ -37648,9 +37640,9 @@ ${t4}`);
       return O(e3, (function(e4) {
         return m2.test(e4) ? $(e4.slice(4).toLowerCase()) : e4;
       }));
-    } }, void 0 === (r2 = (function() {
+    } }, void 0 === (r2 = function() {
       return s2;
-    }).call(t2, n2, t2, e2)) || (e2.exports = r2);
+    }.call(t2, n2, t2, e2)) || (e2.exports = r2);
   })();
 }, "./node_modules/url/url.js": (e2, t2, n2) => {
   var r2 = n2("./node_modules/url/node_modules/punycode/punycode.js"), o2 = n2("./node_modules/url/util.js");
@@ -38563,12 +38555,12 @@ const m = (s2, a) => {
   let m2 = 1, h = 1;
   function u() {
     const t2 = { line: m2, column: h };
-    return (i2) => (i2.position = new e(t2, { line: m2, column: h }, (a == null ? void 0 : a.source) || ""), $(), i2);
+    return (i2) => (i2.position = new e(t2, { line: m2, column: h }, a?.source || ""), $(), i2);
   }
   const p = [];
   function l(e2) {
-    const i2 = new t((a == null ? void 0 : a.source) || "", e2, m2, h, s2);
-    if (!(a == null ? void 0 : a.silent)) throw i2;
+    const i2 = new t(a?.source || "", e2, m2, h, s2);
+    if (!a?.silent) throw i2;
     p.push(i2);
   }
   function f() {
@@ -38760,7 +38752,7 @@ const m = (s2, a) => {
   }
   return c((function() {
     const t2 = y();
-    return { type: i.stylesheet, stylesheet: { source: a == null ? void 0 : a.source, rules: t2, parsingErrors: p } };
+    return { type: i.stylesheet, stylesheet: { source: a?.source, rules: t2, parsingErrors: p } };
   })());
 };
 var toStr = Object.prototype.toString;
@@ -40078,7 +40070,6 @@ function toHaveAccessibleDescription(htmlElement, expectedAccessibleDescription)
 const ariaInvalidName = "aria-invalid";
 const validStates = ["false"];
 function toHaveAccessibleErrorMessage(htmlElement, expectedAccessibleErrorMessage) {
-  var _a;
   checkHtmlElement(htmlElement, toHaveAccessibleErrorMessage, this);
   const to = this.isNot ? "not to" : "to";
   const method = this.isNot ? ".not.toHaveAccessibleErrorMessage" : ".toHaveAccessibleErrorMessage";
@@ -40117,7 +40108,7 @@ function toHaveAccessibleErrorMessage(htmlElement, expectedAccessibleErrorMessag
     };
   }
   const error = normalize(
-    ((_a = htmlElement.ownerDocument.getElementById(errormessageId)) == null ? void 0 : _a.textContent) ?? ""
+    htmlElement.ownerDocument.getElementById(errormessageId)?.textContent ?? ""
   );
   return {
     pass: expectedAccessibleErrorMessage === void 0 ? Boolean(error) : expectedAccessibleErrorMessage instanceof RegExp ? expectedAccessibleErrorMessage.test(error) : this.equals(error, expectedAccessibleErrorMessage),
@@ -40861,8 +40852,7 @@ function supportedRoles() {
   return libExports.roles.keys().filter(roleSupportsChecked);
 }
 function roleSupportsChecked(role) {
-  var _a;
-  return ((_a = libExports.roles.get(role)) == null ? void 0 : _a.props["aria-checked"]) !== void 0;
+  return libExports.roles.get(role)?.props["aria-checked"] !== void 0;
 }
 function toBePartiallyChecked(element) {
   checkHtmlElement(element, toBePartiallyChecked, this);
