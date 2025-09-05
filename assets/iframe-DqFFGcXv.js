@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./Accordeon.stories-n-CVYbnx.js","./index-D1MQ82HR.js","./_commonjsHelpers-C7MPfNLY.js","./index-BdOSk9or.js","./preload-helper-BbOs9S9B.js","./Button.stories-BwiElOBR.js","./Button-Brt7ZDSc.js","./Button-Bnzz4IoU.css","./Card.stories-CaXfwf9k.js","./Configure--Yx_ko8r.js","./blocks-CMknES2G.js","./index-C762LROJ.js","./Header.stories-PbV_LRZ4.js","./Header-BL0xQgAw.js","./Header-eRovX6kq.css","./Page.stories-BBv2UATz.js","./Page-DYrHQXjz.css","./axe-B2EvhcZK.js","./DocsRenderer-PQXLIZUC-CD90sNNO.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./Card.stories-CBplaSwq.js","./index-D1MQ82HR.js","./_commonjsHelpers-C7MPfNLY.js","./index-BdOSk9or.js","./preload-helper-BbOs9S9B.js","./Accordeon.stories-CS8Urfup.js","./Button.stories-D8Bly0EQ.js","./Button-DsO1mLa8.js","./Button-Bnzz4IoU.css","./Configure-xWj2Xojy.js","./blocks-6cZ4C_1L.js","./index-BFDJJLJz.js","./Header.stories-D8povPJC.js","./Header-CEMfjrsh.js","./Header-eRovX6kq.css","./Page.stories-CL8Vm-DC.js","./Page-DYrHQXjz.css","./axe-B2EvhcZK.js","./DocsRenderer-PQXLIZUC-BoZ9C2S8.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
 var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
@@ -43727,12 +43727,12 @@ if (window.CONFIG_TYPE === "DEVELOPMENT") {
   window.__STORYBOOK_SERVER_CHANNEL__ = channel$1;
 }
 const importers = {
-  "./src/stories/Accordeon.stories.ts": () => __vitePreload(() => import("./Accordeon.stories-n-CVYbnx.js"), true ? __vite__mapDeps([0,1,2,3,4]) : void 0, import.meta.url),
-  "./src/stories/Button.stories.ts": () => __vitePreload(() => import("./Button.stories-BwiElOBR.js"), true ? __vite__mapDeps([5,6,7,4]) : void 0, import.meta.url),
-  "./src/stories/Card.stories.ts": () => __vitePreload(() => import("./Card.stories-CaXfwf9k.js"), true ? __vite__mapDeps([8,1,2,3,4]) : void 0, import.meta.url),
-  "./src/stories/Configure.mdx": () => __vitePreload(() => import("./Configure--Yx_ko8r.js"), true ? __vite__mapDeps([9,10,4,2,3,11]) : void 0, import.meta.url),
-  "./src/stories/Header.stories.ts": () => __vitePreload(() => import("./Header.stories-PbV_LRZ4.js"), true ? __vite__mapDeps([12,13,6,7,14,4]) : void 0, import.meta.url),
-  "./src/stories/Page.stories.ts": () => __vitePreload(() => import("./Page.stories-BBv2UATz.js"), true ? __vite__mapDeps([15,13,6,7,14,4,16]) : void 0, import.meta.url)
+  "./src/components/Card.stories.ts": () => __vitePreload(() => import("./Card.stories-CBplaSwq.js"), true ? __vite__mapDeps([0,1,2,3,4]) : void 0, import.meta.url),
+  "./src/stories/Accordeon.stories.ts": () => __vitePreload(() => import("./Accordeon.stories-CS8Urfup.js"), true ? __vite__mapDeps([5,1,2,3,4]) : void 0, import.meta.url),
+  "./src/stories/Button.stories.ts": () => __vitePreload(() => import("./Button.stories-D8Bly0EQ.js"), true ? __vite__mapDeps([6,7,8,4]) : void 0, import.meta.url),
+  "./src/stories/Configure.mdx": () => __vitePreload(() => import("./Configure-xWj2Xojy.js"), true ? __vite__mapDeps([9,10,4,2,3,11]) : void 0, import.meta.url),
+  "./src/stories/Header.stories.ts": () => __vitePreload(() => import("./Header.stories-D8povPJC.js"), true ? __vite__mapDeps([12,13,7,8,14,4]) : void 0, import.meta.url),
+  "./src/stories/Page.stories.ts": () => __vitePreload(() => import("./Page.stories-CL8Vm-DC.js"), true ? __vite__mapDeps([15,13,7,8,14,4,16]) : void 0, import.meta.url)
 };
 async function importFn(path) {
   return await importers[path]();
@@ -62694,7 +62694,7 @@ var excludeTags = Object.entries(globalThis.TAGS_OPTIONS ?? {}).reduce((acc, ent
   let [tag, option] = entry;
   return option.excludeFromDocsStories && (acc[tag] = true), acc;
 }, {}), parameters = { docs: { renderer: async () => {
-  let { DocsRenderer } = await __vitePreload(() => import("./DocsRenderer-PQXLIZUC-CD90sNNO.js"), true ? __vite__mapDeps([18,4,10,2,3]) : void 0, import.meta.url);
+  let { DocsRenderer } = await __vitePreload(() => import("./DocsRenderer-PQXLIZUC-BoZ9C2S8.js"), true ? __vite__mapDeps([18,4,10,2,3]) : void 0, import.meta.url);
   return new DocsRenderer();
 }, stories: { filter: (story) => {
   var _a3;
