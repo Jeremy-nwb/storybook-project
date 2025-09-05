@@ -2,17 +2,17 @@ import type { StorybookConfig } from '@storybook/vue3-vite';
 import { mergeConfig } from 'vite';
 
 const config: StorybookConfig = {
-    "stories": [
+    stories: [
         "../src/**/*.mdx",
         "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
     ],
-    "addons": [
+    addons: [
         "@storybook/addon-onboarding",
         "@chromatic-com/storybook",
         '@storybook/addon-a11y',
         "@storybook/addon-docs"
     ],
-    "framework": {
+    framework: {
         "name": "@storybook/vue3-vite",
         "options": {}
     },
@@ -28,6 +28,7 @@ const config: StorybookConfig = {
                 // la section 'build') une fois que tout fonctionnera.
                 build: {
                     minify: false,
+                    target: 'es2020',
                 }
             });
         }
