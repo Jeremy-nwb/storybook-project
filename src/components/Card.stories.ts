@@ -1,4 +1,4 @@
-import Card from '../components/Card.vue';
+import Card from './Card.vue';
 import type { Meta, StoryObj } from '@storybook/vue3-vite';
 import { userEvent, within } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
